@@ -1,0 +1,13 @@
+# Fichiers temporaires de rendu PDF (scan des supports USPI)
+/_pdfscan/
+
+# Réglages Claude Code locaux (par utilisateur)
+.claude/settings.local.json
+
+# Système
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc

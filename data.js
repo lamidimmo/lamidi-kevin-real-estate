@@ -64,10 +64,13 @@
      pctSBP      : part de la SBP autorisée exploitée.
      margeDefaut : marge appliquée à la recette (surchargeable par dossier).
      --------------------------------------------------------------------------- */
+  // Les trois niveaux exploitent le terrain au MAXIMUM (même programme, densité
+  // pleine). L'écart de valeur vient uniquement de la marge attendue par
+  // l'acquéreur, ce qui resserre et crédibilise la fourchette.
   var SCENARIOS = [
-    { key: 'P', nom: 'Valorisation prudente', niveau: 'Plancher',       pctSBP: 0.70, programme: 'villa',      nbUnites: 1, margeDefaut: 0.15, ppe: false, profil: 'Promoteur prudent, programme classique à densité modérée. Minimum défendable.' },
-    { key: 'R', nom: 'Valeur de marché',      niveau: 'Réaliste',       pctSBP: 1.00, programme: 'mitoyennes', nbUnites: 2, margeDefaut: 0.15, ppe: true,  profil: 'Programme le plus probable au vu du marché local (deux logements mitoyens), marge promoteur pleine.' },
-    { key: 'O', nom: 'Potentiel optimal',     niveau: 'Potentiel',      pctSBP: 1.00, programme: 'mitoyennes', nbUnites: 2, margeDefaut: 0.10, ppe: true,  profil: 'Terrain exploité à son optimum, marge promoteur resserrée. Haut de fourchette crédible, soutenu par la rareté.' }
+    { key: 'P', nom: 'Valorisation prudente', niveau: 'Plancher',  pctSBP: 1.00, programme: 'mitoyennes', nbUnites: 2, margeDefaut: 0.18, ppe: true, profil: 'Exploitation maximale du terrain, vue d\'un promoteur exigeant sur sa marge. Minimum défendable.' },
+    { key: 'R', nom: 'Valeur de marché',      niveau: 'Réaliste',  pctSBP: 1.00, programme: 'mitoyennes', nbUnites: 2, margeDefaut: 0.13, ppe: true, profil: 'Exploitation maximale, marge promoteur usuelle. Valeur la plus probable.' },
+    { key: 'O', nom: 'Potentiel optimal',     niveau: 'Potentiel', pctSBP: 1.00, programme: 'mitoyennes', nbUnites: 2, margeDefaut: 0.08, ppe: true, profil: 'Exploitation maximale, marge resserrée (acquéreur motivé, rareté du foncier). Haut de fourchette crédible.' }
   ];
 
   /* ---------------------------------------------------------------------------

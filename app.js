@@ -291,7 +291,7 @@
         '</div>' +
       '</div>' +
       '<div class="viz viz-scen">' +
-        '<h4>Selon ce qu\'on y construit</h4>' +
+        '<h4>Selon le profil d\'acquéreur</h4>' +
         '<div class="scen-rows">' +
           '<div class="scen-row"><div class="scen-top"><span class="name">Prudente</span><span class="val val-P"></span></div><div class="scen-track"><div class="scen-fill lv-P"></div></div></div>' +
           '<div class="scen-row"><div class="scen-top"><span class="name">Réaliste</span><span class="val val-R"></span></div><div class="scen-track"><div class="scen-fill lv-R"></div></div></div>' +
@@ -378,7 +378,7 @@
       box.querySelector('.val-O').textContent = chf(vO);
       // Explication
       box.querySelector('.r-explain').textContent =
-        'Sur la base d\'environ ' + fmt(sbp) + ' m² de surface brute de plancher constructible, cette fourchette correspond à ce qu\'un acquéreur peut raisonnablement consacrer au terrain, une fois le projet construit et sa marge prise en compte (méthode résiduelle USPI).';
+        'Sur la base d\'environ ' + fmt(sbp) + ' m² de surface brute de plancher constructible, cette fourchette correspond à ce qu\'un acquéreur peut raisonnablement consacrer au terrain, une fois le projet construit et sa marge prise en compte.';
       // Appel à l'action
       var ctaBox = box.querySelector('.r-cta');
       if (contact) {

@@ -56,27 +56,28 @@ Points clés du modèle :
   servent que dans la vue acquéreur (coût de revient).
 - La **marge est définie par niveau** (éditable Prudente / Réaliste / Optimale).
 
-Trois niveaux de valorisation, pensés côté propriétaire et alignés sur la logique d'un
-promoteur (outil orienté génération de lead : le client clique, le courtier rappelle) :
+Trois niveaux de valorisation, tous à **exploitation maximale du terrain** (même
+programme, densité pleine). L'écart de valeur vient uniquement de la marge attendue par
+l'acquéreur, ce qui resserre et crédibilise la fourchette :
 
-- **Prudente (plancher)** : villa unique, 70% SBP, marge promoteur 15%. Minimum défendable.
-- **Réaliste (cœur de marché)** : deux logements mitoyens, 100% SBP, marge 15%. Valeur la plus probable.
-- **Optimale (potentiel)** : deux mitoyens, 100% SBP, marge resserrée 10%. Haut de fourchette crédible et tenable.
+- **Prudente (plancher)** : promoteur exigeant, marge 18%. Minimum défendable.
+- **Réaliste (cœur de marché)** : marge promoteur usuelle 13%. Valeur la plus probable.
+- **Optimale (potentiel)** : marge resserrée 8% (acquéreur motivé, rareté). Haut de fourchette crédible.
 
 ## Validation Bavois 1181
 
-Avec les paramètres du dossier d'origine (600 m², IUS 0.5, prix réf. 7'250 CHF/m² SBP,
+Avec les paramètres du dossier (600 m², IUS 0.5, prix réf. 7'250 CHF/m² SBP,
 coût 1'000 CHF/m³, ratio volume/SBP 4), l'application retrouve :
 
 | Niveau | Terrain défendable |
 |--------|--------------------|
-| Prudente (plancher) | ~207'000 |
-| Réaliste (cœur de marché) | ~467'000 |
-| Optimale (potentiel, marge 10%) | ~579'000 |
+| Prudente (marge 18%) | ~399'000 |
+| Réaliste (marge 13%) | ~512'000 |
+| Optimale (marge 8%) | ~624'000 |
 
-Soit une fourchette client de l'ordre de 200'000 à 580'000 CHF, valeur réaliste 470'000.
-Dans l'onglet Avis, ces trois bornes se pré-remplissent automatiquement et restent
-ajustables manuellement avant d'afficher au client.
+Soit une fourchette client de l'ordre de 390'000 à 630'000 CHF, valeur réaliste 510'000
+(écart resserré, facteur ~1,56). Dans l'onglet Avis, ces trois bornes se pré-remplissent
+automatiquement et restent ajustables manuellement avant d'afficher au client.
 
 ## Leviers de calibrage
 

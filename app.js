@@ -200,6 +200,7 @@
 
     fillFourchette(res);
     renderHero(res);
+    updateContactCta();
     renderSynthese(res, input);
     renderDetail(res);
     renderAcquereur(res);
@@ -230,6 +231,23 @@
       else { elt.setAttribute('data-v', target); elt.textContent = fmt(target); }
     }
     elt._raf = requestAnimationFrame(step);
+  }
+
+  // Bouton « Contacter nos équipes » : mailto pré-rempli avec la valeur indicative.
+  function updateContactCta() {
+    var a = $('ctaContact'); if (!a) return;
+    var email = (val('contactEmail') || '').trim();
+    var commune = val('commune') || '';
+    var parcel = (val('noParcelle') ? 'parcelle ' + val('noParcelle') + ', ' : '') + commune;
+    var res = state.lastResult;
+    var vR = (res && res.synthese && res.synthese.sbpMax > 0) ? round10k(res.synthese.byKey.R || 0) : 0;
+    var subject = 'Évaluation du potentiel foncier de mon bien';
+    var body = 'Bonjour,\n\nJe souhaite faire évaluer le potentiel foncier de mon bien' +
+      (parcel ? ' (' + parcel + ')' : '') + '.' +
+      (vR ? '\nEstimation indicative obtenue : ' + chf(vR) + '.' : '') +
+      '\n\nMerci de me recontacter.';
+    a.href = 'mailto:' + encodeURIComponent(email) +
+      '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   }
 
   var heroBuilt = false;
@@ -297,7 +315,6 @@
       '</div>' +
     '</div>' +
     '<p class="r-explain"></p>' +
-    '<div class="r-cta"></div>' +
     '<div class="r-disclaimer">Avis indicatif, sans engagement, qui ne constitue pas une expertise au sens formel.</div>';
 
   // Résultat de la façade simple : valeur mise en avant + barre + graphiques animés.
@@ -338,10 +355,6 @@
     // Barres des 3 niveaux (relatif au potentiel).
     var mx = Math.max(vP, vR, vO) || 1;
 
-    var contact = (val('contactEmail') || '').trim();
-    var commune = val('commune') || '';
-    var parcel = (val('noParcelle') ? 'parcelle ' + val('noParcelle') + ', ' : '') + commune;
-
     // Hauteur des maisons : proportionnelle à la SBP par unité (densité bâtie).
     var sbpUnit = R.sbpParUnite || (s.sbpMax / 2) || 150;
     var bldF = Math.max(0.5, Math.min(1.3, sbpUnit / 150));
@@ -376,19 +389,6 @@
       // Explication
       box.querySelector('.r-explain').textContent =
         'Sur la base d\'environ ' + fmt(sbp) + ' m² de surface brute de plancher constructible, cette fourchette correspond à ce qu\'un acquéreur peut raisonnablement consacrer au terrain, une fois le projet construit et sa marge prise en compte.';
-      // Appel à l'action
-      var ctaBox = box.querySelector('.r-cta');
-      if (contact) {
-        var subject = 'Estimation de terrain' + (parcel ? ' (' + parcel + ')' : '');
-        var body = 'Bonjour,\n\nJe souhaite une estimation précise pour mon terrain' +
-          (parcel ? ' (' + parcel + ', ' + fmt(val('surfaceCadastrale')) + ' m²)' : '') +
-          '.\nValeur indicative obtenue : ' + chf(vR) + ' (fourchette ' + fmt(vP) + ' à ' + fmt(vO) + ' CHF).\n\nMerci de me rappeler.';
-        ctaBox.innerHTML = '<a class="btn" href="mailto:' + encodeURIComponent(contact) +
-          '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body) +
-          '">Être rappelé pour une estimation précise</a>';
-      } else {
-        ctaBox.innerHTML = '';
-      }
     }
 
     if (justBuilt) { requestAnimationFrame(apply); } else { apply(); }

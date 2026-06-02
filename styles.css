@@ -92,6 +92,57 @@ html, body {
   .topbar .brand { font-size: 10px; letter-spacing: 0.14em; }
 }
 
+/* Modale de contact */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 100; padding: 20px;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(20,33,61,0.55); backdrop-filter: blur(3px);
+  animation: fadeIn 0.2s ease both;
+}
+.modal-overlay[hidden] { display: none; }
+.modal {
+  position: relative; background: #fff; border-radius: 18px; width: 100%; max-width: 460px;
+  padding: 28px 30px 26px; box-shadow: 0 30px 80px rgba(0,0,0,0.35);
+  max-height: 92vh; overflow: auto; animation: popin 0.3s ease both;
+}
+.modal-close {
+  position: absolute; top: 14px; right: 14px; width: 32px; height: 32px; border-radius: 50%;
+  border: none; background: #f0efe9; color: var(--grey); font-size: 20px; line-height: 1; cursor: pointer;
+}
+.modal-close:hover { background: #e6e4dc; color: var(--ink); }
+.modal-head { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+.expert-photo.lg { width: 54px; height: 54px; border: 2px solid var(--line); box-shadow: none; }
+.modal-kicker { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent); }
+.modal-name { font-family: var(--serif); font-size: 18px; color: var(--ink); }
+.modal-role { font-size: 12px; color: var(--grey); }
+.modal-title { font-family: var(--serif); font-size: 24px; margin: 0 0 6px; color: var(--ink); }
+.modal-sub { font-size: 13.5px; color: var(--grey); line-height: 1.5; margin: 0 0 18px; }
+.contact-form .cf-field { margin-bottom: 12px; }
+.contact-form .cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.contact-form label { display: block; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--grey); margin-bottom: 5px; }
+.contact-form .req { color: var(--warn); }
+.contact-form input, .contact-form textarea {
+  width: 100%; padding: 11px 12px; border: 1px solid var(--line); border-radius: 9px;
+  font-family: var(--sans); font-size: 14px; background: #fff; color: var(--ink);
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: none; border-color: var(--navy); box-shadow: 0 0 0 3px rgba(20,33,61,0.1); }
+.contact-form .hp { position: absolute !important; left: -9999px; opacity: 0; height: 0; width: 0; }
+.cf-submit {
+  width: 100%; margin-top: 6px; border: none; cursor: pointer;
+  background: linear-gradient(135deg, #243a6c, var(--navy)); color: #fff;
+  padding: 15px; border-radius: 11px; font-size: 14px; font-weight: 600; letter-spacing: 0.02em;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.cf-submit:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(20,33,61,0.3); }
+.cf-submit:disabled { opacity: 0.6; cursor: default; transform: none; box-shadow: none; }
+.cf-status { font-size: 13px; margin-top: 10px; display: none; }
+.cf-status.show { display: block; }
+.cf-status.ok { color: var(--ok); }
+.cf-status.err { color: var(--warn); }
+.cf-privacy { font-size: 11px; color: var(--grey-light); margin: 12px 0 0; text-align: center; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@media (max-width: 520px) { .contact-form .cf-row { grid-template-columns: 1fr; } }
+
 @keyframes fadeup { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 @keyframes popin { from { opacity: 0; transform: translateY(24px) scale(0.985); } to { opacity: 1; transform: none; } }
 

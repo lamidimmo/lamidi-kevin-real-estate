@@ -19,7 +19,7 @@
     <div class="brand" id="brandLabel">Estimation foncière</div>
     <div class="topbar-expert">
       <span class="expert-photo" id="expertPhoto" aria-hidden="true"></span>
-      <a class="btn-expert" id="ctaContact" href="mailto:">Contactez notre expert</a>
+      <button class="btn-expert" id="ctaOpen" type="button">Contactez notre expert</button>
     </div>
   </header>
 
@@ -306,6 +306,51 @@
     </main>
   </div>
   </div><!-- /#expert -->
+
+  <!-- ======================= MODALE CONTACT ======================= -->
+  <div class="modal-overlay" id="contactModal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cmTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fermer">&times;</button>
+      <div class="modal-head">
+        <span class="expert-photo lg" aria-hidden="true"></span>
+        <div>
+          <div class="modal-kicker">Votre interlocuteur</div>
+          <div class="modal-name">Kevin Lamidi</div>
+          <div class="modal-role">Conseiller en immobilier</div>
+        </div>
+      </div>
+      <h2 class="modal-title" id="cmTitle">Je contacte l'expert</h2>
+      <p class="modal-sub">Laissez vos coordonnées : je vous recontacte sous 48 h pour préciser le potentiel foncier de votre bien.</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <input type="hidden" name="access_key" id="web3formsKey" value="" />
+        <input type="hidden" name="subject" value="Nouvelle demande — Estimateur foncier" />
+        <input type="hidden" name="from_name" value="Estimateur foncier" />
+        <input type="hidden" name="estimation" id="cfEstimation" value="" />
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="cf-field">
+          <label for="cfName">Nom <span class="req">*</span></label>
+          <input id="cfName" name="name" type="text" autocomplete="name" required placeholder="Prénom et nom" />
+        </div>
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cfEmail">E-mail <span class="req">*</span></label>
+            <input id="cfEmail" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.ch" />
+          </div>
+          <div class="cf-field">
+            <label for="cfPhone">Téléphone</label>
+            <input id="cfPhone" name="phone" type="tel" autocomplete="tel" placeholder="+41 …" />
+          </div>
+        </div>
+        <div class="cf-field">
+          <label for="cfBien">Votre bien</label>
+          <textarea id="cfBien" name="bien" rows="3" placeholder="Adresse ou commune, n° de parcelle, particularités…"></textarea>
+        </div>
+        <button type="submit" class="cf-submit" id="cfSubmit">Je contacte l'expert pour plus de précisions</button>
+        <div class="cf-status" id="cfStatus" role="status" aria-live="polite"></div>
+        <p class="cf-privacy">Vos données ne servent qu'à vous recontacter. Aucune transmission à des tiers.</p>
+      </form>
+    </div>
+  </div>
 
   <script src="data.js"></script>
   <script src="calc.js"></script>

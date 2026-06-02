@@ -201,7 +201,6 @@
 
     fillFourchette(res);
     renderHero(res);
-    updateContactCta();
     renderSynthese(res, input);
     renderDetail(res);
     renderAcquereur(res);
@@ -234,21 +233,77 @@
     elt._raf = requestAnimationFrame(step);
   }
 
-  // Bouton « Contacter nos équipes » : mailto pré-rempli avec la valeur indicative.
-  function updateContactCta() {
-    var a = $('ctaContact'); if (!a) return;
-    var email = (val('contactEmail') || '').trim();
-    var commune = val('commune') || '';
-    var parcel = (val('noParcelle') ? 'parcelle ' + val('noParcelle') + ', ' : '') + commune;
-    var res = state.lastResult;
-    var vR = (res && res.synthese && res.synthese.sbpMax > 0) ? round10k(res.synthese.byKey.R || 0) : 0;
-    var subject = 'Évaluation du potentiel foncier de mon bien';
-    var body = 'Bonjour,\n\nJe souhaite faire évaluer le potentiel foncier de mon bien' +
-      (parcel ? ' (' + parcel + ')' : '') + '.' +
-      (vR ? '\nEstimation indicative obtenue : ' + chf(vR) + '.' : '') +
-      '\n\nMerci de me recontacter.';
-    a.href = 'mailto:' + encodeURIComponent(email) +
-      '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  /* ---------- Formulaire de contact (modale + envoi Web3Forms) ----------
+     Même service et même clé que le calculateur d'impôt : les demandes
+     arrivent par email avec les coordonnées du client et le contexte de
+     son estimation. ------------------------------------------------------ */
+  var WEB3FORMS_KEY = '09809340-1199-4890-acbd-dc8fa2d65f54';
+
+  function initContactForm() {
+    var modal = $('contactModal'), openBtn = $('ctaOpen'), closeBtn = $('modalClose');
+    var form = $('contactForm'), statusEl = $('cfStatus'), submitBtn = $('cfSubmit'), keyInput = $('web3formsKey');
+    if (!modal || !openBtn || !form) return;
+    keyInput.value = WEB3FORMS_KEY;
+
+    function fillEstimation() {
+      var parts = [];
+      if (val('commune')) parts.push('Commune : ' + val('commune'));
+      if (val('noParcelle')) parts.push('Parcelle : ' + val('noParcelle'));
+      if (val('surfaceCadastrale')) parts.push('Surface : ' + val('surfaceCadastrale') + ' m²');
+      if (val('ius')) parts.push('Indice : ' + val('ius'));
+      var res = state.lastResult;
+      if (res && res.synthese && res.synthese.sbpMax > 0) {
+        var s = res.synthese;
+        parts.push('Estimation indicative : ' + chf(round10k(s.byKey.R || 0)) +
+          ' (de ' + fmt(floor10k(s.byKey.P || 0)) + ' à ' + fmt(ceil10k(s.byKey.O || 0)) + ' CHF)');
+      }
+      $('cfEstimation').value = parts.join(' | ');
+    }
+    function onKey(e) { if (e.key === 'Escape') close(); }
+    function open() {
+      fillEstimation();
+      modal.hidden = false; document.body.style.overflow = 'hidden';
+      setTimeout(function () { if ($('cfName')) $('cfName').focus(); }, 40);
+      document.addEventListener('keydown', onKey);
+    }
+    function close() {
+      modal.hidden = true; document.body.style.overflow = '';
+      document.removeEventListener('keydown', onKey);
+    }
+    function setStatus(type, msg) {
+      statusEl.className = 'cf-status' + (type ? ' show ' + type : '');
+      statusEl.textContent = msg || '';
+    }
+
+    openBtn.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+    modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.botcheck && form.botcheck.checked) return;
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      submitBtn.disabled = true;
+      var lbl = submitBtn.textContent; submitBtn.textContent = 'Envoi…'; setStatus('', '');
+      var payload = {};
+      new FormData(form).forEach(function (v, k) { payload[k] = v; });
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      }).then(function (r) { return r.json(); }).then(function (data) {
+        if (data.success) {
+          form.reset();
+          setStatus('ok', 'Merci ! Votre demande a bien été envoyée. Je vous recontacte sous 48 h.');
+        } else {
+          setStatus('err', 'Une erreur est survenue. Réessayez ou écrivez à lamidikevin@icloud.com.');
+        }
+      }).catch(function () {
+        setStatus('err', 'Connexion impossible. Vérifiez votre réseau et réessayez.');
+      }).then(function () {
+        submitBtn.disabled = false; submitBtn.textContent = lbl;
+      });
+    });
   }
 
   var heroBuilt = false;
@@ -923,6 +978,7 @@
     renderComps();
     renderCommunes();
     showCommuneNote();
+    initContactForm();
   }
 
   document.addEventListener('DOMContentLoaded', init);

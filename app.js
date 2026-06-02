@@ -264,9 +264,12 @@
     try { sessionStorage.setItem('estim_unlocked', '1'); } catch (e) { /* ignore */ }
     applyGate(true);
   }
-  // URL du Worker Cloudflare qui envoie le PDF par email (via Brevo).
-  // Vide tant qu'il n'est pas deploye -> on retombe sur la notification Web3Forms.
-  var EVAL_WORKER_URL = '';
+  // EmailJS : envoie le PDF par email au client, sans serveur. A renseigner apres
+  // avoir cree le compte + le modele (3 identifiants). Vide -> repli Web3Forms.
+  var EMAILJS = { publicKey: '', serviceId: '', templateId: '' };
+  function emailjsReady() {
+    return !!(window.emailjs && EMAILJS.publicKey && EMAILJS.serviceId && EMAILJS.templateId);
+  }
 
   function buildEvalHtml() {
     var res = state.lastResult;
@@ -367,7 +370,7 @@
       function finish(ok, errMsg) {
         if (ok) {
           form.reset();
-          setStatus('ok', EVAL_WORKER_URL
+          setStatus('ok', emailjsReady()
             ? 'Merci ! Votre évaluation vient de vous être envoyée par email. Elle s\'affiche aussi ci-dessous.'
             : 'Merci ! Votre évaluation est débloquée ci-dessous.');
           unlockResult();
@@ -378,21 +381,20 @@
         submitBtn.disabled = false; submitBtn.textContent = lbl;
       }
 
-      if (EVAL_WORKER_URL) {
-        // PDF genere de facon invisible puis envoye au Worker (email client + notif Kevin).
+      if (emailjsReady()) {
+        // PDF genere de facon invisible puis envoye par EmailJS (piece jointe au client + copie a Kevin via le modele).
         evalPdfBase64().then(function (pdf) {
-          return fetch(EVAL_WORKER_URL, {
-            method: 'POST', headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              prenom: val('cfPrenom'), nom: val('cfNom'), email: val('cfEmail'), phone: val('cfPhone'),
-              commune: val('commune'), surface: val('surfaceCadastrale'), ius: val('ius'),
-              estimation: $('cfEstimation') ? $('cfEstimation').value : '',
-              pdf: pdf
-            })
-          });
-        }).then(function (r) { return r.json().catch(function () { return {}; }); })
-          .then(function (data) { finish(!!(data && data.success)); })
-          .catch(function () { finish(false, 'Connexion impossible. Vérifiez votre réseau et réessayez.'); });
+          return emailjs.send(EMAILJS.serviceId, EMAILJS.templateId, {
+            to_email: val('cfEmail'),
+            prenom: val('cfPrenom'), nom: val('cfNom'),
+            name: [val('cfPrenom'), val('cfNom')].filter(Boolean).join(' '),
+            phone: val('cfPhone'),
+            commune: val('commune'), surface: val('surfaceCadastrale'), ius: val('ius'),
+            estimation: $('cfEstimation') ? $('cfEstimation').value : '',
+            content: pdf, filename: 'evaluation-terrain.pdf'
+          }, { publicKey: EMAILJS.publicKey });
+        }).then(function () { finish(true); })
+          .catch(function () { finish(false, 'Envoi impossible pour le moment. Réessayez ou écrivez à lamidikevin@icloud.com.'); });
       } else {
         var payload = {};
         new FormData(form).forEach(function (v, k) { payload[k] = v; });

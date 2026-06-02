@@ -16,7 +16,12 @@ import re
 import sys
 import datetime
 import html as htmllib
+import time
 import urllib.request
+import urllib.error
+
+MIN_FORSALE = 1     # en dessous -> suspect (API vide / schema change), on refuse d'ecrire
+DROP_RATIO = 0.5    # refus si chute de plus de 50% du nombre de biens vs fichier precedent
 
 AGENT_UUID = "9bcd416c-d496-ef11-8a6a-000d3ab2939c"  # Kevin Lamidi
 API = f"https://middleware.switzerland-sothebysrealty.ch/api/agents/{AGENT_UUID}/properties"
@@ -159,12 +164,46 @@ def apply_overrides(items):
                 b[k] = v
 
 
-def main():
-    req = urllib.request.Request(API, headers={"Accept": "application/json",
-                                               "User-Agent": "lamidi-portail/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.loads(r.read().decode("utf-8"))
+def fetch_json(url, attempts=3):
+    """Recupere le JSON avec retries (erreurs transitoires)."""
+    last = None
+    for i in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers={
+                "Accept": "application/json", "User-Agent": "lamidi-portail/1.0"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode("utf-8"))
+        except Exception as e:  # noqa
+            last = e
+            if i < attempts - 1:
+                time.sleep(2 ** i * 3)  # 3s puis 6s
+    raise last
 
+
+def load_previous():
+    try:
+        with open(OUT, encoding="utf-8") as f:
+            return json.load(f)
+    except (FileNotFoundError, ValueError):
+        return None
+
+
+def validate(out, previous):
+    """Leve ValueError si le JSON produit est suspect -> on n'ecrase pas l'existant."""
+    fs = out.get("forSale") or []
+    if len(fs) < MIN_FORSALE:
+        raise ValueError("0/peu de biens a vendre (%d) : API vide ou schema change ?" % len(fs))
+    for b in fs:
+        if not b.get("id") or not b.get("title"):
+            raise ValueError("bien sans id/title: %s" % (b.get("ref") or b.get("id")))
+    if previous:
+        old = len(previous.get("forSale") or [])
+        if old and len(fs) < old * DROP_RATIO:
+            raise ValueError("chute suspecte %d -> %d biens : refus d'ecraser" % (old, len(fs)))
+
+
+def main():
+    data = fetch_json(API)
     for_sale = [transform(p, "sale") for p in (data.get("forSaleProperties") or [])]
     sold = [transform(p, "sold") for p in (data.get("soldProperties") or [])]
     apply_overrides(for_sale)
@@ -178,10 +217,23 @@ def main():
         "sold": sold,
     }
 
+    previous = load_previous()
+    validate(out, previous)  # leve -> exit 1, ancien biens.json conserve
+
+    # Evite un commit quotidien inutile : si seul updatedAt change, on ne reecrit pas.
+    if previous:
+        a = {k: v for k, v in out.items() if k != "updatedAt"}
+        b = {k: v for k, v in previous.items() if k != "updatedAt"}
+        if a == b:
+            print("Aucun changement de contenu : pas de reecriture.")
+            return
+
     os.makedirs(os.path.dirname(OUT), exist_ok=True)
-    with open(OUT, "w", encoding="utf-8") as f:
+    tmp = OUT + ".tmp"  # ecriture atomique (pas de fichier tronque)
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
+    os.replace(tmp, OUT)
     print(f"OK : {len(for_sale)} a vendre, {len(sold)} vendus -> data/biens.json")
 
 

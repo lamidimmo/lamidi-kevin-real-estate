@@ -1,0 +1,44 @@
+name: Health-check du site
+
+# Vérifie chaque jour que le site en ligne répond et que les biens sont bien publiés.
+# En cas d'échec, l'exécution passe au rouge et GitHub notifie par email (aucun secret requis).
+on:
+  schedule:
+    - cron: '0 6 * * *'    # ~30 min après la mise à jour des biens
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    env:
+      BASE: https://lamidimmo.github.io/lamidi-kevin-real-estate
+    steps:
+      - name: Pages clés en HTTP 200
+        run: |
+          set -e
+          for path in "/" "/estimateur.html" "/biens.html" "/gain/"; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 25 "$BASE$path")
+            echo "$path -> $code"
+            [ "$code" = "200" ] || { echo "::error::$path renvoie $code"; exit 1; }
+          done
+
+      - name: biens.json accessible et non vide
+        run: |
+          curl -s --max-time 25 "$BASE/data/biens.json" -o b.json
+          python - <<'PY'
+          import json
+          d = json.load(open("b.json", encoding="utf-8"))
+          fs = d.get("forSale") or []
+          assert len(fs) >= 1, "biens.json en ligne vide (%d)" % len(fs)
+          print("En ligne OK : %d biens, updatedAt=%s" % (len(fs), d.get("updatedAt")))
+          PY
+
+      - name: Vérifier que la marque employeur n'apparaît pas (garde-fou)
+        run: |
+          set -e
+          for path in "/" "/estimateur.html" "/biens.html" "/gain/"; do
+            if curl -s --max-time 25 "$BASE$path" | grep -iq "sotheby"; then
+              echo "::error::mention 'Sotheby' detectee sur $path"; exit 1
+            fi
+          done
+          echo "Aucune mention de marque employeur sur les pages publiques."

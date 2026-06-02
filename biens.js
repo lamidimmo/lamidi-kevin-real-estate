@@ -40,9 +40,6 @@
   function place(b) {
     return [b.commune, b.region].filter(Boolean).join(', ');
   }
-  function img(url, w) {
-    return url; // images servies par le CDN, deja optimisees
-  }
 
   /* ---------- pastilles de caracteristiques ---------- */
   function specs(b) {
@@ -154,7 +151,6 @@
     var imgs = b.images || [];
     if (idx >= imgs.length) idx = 0;
     var s = b.surfaces || {};
-    var subject = encodeURIComponent('Bien ' + (b.ref ? '#' + b.ref + ' ' : '') + '– ' + place(b));
     var dp = descParas(b);
     var facts = [
       factRow(T('b.rooms'), b.rooms ? num0(b.rooms) : ''),

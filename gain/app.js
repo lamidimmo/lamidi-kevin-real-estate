@@ -105,7 +105,6 @@ const _fmtPct = new Intl.NumberFormat("fr-CH", { style: "percent", minimumFracti
 function _withApostrophes(parts) {
   return parts.map(p => p.type === "group" ? "'" : p.value).join("");
 }
-function nbsp(s) { return s; } // legacy noop
 function formatMoney(n) {
   if (!isFinite(n)) return "0,00";
   return _withApostrophes(_fmt2.formatToParts(n));
@@ -686,7 +685,8 @@ function renderGuide() {
     return true;
   });
   if (filtered.length === 0) {
-    list.innerHTML = `<div class="g-empty">Aucun résultat pour « ${guideState.q} »</div>`;
+    var _q = String(guideState.q).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; });
+    list.innerHTML = `<div class="g-empty">Aucun résultat pour « ${_q} »</div>`;
     return;
   }
   list.innerHTML = filtered.map((g) => {

@@ -28,6 +28,17 @@ jobs:
       - name: Récupérer les biens
         run: python scripts/fetch_biens.py
 
+      - name: Valider biens.json (filet de sécurité)
+        run: |
+          python - <<'PY'
+          import json
+          d = json.load(open("data/biens.json", encoding="utf-8"))
+          fs = d.get("forSale") or []
+          assert isinstance(fs, list) and len(fs) >= 1, "0 bien a vendre : commit refuse"
+          assert all(b.get("id") and b.get("title") for b in fs), "bien sans id/title"
+          print("Validation OK : %d a vendre, %d vendus" % (len(fs), len(d.get("sold") or [])))
+          PY
+
       - name: Commit si changement
         run: |
           if [ -n "$(git status --porcelain data/biens.json)" ]; then

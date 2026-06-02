@@ -270,55 +270,6 @@
     return !!(window.emailjs && EMAILJS.publicKey && EMAILJS.serviceId && EMAILJS.templateId);
   }
 
-  function buildEvalHtml() {
-    var res = state.lastResult;
-    if (!res || !res.synthese || res.synthese.sbpMax <= 0) return null;
-    var s = res.synthese;
-    var vP = floor10k(s.byKey.P || 0), vR = round10k(s.byKey.R || 0), vO = ceil10k(s.byKey.O || 0);
-    var commune = val('commune') || 'votre terrain';
-    var meta = [commune];
-    if (val('surfaceCadastrale')) meta.push(val('surfaceCadastrale') + ' m²');
-    if (val('ius')) meta.push('indice ' + val('ius'));
-    var date = new Date().toLocaleDateString('fr-CH');
-    return '' +
-      '<div style="font-family:Helvetica,Arial,sans-serif;color:#14213d;width:760px;padding:40px 44px;box-sizing:border-box">' +
-        '<div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #b08d57;padding-bottom:12px;margin-bottom:26px">' +
-          '<div><div style="font-size:20px;font-weight:700;letter-spacing:.05em">KEVIN LAMIDI</div>' +
-          '<div style="font-style:italic;color:#8a6d4b;font-size:13px">Immobilier sur mesure</div></div>' +
-          '<div style="text-align:right;font-size:12px;color:#666">Estimation foncière<br>Canton de Vaud</div>' +
-        '</div>' +
-        '<h1 style="font-family:Georgia,serif;font-size:24px;margin:0 0 6px">Estimation indicative de votre terrain</h1>' +
-        '<p style="color:#666;margin:0 0 26px;font-size:14px">' + meta.join(' · ') + '</p>' +
-        '<div style="text-align:center;background:#f7f6f3;border:1px solid #e3e3e3;border-radius:12px;padding:26px;margin-bottom:24px">' +
-          '<div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#666">Valeur de marché estimée</div>' +
-          '<div style="font-family:Georgia,serif;font-size:46px;color:#14213d;margin:8px 0 2px">' + chf(vR) + '</div>' +
-          '<div style="color:#666;font-size:14px">fourchette ' + fmt(vP) + ' à ' + fmt(vO) + ' CHF</div>' +
-        '</div>' +
-        '<p style="font-size:13px;color:#444;line-height:1.65;margin:0 0 22px">Cette estimation, établie selon la méthode résiduelle, correspond à ce qu\'un acquéreur peut raisonnablement consacrer au terrain une fois le projet construit et sa marge prise en compte. Pour une évaluation précise tenant compte des particularités de votre parcelle, je me tiens à votre disposition.</p>' +
-        '<div style="padding-top:14px;border-top:1px solid #e3e3e3;font-size:13px;color:#14213d">Kevin Lamidi · +41 76 715 50 59 · kevin.lamidi@swsir.ch</div>' +
-        '<p style="font-size:10px;color:#999;font-style:italic;margin-top:14px">Avis indicatif, sans engagement, qui ne constitue pas une expertise au sens formel. Établi le ' + date + '.</p>' +
-      '</div>';
-  }
-
-  function evalPdfBase64() {
-    return new Promise(function (resolve, reject) {
-      var html = buildEvalHtml();
-      if (!html || !window.html2pdf) { reject(new Error('pdf indisponible')); return; }
-      var holder = document.createElement('div');
-      holder.style.position = 'fixed'; holder.style.left = '-9999px'; holder.style.top = '0';
-      holder.innerHTML = html;
-      document.body.appendChild(holder);
-      window.html2pdf().set({
-        margin: 0, image: { type: 'jpeg', quality: 0.95 },
-        html2canvas: { scale: 2, backgroundColor: '#ffffff' },
-        jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-      }).from(holder.firstChild).outputPdf('datauristring').then(function (uri) {
-        holder.remove();
-        resolve(String(uri).split(',')[1] || '');
-      }).catch(function (e) { holder.remove(); reject(e); });
-    });
-  }
-
   function initContactForm() {
     var modal = $('contactModal'), openBtn = $('ctaOpen'), closeBtn = $('modalClose');
     var form = $('contactForm'), statusEl = $('cfStatus'), submitBtn = $('cfSubmit'), keyInput = $('web3formsKey');

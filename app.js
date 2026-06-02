@@ -266,7 +266,7 @@
   }
   // EmailJS : envoie le PDF par email au client, sans serveur. A renseigner apres
   // avoir cree le compte + le modele (3 identifiants). Vide -> repli Web3Forms.
-  var EMAILJS = { publicKey: '', serviceId: '', templateId: '' };
+  var EMAILJS = { publicKey: 'o9on7lpzcD9yoGIeX', serviceId: 'service_gwait39', templateId: 'template_d7x7csr' };
   function emailjsReady() {
     return !!(window.emailjs && EMAILJS.publicKey && EMAILJS.serviceId && EMAILJS.templateId);
   }

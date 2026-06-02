@@ -19,9 +19,15 @@
   .tabs { background: rgba(255,255,255,0.05); }
   .result-card, .bareme-table, .bareme-chart, .g-item, .g-item.is-no, .occ-btn, .pdf-btn,
   .contact-form textarea, .contact-form input, input[type="text"], input[type="number"],
-  input[type="email"], input[type="tel"], input[type="search"], .search-wrap input[type="search"] {
+  input[type="email"], input[type="tel"], input[type="search"], input[type="date"],
+  .search-wrap input[type="search"] {
     background: #0f1c2e; color: var(--ink); border-color: rgba(255,255,255,0.14);
   }
+  /* carte d'occupation active : fond dore sombre (var(--ink) est clair en sombre) */
+  .occ-btn.is-active { background: rgba(176,141,87,0.16) !important; border-color: var(--accent) !important; color: #fff !important; }
+  .occ-btn.is-active .occ-name, .occ-btn.is-active .occ-meta { color: #fff !important; }
+  /* icone du calendrier visible sur fond sombre */
+  input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.7; }
   input[type="range"]::-moz-range-track { background: rgba(255,255,255,0.16); }
   .chip.is-active { background: #17273d; color: #fff; }
   .modal { background: #0f1c2e; color: var(--ink); }

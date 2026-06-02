@@ -7,12 +7,15 @@
   <title data-i18n="meta.title">Kevin Lamidi · Immobilier de prestige</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;1,400&family=Jost:wght@300;400;500&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="brand.css" />
 </head>
-<body>
+<body class="hub-cine">
 
-  <div class="bg-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
+  <!-- Fond cinématique : diaporama des biens (rempli par hub.js) -->
+  <div class="cine-bg" id="cineBg" aria-hidden="true"></div>
+  <div class="cine-overlay" aria-hidden="true"></div>
+  <div class="cine-grain" aria-hidden="true"></div>
 
   <!-- ======================= EN-TÊTE ======================= -->
   <header class="site-header">
@@ -38,23 +41,24 @@
     </div>
   </header>
 
-  <!-- ======================= HUB ======================= -->
-  <div class="hub">
+  <!-- ======================= HUB IMMERSIF ======================= -->
+  <main class="hub">
     <section class="hub-hero">
       <div class="hub-kicker" data-i18n="hub.kicker">Immobilier d’exception · Suisse romande</div>
       <h1 class="hub-title" data-i18n="hub.title" data-i18n-html>L’immobilier d’exception,<br>avec <em>exigence</em> et discrétion.</h1>
       <p class="hub-sub" data-i18n="hub.sub">Bienvenue dans mon espace privé. Retrouvez ici mes biens à la vente et mes outils d’expertise, réservés à mes clients.</p>
+      <div class="hub-scroll" aria-hidden="true"><span></span></div>
     </section>
 
     <section class="universes" aria-label="Univers">
 
       <!-- 1. Mes biens -->
       <article class="universe">
-        <div class="universe-media"><span class="glyph" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
-        </span></div>
         <div class="universe-body">
           <div class="universe-num">01</div>
+          <span class="universe-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v9h14v-9"/><path d="M10 19v-5h4v5"/></svg>
+          </span>
           <h2 class="universe-title" data-i18n="u.biens.title">Mes biens</h2>
           <p class="universe-desc" data-i18n="u.biens.desc">Découvrez les propriétés que j’accompagne actuellement à la vente, mises à jour chaque jour.</p>
           <span class="universe-cta"><span data-i18n="u.cta.enter">Entrer</span> <span class="arrow">→</span></span>
@@ -64,11 +68,11 @@
 
       <!-- 2. Estimateur foncier -->
       <article class="universe">
-        <div class="universe-media"><span class="glyph" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 20h16"/><path d="M4 20V8l6-4 6 4"/><path d="M16 20V11l4-2v11"/><path d="M8 12h2M8 16h2"/></svg>
-        </span></div>
         <div class="universe-body">
           <div class="universe-num">02</div>
+          <span class="universe-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 20h16"/><path d="M4 20V8l6-4 6 4"/><path d="M16 20V11l4-2v11"/><path d="M8 12h2M8 16h2"/></svg>
+          </span>
           <h2 class="universe-title" data-i18n="u.estim.title">Estimateur foncier</h2>
           <p class="universe-desc" data-i18n="u.estim.desc">Estimez en quelques secondes la valeur d’un terrain à bâtir, selon la méthode résiduelle.</p>
           <span class="universe-cta"><span data-i18n="u.cta.estimate">Estimer</span> <span class="arrow">→</span></span>
@@ -78,11 +82,11 @@
 
       <!-- 3. Gain immobilier -->
       <article class="universe">
-        <div class="universe-media"><span class="glyph" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 18l5-5 3 3 7-8"/><path d="M19 4v5h-5"/><path d="M4 20h16"/></svg>
-        </span></div>
         <div class="universe-body">
           <div class="universe-num">03</div>
+          <span class="universe-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 18l5-5 3 3 7-8"/><path d="M19 4v5h-5"/><path d="M4 20h16"/></svg>
+          </span>
           <h2 class="universe-title" data-i18n="u.gain.title">Gain immobilier</h2>
           <p class="universe-desc" data-i18n="u.gain.desc">Anticipez l’impôt sur le gain immobilier lors de la vente de votre bien dans le canton.</p>
           <span class="universe-cta"><span data-i18n="u.cta.calc">Calculer</span> <span class="arrow">→</span></span>
@@ -91,7 +95,7 @@
       </article>
 
     </section>
-  </div>
+  </main>
 
   <!-- ======================= PIED DE PAGE ======================= -->
   <footer class="site-footer">
@@ -125,15 +129,13 @@
   </footer>
 
   <script src="i18n.js"></script>
+  <script src="hub.js"></script>
   <script>
-    // Année courante
     document.getElementById('year').textContent = new Date().getFullYear();
-    // Apparition en cascade des cartes
     (function () {
-      var cards = document.querySelectorAll('.universe');
       if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-      cards.forEach(function (c, i) {
-        c.style.animationDelay = (0.12 + i * 0.13) + 's';
+      document.querySelectorAll('.universe').forEach(function (c, i) {
+        c.style.animationDelay = (0.35 + i * 0.14) + 's';
         c.classList.add('reveal');
       });
     })();

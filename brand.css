@@ -333,3 +333,55 @@ img { max-width: 100%; display: block; }
 .bd-contact { margin-top: 28px; padding: 22px 24px; background: var(--navy); border-radius: 12px; color: #fff; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
 .bd-contact-title { font-family: var(--serif-display); font-size: 21px; }
 .bd-contact-sub { color: var(--navy-300); font-size: 14px; margin-top: 4px; }
+
+/* =============================================================================
+   HUB CINÉMATIQUE — page d'accueil sombre & immersive (body.hub-cine)
+   Scopé : n'affecte QUE index.html. Les autres pages gardent leur thème clair.
+   ============================================================================= */
+body.hub-cine { background: #060d18; color: #fff; }
+
+/* Fond : diaporama plein écran (photos des biens) */
+.cine-bg { position: fixed; inset: 0; z-index: -3; overflow: hidden; background: #060d18 radial-gradient(120% 90% at 70% 10%, #14223b, #060d18 70%); }
+.cine-slide { position: absolute; inset: 0; background-size: cover; background-position: center; opacity: 0; transition: opacity 1.8s ease; will-change: opacity, transform; }
+.cine-slide.is-active { opacity: 1; animation: kenburns 8s ease-out both; }
+@keyframes kenburns { from { transform: scale(1.05); } to { transform: scale(1.17) translate(-1.5%, -1%); } }
+.cine-overlay { position: fixed; inset: 0; z-index: -2; pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6,13,24,0.82) 0%, rgba(6,13,24,0.40) 26%, rgba(6,13,24,0.50) 58%, rgba(6,13,24,0.94) 100%),
+    radial-gradient(130% 80% at 50% 12%, rgba(6,13,24,0.30), transparent 45%); }
+.cine-grain { position: fixed; inset: 0; z-index: -1; pointer-events: none; box-shadow: inset 0 0 240px 70px rgba(0,0,0,0.6); }
+@media (prefers-reduced-motion: reduce) { .cine-slide.is-active { animation: none; } }
+
+/* En-tête transparent superposé au héro */
+.hub-cine .site-header { position: absolute; top: 0; left: 0; right: 0; background: transparent; backdrop-filter: none; border-bottom: none; }
+.hub-cine .site-nav a { color: rgba(255,255,255,0.86); }
+.hub-cine .brand-mark .bm-affil { color: var(--gold-soft); }
+
+/* Héro plein écran */
+.hub-cine .hub { display: block; }
+.hub-cine .hub-hero { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 110px 22px 48px; max-width: 1040px; margin: 0 auto; }
+.hub-cine .hub-kicker { color: var(--gold-soft); letter-spacing: 0.46em; opacity: 0.95; }
+.hub-cine .hub-title { font-family: 'Sora', var(--sans); font-weight: 800; color: #fff; font-size: clamp(40px, 8.4vw, 104px); line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 26px; text-shadow: 0 6px 50px rgba(0,0,0,0.55); }
+.hub-cine .hub-title em { font-style: normal; color: var(--gold); }
+.hub-cine .hub-sub { font-family: var(--sans); font-weight: 300; font-size: clamp(16px, 2vw, 20px); color: rgba(255,255,255,0.84); max-width: 620px; }
+
+/* Indicateur de défilement */
+.hub-scroll { margin: 44px auto 0; width: 26px; height: 42px; border: 1px solid rgba(255,255,255,0.4); border-radius: 14px; position: relative; }
+.hub-scroll span { position: absolute; left: 50%; top: 8px; width: 4px; height: 8px; background: var(--gold-soft); border-radius: 2px; transform: translateX(-50%); animation: scrolldot 1.9s ease-in-out infinite; }
+@keyframes scrolldot { 0% { opacity: 0; transform: translate(-50%, 0); } 30% { opacity: 1; } 100% { opacity: 0; transform: translate(-50%, 15px); } }
+
+/* Cartes "verre" sur le fond cinématique */
+.hub-cine .universes { max-width: 1120px; margin: 0 auto; padding: 0 clamp(18px, 4vw, 40px) 12vh; }
+.hub-cine .universe { background: rgba(255,255,255,0.055); border: 1px solid rgba(255,255,255,0.14); border-radius: 16px; min-height: 0; -webkit-backdrop-filter: blur(14px) saturate(120%); backdrop-filter: blur(14px) saturate(120%); box-shadow: 0 10px 40px rgba(0,0,0,0.28); }
+.hub-cine .universe:hover { transform: translateY(-8px); border-color: var(--gold-soft); background: rgba(255,255,255,0.09); box-shadow: 0 28px 70px rgba(0,0,0,0.5); }
+.hub-cine .universe-body { padding: 32px 28px 30px; }
+.hub-cine .universe-num { color: var(--gold); letter-spacing: 0.3em; }
+.hub-cine .universe-ico { display: block; color: var(--gold-soft); margin: 6px 0 18px; }
+.hub-cine .universe-ico svg { width: 40px; height: 40px; }
+.hub-cine .universe-title { font-family: 'Sora', var(--sans); font-weight: 700; font-size: 23px; color: #fff; margin: 0 0 10px; }
+.hub-cine .universe-desc { font-family: var(--sans); font-weight: 300; color: rgba(255,255,255,0.72); margin: 0 0 22px; }
+.hub-cine .universe-cta { color: #fff; }
+.hub-cine .universe-cta .arrow { color: var(--gold); }
+
+/* Pied de page : encore plus sombre pour fondre avec le thème */
+.hub-cine .site-footer { background: #04101f; position: relative; z-index: 1; }

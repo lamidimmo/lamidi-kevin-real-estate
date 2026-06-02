@@ -21,6 +21,7 @@ import urllib.request
 AGENT_UUID = "9bcd416c-d496-ef11-8a6a-000d3ab2939c"  # Kevin Lamidi
 API = f"https://middleware.switzerland-sothebysrealty.ch/api/agents/{AGENT_UUID}/properties"
 OUT = os.path.join(os.path.dirname(__file__), "..", "data", "biens.json")
+OVERRIDES = os.path.join(os.path.dirname(__file__), "..", "overrides.json")
 LANGS = ("fr", "en", "de")
 MAX_IMAGES = 16
 
@@ -137,6 +138,27 @@ def transform(p, status):
     }
 
 
+def apply_overrides(items):
+    """Applique des corrections manuelles (overrides.json) APRES le scraping,
+    pour les fiches incompletes cote API. Cle = id du bien."""
+    try:
+        with open(OVERRIDES, encoding="utf-8") as f:
+            by_id = json.load(f).get("byId", {})
+    except (FileNotFoundError, ValueError):
+        return
+    for b in items:
+        o = by_id.get(b.get("id"))
+        if not o:
+            continue
+        for k, v in o.items():
+            if k.startswith("_"):
+                continue
+            if k in ("surfaces", "title", "desc") and isinstance(v, dict):
+                b.setdefault(k, {}).update(v)
+            else:
+                b[k] = v
+
+
 def main():
     req = urllib.request.Request(API, headers={"Accept": "application/json",
                                                "User-Agent": "lamidi-portail/1.0"})
@@ -145,6 +167,8 @@ def main():
 
     for_sale = [transform(p, "sale") for p in (data.get("forSaleProperties") or [])]
     sold = [transform(p, "sold") for p in (data.get("soldProperties") or [])]
+    apply_overrides(for_sale)
+    apply_overrides(sold)
 
     out = {
         "updatedAt": datetime.date.today().isoformat(),

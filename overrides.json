@@ -1,0 +1,11 @@
+{
+  "_doc": "Corrections manuelles appliquees par scripts/fetch_biens.py APRES le scraping (donc persistantes). Cle = id du bien. Champs reconnus: title {fr,en,de}, rooms, bedrooms, bathrooms, surfaces {living,land,...}, commune, region, price {amount,currency}, images [urls ou chemins locaux]. Les champs absents ne sont pas modifies.",
+  "byId": {
+    "136df230-530e-f111-8407-000d3a66f0fc": {
+      "_note": "Maison vendue a Bullet — fiche API vide (titre 'x', 0 piece, 0 surface, 0 photo).",
+      "title": { "fr": "Maison rare à Bullet", "en": "Rare house in Bullet", "de": "Seltenes Haus in Bullet" },
+      "rooms": 6.5,
+      "surfaces": { "living": 200 }
+    }
+  }
+}

@@ -788,9 +788,9 @@
       "type": "house",
       "subtype": "single-house",
       "title": {
-        "fr": "x",
-        "en": "x",
-        "de": "x"
+        "fr": "Maison rare à Bullet",
+        "en": "Rare house in Bullet",
+        "de": "Seltenes Haus in Bullet"
       },
       "desc": {
         "fr": [],
@@ -798,10 +798,12 @@
         "de": []
       },
       "price": null,
-      "rooms": 0,
+      "rooms": 6.5,
       "bedrooms": 0,
       "bathrooms": 0,
-      "surfaces": {},
+      "surfaces": {
+        "living": 200
+      },
       "buildingYear": 2021,
       "renovationYear": 2021,
       "commune": "Bullet",

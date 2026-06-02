@@ -155,31 +155,33 @@
     if (idx >= imgs.length) idx = 0;
     var s = b.surfaces || {};
     var subject = encodeURIComponent('Bien ' + (b.ref ? '#' + b.ref + ' ' : '') + '– ' + place(b));
+    var dp = descParas(b);
+    var facts = [
+      factRow(T('b.rooms'), b.rooms ? num0(b.rooms) : ''),
+      factRow(T('b.bed'), b.bedrooms),
+      factRow(T('b.bath'), b.bathrooms),
+      factRow(T('b.living'), s.living ? num(s.living) + ' m²' : ''),
+      factRow(T('b.land'), s.land ? num(s.land) + ' m²' : ''),
+      factRow(T('b.built'), b.buildingYear),
+      factRow(T('b.renovated'), b.renovationYear)
+    ].join('');
     var body = '' +
-      '<div class="bien-gallery">' +
+      '<div class="bien-gallery' + (imgs.length ? '' : ' is-empty') + '">' +
         (imgs.length ? '<img class="bg-main" src="' + esc(imgs[idx]) + '" alt="' + esc(title(b)) + '">' : '<div class="bien-noimg"></div>') +
         (imgs.length > 1 ? '<button class="bg-nav prev" aria-label="Préc.">‹</button><button class="bg-nav next" aria-label="Suiv.">›</button>' +
           '<div class="bg-count">' + (idx + 1) + ' / ' + imgs.length + '</div>' : '') +
+        '<div class="bg-caption">' +
+          '<div class="bg-cap-place">' + esc(place(b)) + (b.ref ? ' · ' + esc(T('b.ref')) + ' ' + esc(b.ref) : '') + '</div>' +
+          '<h2 class="bg-cap-title">' + esc(title(b)) + '</h2>' +
+          '<div class="bg-cap-price">' + esc(priceStr(b)) + '</div>' +
+        '</div>' +
       '</div>' +
       (imgs.length > 1 ? '<div class="bg-thumbs">' + imgs.map(function (u, i) {
           return '<button class="bg-thumb' + (i === idx ? ' on' : '') + '" data-t="' + i + '"><img loading="lazy" src="' + esc(u) + '" alt=""></button>';
         }).join('') + '</div>' : '') +
       '<div class="bien-detail">' +
-        '<div class="bd-head">' +
-          '<div><div class="bd-place">' + esc(place(b)) + (b.ref ? ' · ' + esc(T('b.ref')) + ' ' + esc(b.ref) : '') + '</div>' +
-          '<h2 class="bd-title">' + esc(title(b)) + '</h2></div>' +
-          '<div class="bd-price">' + esc(priceStr(b)) + '</div>' +
-        '</div>' +
-        '<dl class="bd-facts">' +
-          factRow(T('b.rooms'), b.rooms ? num0(b.rooms) : '') +
-          factRow(T('b.bed'), b.bedrooms) +
-          factRow(T('b.bath'), b.bathrooms) +
-          factRow(T('b.living'), s.living ? num(s.living) + ' m²' : '') +
-          factRow(T('b.land'), s.land ? num(s.land) + ' m²' : '') +
-          factRow(T('b.built'), b.buildingYear) +
-          factRow(T('b.renovated'), b.renovationYear) +
-        '</dl>' +
-        '<div class="bd-desc">' + descParas(b).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</div>' +
+        (facts ? '<dl class="bd-facts">' + facts + '</dl>' : '') +
+        (dp.length ? '<div class="bd-desc">' + dp.map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</div>' : '') +
         mapEmbed(b) +
         '<div class="bd-contact">' +
           '<div><div class="bd-contact-title">' + esc(T('b.contactTitle')) + '</div>' +

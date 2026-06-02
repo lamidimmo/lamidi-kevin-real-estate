@@ -5,7 +5,8 @@
       "_note": "Maison vendue a Bullet — fiche API vide (titre 'x', 0 piece, 0 surface, 0 photo).",
       "title": { "fr": "Maison rare à Bullet", "en": "Rare house in Bullet", "de": "Seltenes Haus in Bullet" },
       "rooms": 6.5,
-      "surfaces": { "living": 200 }
+      "surfaces": { "living": 200 },
+      "images": ["assets/biens/bullet.jpg"]
     }
   }
 }

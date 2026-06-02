@@ -811,7 +811,9 @@
       "country": "CH",
       "lat": 46.83,
       "lon": 6.55,
-      "images": []
+      "images": [
+        "assets/biens/bullet.jpg"
+      ]
     }
   ]
 }

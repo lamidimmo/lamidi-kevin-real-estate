@@ -848,8 +848,11 @@
      DÉMARRAGE GÉNÉRIQUE (dossier vierge, socle commun à tous les dossiers)
      ============================================================================= */
   function startNew() {
-    // Aucune parcelle préchargée : seules les hypothèses USPI communes (appliquées
-    // par applyDefaults) servent de socle. L'utilisateur saisit chaque dossier.
+    // Démonstration vivante au chargement : valeurs d'exemple neutres (non liées à
+    // une commune précise) pour que le résultat animé s'affiche d'emblée. Le
+    // visiteur les remplace par les données de sa parcelle.
+    setVal('surfaceCadastrale', 800);
+    setVal('ius', 0.5);
     recompute();
   }
 

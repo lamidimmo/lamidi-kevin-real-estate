@@ -264,9 +264,13 @@
     try { sessionStorage.setItem('estim_unlocked', '1'); } catch (e) { /* ignore */ }
     applyGate(true);
   }
-  function downloadEvalPdf() {
+  // URL du Worker Cloudflare qui envoie le PDF par email (via Brevo).
+  // Vide tant qu'il n'est pas deploye -> on retombe sur la notification Web3Forms.
+  var EVAL_WORKER_URL = '';
+
+  function buildEvalHtml() {
     var res = state.lastResult;
-    if (!res || !res.synthese || res.synthese.sbpMax <= 0) return;
+    if (!res || !res.synthese || res.synthese.sbpMax <= 0) return null;
     var s = res.synthese;
     var vP = floor10k(s.byKey.P || 0), vR = round10k(s.byKey.R || 0), vO = ceil10k(s.byKey.O || 0);
     var commune = val('commune') || 'votre terrain';
@@ -274,7 +278,7 @@
     if (val('surfaceCadastrale')) meta.push(val('surfaceCadastrale') + ' m²');
     if (val('ius')) meta.push('indice ' + val('ius'));
     var date = new Date().toLocaleDateString('fr-CH');
-    var html =
+    return '' +
       '<div style="font-family:Helvetica,Arial,sans-serif;color:#14213d;width:760px;padding:40px 44px;box-sizing:border-box">' +
         '<div style="display:flex;justify-content:space-between;align-items:flex-end;border-bottom:2px solid #b08d57;padding-bottom:12px;margin-bottom:26px">' +
           '<div><div style="font-size:20px;font-weight:700;letter-spacing:.05em">KEVIN LAMIDI</div>' +
@@ -292,18 +296,25 @@
         '<div style="padding-top:14px;border-top:1px solid #e3e3e3;font-size:13px;color:#14213d">Kevin Lamidi · +41 76 715 50 59 · kevin.lamidi@swsir.ch</div>' +
         '<p style="font-size:10px;color:#999;font-style:italic;margin-top:14px">Avis indicatif, sans engagement, qui ne constitue pas une expertise au sens formel. Établi le ' + date + '.</p>' +
       '</div>';
-    var holder = document.createElement('div');
-    holder.style.position = 'fixed'; holder.style.left = '-9999px'; holder.style.top = '0';
-    holder.innerHTML = html;
-    document.body.appendChild(holder);
-    var fname = 'evaluation-terrain-' + commune.toLowerCase().replace(/[^a-z0-9]+/g, '-') + '.pdf';
-    if (window.html2pdf) {
+  }
+
+  function evalPdfBase64() {
+    return new Promise(function (resolve, reject) {
+      var html = buildEvalHtml();
+      if (!html || !window.html2pdf) { reject(new Error('pdf indisponible')); return; }
+      var holder = document.createElement('div');
+      holder.style.position = 'fixed'; holder.style.left = '-9999px'; holder.style.top = '0';
+      holder.innerHTML = html;
+      document.body.appendChild(holder);
       window.html2pdf().set({
-        margin: 0, filename: fname, image: { type: 'jpeg', quality: 0.95 },
+        margin: 0, image: { type: 'jpeg', quality: 0.95 },
         html2canvas: { scale: 2, backgroundColor: '#ffffff' },
         jsPDF: { unit: 'pt', format: 'a4', orientation: 'portrait' }
-      }).from(holder.firstChild).save().then(function () { holder.remove(); }).catch(function () { holder.remove(); });
-    } else { holder.remove(); window.print(); }
+      }).from(holder.firstChild).outputPdf('datauristring').then(function (uri) {
+        holder.remove();
+        resolve(String(uri).split(',')[1] || '');
+      }).catch(function (e) { holder.remove(); reject(e); });
+    });
   }
 
   function initContactForm() {
@@ -344,7 +355,6 @@
 
     openBtn.addEventListener('click', open);
     var gateBtn = $('gateOpen'); if (gateBtn) gateBtn.addEventListener('click', open);
-    var pdfBtn = $('pdfDownload'); if (pdfBtn) pdfBtn.addEventListener('click', downloadEvalPdf);
     closeBtn.addEventListener('click', close);
     modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
 
@@ -354,26 +364,45 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
       submitBtn.disabled = true;
       var lbl = submitBtn.textContent; submitBtn.textContent = 'Envoi…'; setStatus('', '');
-      var payload = {};
-      new FormData(form).forEach(function (v, k) { payload[k] = v; });
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
-      }).then(function (r) { return r.json(); }).then(function (data) {
-        if (data.success) {
+      function finish(ok, errMsg) {
+        if (ok) {
           form.reset();
-          setStatus('ok', 'Merci ! Votre évaluation est débloquée ci-dessous. Un récapitulatif vous a été envoyé par email.');
+          setStatus('ok', EVAL_WORKER_URL
+            ? 'Merci ! Votre évaluation vient de vous être envoyée par email. Elle s\'affiche aussi ci-dessous.'
+            : 'Merci ! Votre évaluation est débloquée ci-dessous.');
           unlockResult();
-          setTimeout(close, 1900);
+          setTimeout(close, 2400);
         } else {
-          setStatus('err', 'Une erreur est survenue. Réessayez ou écrivez à lamidikevin@icloud.com.');
+          setStatus('err', errMsg || 'Une erreur est survenue. Réessayez ou écrivez à lamidikevin@icloud.com.');
         }
-      }).catch(function () {
-        setStatus('err', 'Connexion impossible. Vérifiez votre réseau et réessayez.');
-      }).then(function () {
         submitBtn.disabled = false; submitBtn.textContent = lbl;
-      });
+      }
+
+      if (EVAL_WORKER_URL) {
+        // PDF genere de facon invisible puis envoye au Worker (email client + notif Kevin).
+        evalPdfBase64().then(function (pdf) {
+          return fetch(EVAL_WORKER_URL, {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              prenom: val('cfPrenom'), nom: val('cfNom'), email: val('cfEmail'), phone: val('cfPhone'),
+              commune: val('commune'), surface: val('surfaceCadastrale'), ius: val('ius'),
+              estimation: $('cfEstimation') ? $('cfEstimation').value : '',
+              pdf: pdf
+            })
+          });
+        }).then(function (r) { return r.json().catch(function () { return {}; }); })
+          .then(function (data) { finish(!!(data && data.success)); })
+          .catch(function () { finish(false, 'Connexion impossible. Vérifiez votre réseau et réessayez.'); });
+      } else {
+        var payload = {};
+        new FormData(form).forEach(function (v, k) { payload[k] = v; });
+        fetch('https://api.web3forms.com/submit', {
+          method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload)
+        }).then(function (r) { return r.json(); })
+          .then(function (data) { finish(!!(data && data.success)); })
+          .catch(function () { finish(false, 'Connexion impossible. Vérifiez votre réseau et réessayez.'); });
+      }
     });
   }
 

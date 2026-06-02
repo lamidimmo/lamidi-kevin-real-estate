@@ -70,29 +70,29 @@ html, body {
   66% { transform: translate(-3vw, 2vh) scale(0.95); }
 }
 
-.estimateur { max-width: 1120px; margin: 0 auto; padding: 60px 24px 48px; }
+.estimateur { max-width: 960px; margin: 0 auto; padding: 60px 24px 48px; }
 
-/* Résultat + carré de contact à droite */
-.result-row { display: flex; gap: 24px; align-items: stretch; margin-top: 30px; }
-.result-row .result { flex: 1; margin-top: 0; min-width: 0; }
-.cta-side {
-  flex: 0 0 272px; align-self: flex-start; position: sticky; top: 20px;
-  background: linear-gradient(160deg, #243a6c, var(--navy)); color: #fff;
-  border-radius: 16px; padding: 26px 24px; box-shadow: 0 14px 40px rgba(20,33,61,0.22);
-  animation: fadeup 0.7s 0.3s both;
+/* Bande de contact, ancrée sous le résultat */
+.cta-band {
+  display: flex; align-items: center; justify-content: space-between; gap: 26px;
+  margin-top: 22px; padding: 26px 32px; border-radius: 16px; color: #fff;
+  background: linear-gradient(135deg, #243a6c, var(--navy));
+  box-shadow: 0 14px 40px rgba(20,33,61,0.20);
+  animation: fadeup 0.7s 0.2s both;
 }
-.cta-eyebrow { font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
-.cta-title { font-family: var(--serif); font-size: 21px; line-height: 1.2; margin-bottom: 10px; }
-.cta-text { font-size: 13px; line-height: 1.55; color: #d6deec; margin: 0 0 18px; }
+.cta-band-text { min-width: 0; }
+.cta-eyebrow { font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+.cta-band .cta-title { font-family: var(--serif); font-size: 22px; line-height: 1.2; margin: 0 0 4px; }
+.cta-band .cta-text { font-size: 13.5px; line-height: 1.5; color: #d6deec; margin: 0; }
 .cta-btn {
   display: inline-block; background: var(--accent); color: #1a1a1a;
-  padding: 13px 20px; border-radius: 10px; font-weight: 600; font-size: 13px;
-  text-decoration: none; letter-spacing: 0.03em; transition: transform 0.15s, box-shadow 0.15s;
+  padding: 15px 26px; border-radius: 11px; font-weight: 600; font-size: 13.5px;
+  text-decoration: none; letter-spacing: 0.03em; white-space: nowrap; flex: none;
+  transition: transform 0.15s, box-shadow 0.15s;
 }
 .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(176,141,87,0.45); }
-@media (max-width: 1000px) {
-  .result-row { flex-direction: column; }
-  .cta-side { flex: none; position: static; }
+@media (max-width: 680px) {
+  .cta-band { flex-direction: column; align-items: flex-start; }
 }
 
 @keyframes fadeup { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }

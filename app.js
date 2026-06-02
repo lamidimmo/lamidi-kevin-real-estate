@@ -390,6 +390,8 @@
         var s = (state.lastResult || {}).synthese;
         var params = {
           to_email: val('cfEmail'),
+          email: val('cfEmail'),
+          reply_to: val('cfEmail'),
           prenom: val('cfPrenom'), nom: val('cfNom'),
           name: [val('cfPrenom'), val('cfNom')].filter(Boolean).join(' '),
           phone: val('cfPhone'),

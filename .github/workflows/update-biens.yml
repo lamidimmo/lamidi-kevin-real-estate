@@ -1,0 +1,42 @@
+name: Mise à jour des biens
+
+# Récupère chaque jour les biens depuis l'API et met à jour data/biens.json.
+on:
+  schedule:
+    - cron: '30 5 * * *'   # tous les jours ~05:30 UTC (07:30 heure suisse d'été)
+  workflow_dispatch:        # déclenchement manuel possible depuis l'onglet Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-biens
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Récupérer les biens
+        run: python scripts/fetch_biens.py
+
+      - name: Commit si changement
+        run: |
+          if [ -n "$(git status --porcelain data/biens.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add data/biens.json
+            git commit -m "Mise à jour automatique des biens ($(date -u +%Y-%m-%d))"
+            git push
+            echo "biens.json mis à jour et poussé."
+          else
+            echo "Aucun changement dans les biens."
+          fi

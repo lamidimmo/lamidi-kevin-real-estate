@@ -11,3 +11,8 @@ Thumbs.db
 # Python
 __pycache__/
 *.pyc
+
+# Fichiers de travail / scraping temporaire
+_*.html
+_*.js
+_*.json

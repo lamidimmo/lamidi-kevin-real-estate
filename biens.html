@@ -34,11 +34,15 @@
     </div>
   </header>
 
-  <main class="tool-shell">
-    <div class="ts-kicker" data-i18n="soon.kicker">En préparation</div>
-    <h1 data-i18n="soon.biens.title">Mes biens</h1>
-    <p data-i18n="soon.biens.desc">Cette vitrine affichera bientôt, automatiquement, les propriétés que j’accompagne à la vente. Mise à jour quotidienne.</p>
-    <a class="btn-gold" href="index.html" data-i18n="back.hub">Retour à l’accueil</a>
+  <section class="biens-hero">
+    <div class="ts-kicker" data-i18n="biens.kicker">Sélection privée</div>
+    <h1 data-i18n="biens.title">Mes biens à la vente</h1>
+    <p data-i18n="biens.sub">Une sélection de propriétés que j’accompagne actuellement. Cliquez pour découvrir chaque bien.</p>
+    <div class="biens-updated" id="biens-updated"></div>
+  </section>
+
+  <main class="biens-wrap" id="biens-app" aria-live="polite">
+    <p class="biens-empty" data-i18n="biens.empty">Aucun bien en ligne pour le moment. Revenez bientôt.</p>
   </main>
 
   <footer class="site-footer">
@@ -49,6 +53,7 @@
   </footer>
 
   <script src="i18n.js"></script>
+  <script src="biens.js"></script>
   <script>document.querySelectorAll('.year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

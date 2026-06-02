@@ -26,6 +26,9 @@
   /* carte d'occupation active : fond dore sombre (var(--ink) est clair en sombre) */
   .occ-btn.is-active { background: rgba(176,141,87,0.16) !important; border-color: var(--accent) !important; color: #fff !important; }
   .occ-btn.is-active .occ-name, .occ-btn.is-active .occ-meta { color: #fff !important; }
+  /* cartes "Total" : background var(--ink) devient clair en sombre -> dark eleve + accent or */
+  .card-total { background: #13233a !important; color: #fff !important; border: 1px solid rgba(176,141,87,0.4); }
+  .card-total strong { color: var(--accent); }
   /* icone du calendrier visible sur fond sombre */
   input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); opacity: 0.7; }
   input[type="range"]::-moz-range-track { background: rgba(255,255,255,0.16); }

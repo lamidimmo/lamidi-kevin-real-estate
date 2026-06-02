@@ -107,9 +107,9 @@
   /* ---------- Initialisation des listes / défauts ---------- */
   function initSelects() {
     var aff = $('affectation');
-    D.AFFECTATIONS.forEach(function (a) { aff.appendChild(el('option', null, a)); });
+    if (aff) D.AFFECTATIONS.forEach(function (a) { aff.appendChild(el('option', null, a)); });
     var norm = $('normeSurface');
-    D.NORMES_SURFACE.forEach(function (n) { norm.appendChild(el('option', null, n)); });
+    if (norm) D.NORMES_SURFACE.forEach(function (n) { norm.appendChild(el('option', null, n)); });
     refreshCommuneDatalist();
   }
 
@@ -135,8 +135,9 @@
   }
 
   function showCommuneNote() {
+    var n = $('communeNote'); if (!n) return;
     var c = getCommunes()[val('commune')];
-    $('communeNote').textContent = (c && c.notes) ? c.notes : '';
+    n.textContent = (c && c.notes) ? c.notes : '';
   }
 
   function prefillCommune() {
@@ -161,6 +162,7 @@
   /* ---------- Tableau de dégressivité éditable ---------- */
   function renderDegTable() {
     var t = $('degTable');
+    if (!t) return;
     t.innerHTML = '';
     var head = el('tr');
     head.appendChild(el('th', null, 'SBP du programme'));
@@ -451,6 +453,7 @@
   }
 
   function renderSynthese(res, input) {
+    if (!$('synCards')) return;
     var s = res.synthese;
     var commune = val('commune') || '—';
     var noP = val('noParcelle') || '—';
@@ -505,7 +508,8 @@
   }
 
   function renderDetail(res) {
-    var t = $('detailTable'); t.innerHTML = '';
+    var t = $('detailTable'); if (!t) return;
+    t.innerHTML = '';
     var sc = res.scenarios;
     var thead = el('thead'); var hr = el('tr');
     hr.appendChild(el('th', null, 'Ligne'));
@@ -563,6 +567,7 @@
 
   function renderAcquereur(res) {
     var sel = $('cibleScenario');
+    if (!sel) return;
     if (sel.options.length !== res.scenarios.length) {
       sel.innerHTML = '';
       res.scenarios.forEach(function (s) {
@@ -628,6 +633,7 @@
 
   function renderPdf(res) {
     var sheet = $('pdfSheet');
+    if (!sheet) return;
     var commune = val('commune') || '[Commune]';
     var noP = val('noParcelle') || '[N°]';
     var district = val('district') || '[district]';
@@ -724,8 +730,9 @@
      GESTIONNAIRE DE COMMUNES
      ============================================================================= */
   function renderCommunes() {
+    var t = $('communesTable'); if (!t) return;
     var communes = getCommunes();
-    var t = $('communesTable'); t.innerHTML = '';
+    t.innerHTML = '';
     var thead = el('thead'); var hr = el('tr');
     ['Commune','District','Prix/m² SBP','IUS village','Haut. corniche','Surf. min','Source','',''].forEach(function (h) { hr.appendChild(el('th', null, h)); });
     thead.appendChild(hr); t.appendChild(thead);
@@ -809,9 +816,10 @@
   function setComps(a) { localStorage.setItem(COMP_KEY, JSON.stringify(a)); }
 
   function renderComps() {
+    var t = $('compTable'); if (!t) return;
     var comps = getComps();
     var commune = (val('commune') || '').toLowerCase();
-    var t = $('compTable'); t.innerHTML = '';
+    t.innerHTML = '';
     var thead = el('thead'); var hr = el('tr');
     ['Commune','Adresse','Type','SBP','Habitable','Prix','CHF/m² hab','Date','Source',''].forEach(function (h) { hr.appendChild(el('th', null, h)); });
     thead.appendChild(hr); t.appendChild(thead);
@@ -867,7 +875,8 @@
   }
 
   function refreshDossierList() {
-    var sel = $('dossierList'); sel.innerHTML = '';
+    var sel = $('dossierList'); if (!sel) return;
+    sel.innerHTML = '';
     var d = getDoss();
     var keys = Object.keys(d);
     if (!keys.length) { sel.appendChild(el('option', null, '(aucun dossier)')); return; }
@@ -916,56 +925,61 @@
      LIAISONS / INIT
      ============================================================================= */
   function bind() {
+    // Lie un écouteur seulement si l'élément existe (la page publique allégée
+    // n'a pas le bloc expert : on évite ainsi toute erreur).
+    function addEvt(id, evt, fn) { var e = $(id); if (e) e.addEventListener(evt, fn); }
+
     FIELDS.forEach(function (f) {
       var e = $(f); if (!e) return;
       var evt = (e.tagName === 'SELECT' || e.type === 'checkbox' || e.type === 'range') ? 'change' : 'input';
       e.addEventListener(evt, recompute);
       if (e.type === 'range') e.addEventListener('input', recompute);
     });
-    $('commune').addEventListener('change', prefillCommune);
-    $('standing').addEventListener('change', applyStanding);
+    addEvt('commune', 'change', prefillCommune);
+    addEvt('standing', 'change', applyStanding);
 
     document.querySelectorAll('.tab').forEach(function (tab) {
       tab.addEventListener('click', function () {
         document.querySelectorAll('.tab').forEach(function (t) { t.classList.remove('active'); });
         document.querySelectorAll('.panel').forEach(function (p) { p.classList.remove('active'); });
         tab.classList.add('active');
-        $('panel-' + tab.dataset.tab).classList.add('active');
+        var panel = $('panel-' + tab.dataset.tab); if (panel) panel.classList.add('active');
       });
     });
 
-    $('cibleScenario').addEventListener('change', function () { state.cible = this.value; renderAcquereur(state.lastResult); });
-    $('optRarete').addEventListener('change', function () { renderPdf(state.lastResult); });
-    $('rareteNiveau').addEventListener('change', function () { renderPdf(state.lastResult); });
-    ['pdfMin','pdfCentral','pdfMax'].forEach(function (id) {
-      $(id).addEventListener('input', function () { renderPdf(state.lastResult); });
+    addEvt('cibleScenario', 'change', function () { state.cible = this.value; renderAcquereur(state.lastResult); });
+    addEvt('optRarete', 'change', function () { renderPdf(state.lastResult); });
+    addEvt('rareteNiveau', 'change', function () { renderPdf(state.lastResult); });
+    ['pdfMin', 'pdfCentral', 'pdfMax'].forEach(function (id) {
+      addEvt(id, 'input', function () { renderPdf(state.lastResult); });
     });
 
-    function showExpert(on) {
-      var ex = $('expert');
-      if (on) {
+    function showExpert(open) {
+      var ex = $('expert'); if (!ex) return;
+      var b = $('btnExpert');
+      if (open) {
         ex.removeAttribute('hidden');
-        $('btnExpert').textContent = 'Masquer le mode expert';
+        if (b) b.textContent = 'Masquer le mode expert';
         ex.scrollIntoView({ behavior: 'smooth', block: 'start' });
       } else {
         ex.setAttribute('hidden', '');
-        $('btnExpert').textContent = 'Mode expert (méthode détaillée)';
+        if (b) b.textContent = 'Mode expert (méthode détaillée)';
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }
-    $('btnExpert').addEventListener('click', function () { showExpert($('expert').hasAttribute('hidden')); });
-    $('btnSimple').addEventListener('click', function () { showExpert(false); });
+    addEvt('btnExpert', 'click', function () { showExpert($('expert').hasAttribute('hidden')); });
+    addEvt('btnSimple', 'click', function () { showExpert(false); });
 
-    $('btnPrint').addEventListener('click', function () { window.print(); });
-    $('btnSave').addEventListener('click', saveDossier);
-    $('btnLoad').addEventListener('click', loadDossier);
-    $('btnDelete').addEventListener('click', deleteDossier);
-    $('btnExport').addEventListener('click', exportJson);
-    $('btnImport').addEventListener('click', function () { $('fileImport').click(); });
-    $('fileImport').addEventListener('change', function () { if (this.files[0]) importJson(this.files[0]); });
-    $('btnAddComp').addEventListener('click', addComp);
-    $('btnSaveCommune').addEventListener('click', saveCommune);
-    $('btnResetCommune').addEventListener('click', resetCommuneForm);
+    addEvt('btnPrint', 'click', function () { window.print(); });
+    addEvt('btnSave', 'click', saveDossier);
+    addEvt('btnLoad', 'click', loadDossier);
+    addEvt('btnDelete', 'click', deleteDossier);
+    addEvt('btnExport', 'click', exportJson);
+    addEvt('btnImport', 'click', function () { var f = $('fileImport'); if (f) f.click(); });
+    addEvt('fileImport', 'change', function () { if (this.files[0]) importJson(this.files[0]); });
+    addEvt('btnAddComp', 'click', addComp);
+    addEvt('btnSaveCommune', 'click', saveCommune);
+    addEvt('btnResetCommune', 'click', resetCommuneForm);
   }
 
   function init() {

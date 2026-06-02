@@ -9,6 +9,44 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <!-- Thème sombre (écran uniquement) — cohérence avec le portail. L'impression PDF reste blanche. -->
+  <style id="darkmode">
+  @media screen {
+    :root {
+      --bg: #060d18; --panel: #0f1c2e; --ink: #e9edf3;
+      --grey: #9aa7b8; --grey-light: #6c798b; --line: rgba(255,255,255,0.12);
+      --input-hl: rgba(176,141,87,0.13);
+    }
+    body { background: #060d18; color: var(--ink); }
+    .bg-mesh { background: #060d18; }
+    .bg-mesh span { opacity: 0.15; }
+    .hero-inputs { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); box-shadow: 0 12px 44px rgba(0,0,0,0.4); }
+    .hero-field input, .contact-form input, .contact-form textarea, .field textarea { background: #0c1726; color: var(--ink); }
+    .field.checks input, .field input[type=checkbox] { background: #0c1726; }
+    .r-main { background: linear-gradient(100deg, #aeb9d6 28%, var(--accent)); -webkit-background-clip: text; background-clip: text; }
+    .r-bar { background: rgba(255,255,255,0.13); }
+    .r-bar .r-mark { background: #0c1726; }
+    .decomp-bar, .scen-track { background: rgba(255,255,255,0.08); }
+    .decomp-legend, .r-explain, .scen-row .scen-top .name { color: var(--grey); }
+    #expert { background: #060d18; }
+    #expert .sidebar { background: #0b1626; }
+    .expert-head { background: #0b1626; }
+    .tabs { background: rgba(255,255,255,0.06); }
+    .tab.active { background: #17273d; box-shadow: none; }
+    .card.feature { background: rgba(176,141,87,0.10); }
+    table.grid thead th { background: rgba(255,255,255,0.05); }
+    table.grid tr.section td { background: rgba(255,255,255,0.045); }
+    .btn.secondary { background: #17273d; color: #fff; border-color: rgba(255,255,255,0.2); }
+    .badge.promo { background: rgba(120,150,210,0.2); }
+    .badge.part { background: rgba(176,141,87,0.2); }
+    .badge.warn { background: rgba(181,83,42,0.22); }
+    .modal { background: #0f1c2e; color: var(--ink); }
+    .modal-close { background: #17273d; color: var(--ink); }
+    .modal-close:hover { background: #1e2f48; }
+    /* La feuille PDF garde la palette claire (aperçu écran ET impression) */
+    .sheet { --ink:#1a1a1a; --grey:#666666; --grey-light:#bbbbbb; --line:#e3e3e3; --panel:#ffffff; --bg:#f7f6f3; --navy:#14213d; --accent:#b08d57; background:#fff; color:#1a1a1a; }
+  }
+  </style>
 </head>
 <body>
 

@@ -10,6 +10,34 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<!-- Thème sombre (écran uniquement) — cohérence avec le portail. L'impression reste claire. -->
+<style id="darkmode">
+@media screen {
+  :root {
+    --ink: #e9edf3; --ink-soft: #b4bdca; --muted: #8493a6;
+    --line: rgba(255,255,255,0.12); --line-soft: rgba(255,255,255,0.07);
+    --bg: #060d18; --bg-card: #0f1c2e; --bg-elev: #13233a;
+    --accent: #caa15c; --accent-dk: #b08d57; --accent-soft: rgba(180,138,71,0.16);
+    --blue: #7aa6dd; --blue-soft: rgba(31,79,138,0.20);
+    --green: #5fae7a; --green-soft: rgba(43,106,63,0.20);
+    --red: #e0654f; --red-soft: rgba(168,51,31,0.22);
+    --warn: #d8a83f; --warn-soft: rgba(164,114,20,0.22);
+  }
+  html, body { background: #060d18; color: var(--ink); }
+  .site-header { background: rgba(8,15,28,0.94); border-bottom-color: rgba(255,255,255,0.1); }
+  .tabs { background: rgba(255,255,255,0.05); }
+  .result-card, .bareme-table, .bareme-chart, .g-item, .g-item.is-no, .occ-btn, .pdf-btn,
+  .contact-form textarea, .contact-form input, input[type="text"], input[type="number"],
+  input[type="email"], input[type="tel"], input[type="search"], .search-wrap input[type="search"] {
+    background: #0f1c2e; color: var(--ink); border-color: rgba(255,255,255,0.14);
+  }
+  input[type="range"]::-moz-range-track { background: rgba(255,255,255,0.16); }
+  .chip.is-active { background: #17273d; color: #fff; }
+  .modal { background: #0f1c2e; color: var(--ink); }
+  .site-footer { background: #04101f; border-top-color: rgba(255,255,255,0.1); }
+  .pdfr-cta { background: rgba(176,141,87,0.14); border-left-color: var(--accent); }
+}
+</style>
 </head>
 <body>
 

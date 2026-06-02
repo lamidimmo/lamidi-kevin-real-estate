@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
   <link rel="stylesheet" href="portal-header.css" />
   <!-- Thème sombre (écran uniquement) — cohérence avec le portail. L'impression PDF reste blanche. -->
   <style id="darkmode">
@@ -118,7 +118,23 @@
       <div class="note" id="communeNote"></div>
     </section>
 
-    <section class="result" id="heroResult"><!-- rempli dynamiquement --></section>
+    <div class="result-wrap" id="resultWrap">
+      <section class="result" id="heroResult"><!-- rempli dynamiquement --></section>
+      <div class="result-gate" id="resultGate" hidden>
+        <div class="gate-card">
+          <span class="gate-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          </span>
+          <div class="gate-title">Votre évaluation est prête</div>
+          <p class="gate-sub">Laissez vos coordonnées pour découvrir votre estimation à l’écran et en recevoir le récapitulatif par email.</p>
+          <button type="button" class="btn-gold gate-btn" id="gateOpen">Recevoir mon évaluation</button>
+          <p class="gate-mini">Gratuit, sans engagement.</p>
+        </div>
+      </div>
+      <div class="result-actions" id="resultActions" hidden>
+        <button type="button" class="btn-gold" id="pdfDownload">Télécharger mon évaluation (PDF)</button>
+      </div>
+    </div>
   </main>
 
   <!-- ======================= MODALE CONTACT ======================= -->
@@ -133,17 +149,23 @@
           <div class="modal-role">Conseiller en immobilier</div>
         </div>
       </div>
-      <h2 class="modal-title" id="cmTitle">Je contacte l'expert</h2>
-      <p class="modal-sub">Laissez vos coordonnées : je vous recontacte sous 48 h pour préciser le potentiel foncier de votre bien.</p>
+      <h2 class="modal-title" id="cmTitle">Recevez votre évaluation</h2>
+      <p class="modal-sub">Indiquez vos coordonnées : votre estimation s’affiche aussitôt à l’écran et un récapitulatif vous est envoyé par email.</p>
       <form id="contactForm" class="contact-form" novalidate>
         <input type="hidden" name="access_key" id="web3formsKey" value="" />
-        <input type="hidden" name="subject" value="Nouvelle demande — Estimateur foncier" />
-        <input type="hidden" name="from_name" value="Estimateur foncier" />
+        <input type="hidden" name="subject" value="Nouveau test — Estimateur foncier" />
+        <input type="hidden" name="from_name" value="Estimateur foncier — Lamidi" />
         <input type="hidden" name="estimation" id="cfEstimation" value="" />
         <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="cf-field">
-          <label for="cfName">Nom <span class="req">*</span></label>
-          <input id="cfName" name="name" type="text" autocomplete="name" required placeholder="Prénom et nom" />
+        <div class="cf-row">
+          <div class="cf-field">
+            <label for="cfPrenom">Prénom <span class="req">*</span></label>
+            <input id="cfPrenom" name="prenom" type="text" autocomplete="given-name" required placeholder="Prénom" />
+          </div>
+          <div class="cf-field">
+            <label for="cfNom">Nom <span class="req">*</span></label>
+            <input id="cfNom" name="nom" type="text" autocomplete="family-name" required placeholder="Nom" />
+          </div>
         </div>
         <div class="cf-row">
           <div class="cf-field">
@@ -151,24 +173,21 @@
             <input id="cfEmail" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.ch" />
           </div>
           <div class="cf-field">
-            <label for="cfPhone">Téléphone</label>
-            <input id="cfPhone" name="phone" type="tel" autocomplete="tel" placeholder="+41 …" />
+            <label for="cfPhone">Téléphone <span class="req">*</span></label>
+            <input id="cfPhone" name="phone" type="tel" autocomplete="tel" required placeholder="+41 …" />
           </div>
         </div>
-        <div class="cf-field">
-          <label for="cfBien">Votre bien</label>
-          <textarea id="cfBien" name="bien" rows="3" placeholder="Adresse ou commune, n° de parcelle, particularités…"></textarea>
-        </div>
-        <button type="submit" class="cf-submit" id="cfSubmit">Je contacte l'expert pour plus de précisions</button>
+        <button type="submit" class="cf-submit" id="cfSubmit">Recevoir mon évaluation</button>
         <div class="cf-status" id="cfStatus" role="status" aria-live="polite"></div>
         <p class="cf-privacy">Vos données ne servent qu'à vous recontacter. Aucune transmission à des tiers.</p>
       </form>
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
   <script src="data.js"></script>
   <script src="calc.js"></script>
-  <script src="app.js"></script>
+  <script src="app.js?v=2"></script>
   <script src="i18n.js"></script>
 </body>
 </html>

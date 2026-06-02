@@ -358,6 +358,10 @@
 
     openBtn.addEventListener('click', open);
     var gateBtn = $('gateOpen'); if (gateBtn) gateBtn.addEventListener('click', open);
+    // "Me contacter" du bandeau : ouvre la fenetre de contact (plus fiable qu'un mailto).
+    document.querySelectorAll('.pnav-contact').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); open(); });
+    });
     closeBtn.addEventListener('click', close);
     modal.addEventListener('click', function (e) { if (e.target === modal) close(); });
 

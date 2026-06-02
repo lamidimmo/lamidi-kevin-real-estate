@@ -186,7 +186,7 @@
         '<div class="bd-contact">' +
           '<div><div class="bd-contact-title">' + esc(T('b.contactTitle')) + '</div>' +
           '<div class="bd-contact-sub">' + esc(T('b.contactSub')) + '</div></div>' +
-          '<a class="btn-gold" href="mailto:' + EMAIL + '?subject=' + subject + '">' + esc(T('nav.contact')) + '</a>' +
+          '<button type="button" class="btn-gold" id="bdContactBtn">' + esc(T('nav.contact')) + '</button>' +
         '</div>' +
       '</div>';
     ov.querySelector('.bien-modal-body').innerHTML = body;
@@ -201,6 +201,8 @@
     ov.querySelectorAll('.bg-thumb').forEach(function (t) {
       t.addEventListener('click', function () { idx = +t.getAttribute('data-t'); renderDetail(); });
     });
+    var cbtn = ov.querySelector('#bdContactBtn');
+    if (cbtn) cbtn.addEventListener('click', function () { openContact(current); });
   }
 
   function step(d) {
@@ -224,8 +226,55 @@
     document.body.style.overflow = '';
   }
 
+  /* ---------- Fenetre de contact (Web3Forms) ---------- */
+  function cEl(id) { return document.getElementById(id); }
+  function closeContact() {
+    var ov = cEl('bcContact'); if (ov) ov.hidden = true;
+    document.body.style.overflow = '';
+  }
+  function openContact(bien) {
+    var ov = cEl('bcContact'); if (!ov) return;
+    var bienField = cEl('bcBien'), titleEl = cEl('bcTitle');
+    if (bien) {
+      if (bienField) bienField.value = (bien.ref ? 'Réf. ' + bien.ref + ' — ' : '') + title(bien) + ' (' + place(bien) + ')';
+      if (titleEl) titleEl.textContent = T('b.contactTitle');
+    } else {
+      if (bienField) bienField.value = '';
+      if (titleEl) titleEl.textContent = T('nav.contact');
+    }
+    ov.hidden = false; document.body.style.overflow = 'hidden';
+    var p = cEl('bcPrenom'); if (p) setTimeout(function () { p.focus(); }, 40);
+  }
+  function setupContact() {
+    var ov = cEl('bcContact'); if (!ov) return;
+    var form = cEl('bcForm'), btn = cEl('bcSubmit'), st = cEl('bcStatus'), closeBtn = cEl('bcClose');
+    if (closeBtn) closeBtn.addEventListener('click', closeContact);
+    ov.addEventListener('click', function (e) { if (e.target === ov) closeContact(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !ov.hidden) closeContact(); });
+    document.querySelectorAll('.pnav-contact, .site-header a[href^="mailto"]').forEach(function (b) {
+      b.addEventListener('click', function (e) { e.preventDefault(); openContact(null); });
+    });
+    if (form) form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (form.botcheck && form.botcheck.checked) return;
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      var lbl = btn.textContent; btn.disabled = true; btn.textContent = 'Envoi…';
+      if (st) { st.textContent = ''; st.className = 'bc-status'; }
+      var payload = {}; new FormData(form).forEach(function (v, k) { payload[k] = v; });
+      fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(payload) })
+        .then(function (r) { return r.json(); })
+        .then(function (d) {
+          if (d.success) { form.reset(); if (st) { st.textContent = 'Merci ! Votre message a bien été envoyé.'; st.className = 'bc-status ok'; } setTimeout(closeContact, 1900); }
+          else if (st) { st.textContent = 'Une erreur est survenue. Réessayez ou écrivez à ' + EMAIL + '.'; st.className = 'bc-status err'; }
+        })
+        .catch(function () { if (st) { st.textContent = 'Connexion impossible. Réessayez.'; st.className = 'bc-status err'; } })
+        .then(function () { btn.disabled = false; btn.textContent = lbl; });
+    });
+  }
+
   /* ---------- init ---------- */
   function init() {
+    setupContact();
     fetch('data/biens.json', { cache: 'no-cache' })
       .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
       .then(function (d) { DATA = d; render(); })

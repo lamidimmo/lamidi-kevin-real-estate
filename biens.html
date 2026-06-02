@@ -9,6 +9,27 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="brand.css" />
+  <style>
+    .bc-overlay { position: fixed; inset: 0; z-index: 300; display: flex; align-items: center; justify-content: center; padding: 18px; background: rgba(4,12,24,.7); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+    .bc-overlay[hidden] { display: none; }
+    .bc-modal { position: relative; width: 100%; max-width: 460px; background: #0c1726; border: 1px solid rgba(255,255,255,.12); border-radius: 16px; padding: 28px 28px 24px; box-shadow: 0 30px 80px rgba(0,0,0,.55); color: #eaeef4; max-height: 92vh; overflow: auto; }
+    .bc-close { position: absolute; top: 14px; right: 14px; width: 34px; height: 34px; border-radius: 50%; border: none; background: rgba(255,255,255,.08); color: #fff; font-size: 20px; cursor: pointer; }
+    .bc-close:hover { background: rgba(255,255,255,.16); }
+    .bc-kicker { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+    .bc-name { font-family: var(--serif-display); font-size: 20px; color: #fff; margin-bottom: 14px; }
+    .bc-title { font-family: var(--serif-display); font-size: 24px; color: #fff; margin: 0 0 6px; }
+    .bc-sub { font-size: 13.5px; color: var(--navy-300); margin: 0 0 18px; line-height: 1.5; }
+    .bc-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .bc-field { margin-bottom: 12px; }
+    .bc-field label { display: block; font-size: 11px; letter-spacing: .04em; text-transform: uppercase; color: var(--navy-300); margin-bottom: 5px; }
+    .bc-field input, .bc-field textarea { width: 100%; padding: 11px 12px; border: 1px solid rgba(255,255,255,.15); border-radius: 9px; background: #0f1c2e; color: #fff; font: inherit; font-size: 14px; }
+    .bc-field input:focus, .bc-field textarea:focus { outline: none; border-color: var(--gold-soft); }
+    .bc-hp { position: absolute !important; left: -9999px; opacity: 0; height: 0; width: 0; }
+    #bcSubmit { width: 100%; margin-top: 4px; }
+    .bc-status { font-size: 13px; margin-top: 10px; min-height: 1em; }
+    .bc-status.ok { color: #5fae7a; } .bc-status.err { color: #e0654f; }
+    @media (max-width: 480px) { .bc-row { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body class="theme-dark">
   <div class="bg-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
@@ -52,8 +73,37 @@
     </div>
   </footer>
 
+  <!-- Fenêtre de contact (Mes biens) -->
+  <div class="bc-overlay" id="bcContact" hidden>
+    <div class="bc-modal" role="dialog" aria-modal="true" aria-labelledby="bcTitle">
+      <button class="bc-close" id="bcClose" type="button" aria-label="Fermer">&times;</button>
+      <div class="bc-kicker">Votre interlocuteur</div>
+      <div class="bc-name">Kevin Lamidi</div>
+      <h2 class="bc-title" id="bcTitle">Me contacter</h2>
+      <p class="bc-sub" id="bcSub">Laissez vos coordonnées, je vous réponds rapidement.</p>
+      <form id="bcForm" novalidate>
+        <input type="hidden" name="access_key" value="09809340-1199-4890-acbd-dc8fa2d65f54" />
+        <input type="hidden" name="subject" value="Demande — Mes biens (site)" />
+        <input type="hidden" name="from_name" value="Site Lamidi — Mes biens" />
+        <input type="hidden" name="bien" id="bcBien" value="" />
+        <input type="checkbox" name="botcheck" class="bc-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <div class="bc-row">
+          <div class="bc-field"><label for="bcPrenom">Prénom *</label><input id="bcPrenom" name="prenom" autocomplete="given-name" required /></div>
+          <div class="bc-field"><label for="bcNom">Nom *</label><input id="bcNom" name="nom" autocomplete="family-name" required /></div>
+        </div>
+        <div class="bc-row">
+          <div class="bc-field"><label for="bcEmail">E-mail *</label><input id="bcEmail" name="email" type="email" autocomplete="email" required /></div>
+          <div class="bc-field"><label for="bcPhone">Téléphone</label><input id="bcPhone" name="phone" type="tel" autocomplete="tel" /></div>
+        </div>
+        <div class="bc-field"><label for="bcMessage">Message</label><textarea id="bcMessage" name="message" rows="3"></textarea></div>
+        <button class="btn-gold" type="submit" id="bcSubmit">Envoyer</button>
+        <div class="bc-status" id="bcStatus" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+
   <script src="i18n.js"></script>
-  <script src="biens.js?v=2"></script>
+  <script src="biens.js?v=4"></script>
   <script>document.querySelectorAll('.year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

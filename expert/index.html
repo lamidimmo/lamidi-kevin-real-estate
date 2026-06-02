@@ -4,54 +4,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Estimation foncière — Espace expert (privé)</title>
+  <title>Tableau de bord expert — Estimation foncière</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Thème sombre (écran uniquement) — cohérence avec le portail. L'impression PDF reste blanche. -->
-  <style id="darkmode">
-  @media screen {
-    :root {
-      --bg: #060d18; --panel: #0f1c2e; --ink: #e9edf3;
-      --grey: #9aa7b8; --grey-light: #6c798b; --line: rgba(255,255,255,0.12);
-      --input-hl: rgba(176,141,87,0.13);
-    }
-    body { background: #060d18; color: var(--ink); }
-    .topbar[hidden] { display: none !important; }
-    .bg-mesh { background: #060d18; }
-    .bg-mesh span { opacity: 0.15; }
-    .hero-inputs { background: rgba(255,255,255,0.05); border-color: rgba(255,255,255,0.12); box-shadow: 0 12px 44px rgba(0,0,0,0.4); }
-    .hero-field input, .contact-form input, .contact-form textarea, .field textarea { background: #0c1726; color: var(--ink); }
-    .field.checks input, .field input[type=checkbox] { background: #0c1726; }
-    .r-main { background: linear-gradient(100deg, #aeb9d6 28%, var(--accent)); -webkit-background-clip: text; background-clip: text; }
-    .r-bar { background: rgba(255,255,255,0.13); }
-    .r-bar .r-mark { background: #0c1726; }
-    .decomp-bar, .scen-track { background: rgba(255,255,255,0.08); }
-    .decomp-legend, .r-explain, .scen-row .scen-top .name { color: var(--grey); }
-    #expert { background: #060d18; }
-    #expert .sidebar { background: #0b1626; }
-    .expert-head { background: #0b1626; }
-    .tabs { background: rgba(255,255,255,0.06); }
-    .tab.active { background: #17273d; box-shadow: none; }
-    .card.feature { background: rgba(176,141,87,0.10); }
-    table.grid thead th { background: rgba(255,255,255,0.05); }
-    table.grid tr.section td { background: rgba(255,255,255,0.045); }
-    .btn.secondary { background: #17273d; color: #fff; border-color: rgba(255,255,255,0.2); }
-    .badge.promo { background: rgba(120,150,210,0.2); }
-    .badge.part { background: rgba(176,141,87,0.2); }
-    .badge.warn { background: rgba(181,83,42,0.22); }
-    .modal { background: #0f1c2e; color: var(--ink); }
-    .modal-close { background: #17273d; color: var(--ink); }
-    .modal-close:hover { background: #1e2f48; }
-    /* La feuille PDF garde la palette claire (aperçu écran ET impression) */
-    .sheet { --ink:#1a1a1a; --grey:#666666; --grey-light:#bbbbbb; --line:#e3e3e3; --panel:#ffffff; --bg:#f7f6f3; --navy:#14213d; --accent:#b08d57; background:#fff; color:#1a1a1a; }
-  }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="expert.css" />
 </head>
 <body>
 
-  <!-- ======================= PORTE D'ACCÈS (privé) ======================= -->
+  <!-- ===================== PORTE D'ACCÈS (privé) ===================== -->
   <div id="expertGate">
     <form id="gateForm">
       <h1>Espace expert</h1>
@@ -61,385 +22,132 @@
       <div id="gateErr" aria-live="polite"></div>
     </form>
   </div>
-  <style>
-    #expertGate { position: fixed; inset: 0; z-index: 9999; background: #060d18; display: flex; align-items: center; justify-content: center; }
-    #expertGate.ok { display: none; }
-    #gateForm { background: #0f1c2e; border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 34px 30px; width: 320px; max-width: 86vw; text-align: center; box-shadow: 0 30px 80px rgba(0,0,0,0.5); }
-    #gateForm h1 { font-family: 'EB Garamond', Georgia, serif; color: #e9edf3; font-size: 26px; margin: 0 0 6px; }
-    #gateForm p { color: #9aa7b8; font-size: 13px; margin: 0 0 18px; }
-    #gatePass { width: 100%; padding: 12px; border: 1px solid rgba(255,255,255,0.15); border-radius: 9px; background: #0c1726; color: #e9edf3; font-size: 15px; margin-bottom: 12px; box-sizing: border-box; }
-    #gateForm button { width: 100%; padding: 12px; border: none; border-radius: 9px; background: #b08d57; color: #1a1a1a; font-weight: 600; cursor: pointer; font-size: 14px; }
-    #gateErr { color: #e0896b; font-size: 12px; margin-top: 10px; min-height: 14px; }
-  </style>
   <script>
     (function () {
       var KEY = 'kl_expert_ok';
       function unlock() { var g = document.getElementById('expertGate'); if (g) g.classList.add('ok'); }
       function bindGate() {
         if (sessionStorage.getItem(KEY) === '1') unlock();
-        var f = document.getElementById('gateForm');
-        if (!f) return;
+        var f = document.getElementById('gateForm'); if (!f) return;
         f.addEventListener('submit', function (e) {
           e.preventDefault();
-          if (document.getElementById('gatePass').value === '20091186') {
-            sessionStorage.setItem(KEY, '1'); unlock();
-          } else {
-            document.getElementById('gateErr').textContent = 'Mot de passe incorrect.';
-          }
+          if (document.getElementById('gatePass').value === '20091186') { sessionStorage.setItem(KEY, '1'); unlock(); }
+          else { document.getElementById('gateErr').textContent = 'Mot de passe incorrect.'; }
         });
         var p = document.getElementById('gatePass'); if (p) p.focus();
       }
-      if (document.readyState !== 'loading') bindGate();
-      else document.addEventListener('DOMContentLoaded', bindGate);
+      if (document.readyState !== 'loading') bindGate(); else document.addEventListener('DOMContentLoaded', bindGate);
     })();
   </script>
 
-  <div class="bg-mesh" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="aurora" aria-hidden="true"><span></span><span></span><span></span></div>
 
-  <!-- ======================= BANDEAU OUTIL (en-tête de l'espace expert) ======================= -->
-  <header class="topbar">
-    <div style="display:flex;align-items:center;gap:16px;min-width:0">
-      <a href="../index.html" aria-label="Retour à l'accueil" style="display:inline-flex;align-items:center;gap:7px;color:#c9d2e3;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;white-space:nowrap;text-decoration:none">&larr; Kevin Lamidi</a>
-      <span style="width:1px;height:18px;background:rgba(255,255,255,0.22)"></span>
-      <div class="brand" id="brandLabel">Estimation foncière</div>
+  <!-- ===================== EN-TÊTE ===================== -->
+  <header class="dash-head">
+    <div class="dh-left">
+      <a class="dh-back" href="../index.html">&larr; Portail</a>
+      <div>
+        <div class="dh-title">Tableau de bord foncier</div>
+        <div class="dh-sub">Analyse détaillée, usage interne</div>
+      </div>
     </div>
-    <div class="topbar-expert">
-      <span class="expert-photo" id="expertPhoto" aria-hidden="true"></span>
-      <button class="btn-expert" id="ctaOpen" type="button">Contactez notre expert</button>
+    <div class="dh-right">
+      <span class="dh-badge">Espace expert</span>
+      <button class="btn-gold" id="btnPdf" type="button">Générer l'avis PDF</button>
     </div>
   </header>
 
-  <!-- ======================= FAÇADE SIMPLE ======================= -->
-  <main class="estimateur">
-    <section class="hero">
-      <h1 class="hero-title">Quelle est la valeur de votre terrain ?</h1>
-      <p class="hero-sub">Estimation indicative de la valeur de votre terrain à bâtir, canton de Vaud.</p>
-      <div class="hero-inputs">
-        <div class="hero-field">
-          <label>Commune</label>
-          <input id="commune" list="communeList" placeholder="ex. Échallens" />
-          <datalist id="communeList"></datalist>
-        </div>
-        <div class="hero-field">
-          <label>Surface du terrain (m²)</label>
-          <input id="surfaceCadastrale" type="number" inputmode="numeric" placeholder="ex. 800" />
-        </div>
-        <div class="hero-field">
-          <label>Indice de zone (CUS / IUS)</label>
-          <input id="ius" type="number" step="0.05" inputmode="decimal" placeholder="ex. 0.5" />
-          <div class="hero-help">souvent 0,4 à 0,6 en zone village (extrait RDPPF)</div>
-        </div>
-        <div class="hero-field">
-          <label>Prix du neuf (CHF/m² SBP)</label>
-          <input id="prixReference" type="number" inputmode="numeric" placeholder="ex. 7500" />
-          <div class="hero-help">prix de vente au m² dans votre secteur</div>
-        </div>
+  <main class="dash">
+
+    <!-- ===================== CONSOLE DE SAISIE ===================== -->
+    <section class="panel console">
+      <div class="console-grid">
+        <label class="fld"><span>Commune</span><input id="commune" type="text" placeholder="ex. Échallens" /></label>
+        <label class="fld"><span>N° parcelle</span><input id="noParcelle" type="text" placeholder="1181" /></label>
+        <label class="fld"><span>Surface terrain (m²)</span><input id="surfaceCadastrale" type="number" placeholder="800" /></label>
+        <label class="fld"><span>Indice CUS / IUS</span><input id="ius" type="number" step="0.05" placeholder="0.5" /></label>
+        <label class="fld accent"><span>Prix neuf (CHF/m² SBP)</span><input id="prixReference" type="number" placeholder="7500" /></label>
+        <label class="fld accent"><span>Coût constr. (CHF/m³)</span><input id="coutM3" type="number" placeholder="1000" /></label>
+        <label class="fld"><span>Estim. fiscale (CHF)</span><input id="estimationFiscale" type="number" placeholder="repère" /></label>
+        <label class="fld slider"><span>Abattement servitudes <b id="abVal">0 %</b></span><input id="abattementServitudes" type="range" min="0" max="0.2" step="0.01" value="0" /></label>
       </div>
-      <div class="note" id="communeNote"></div>
+
+      <details class="adv">
+        <summary>Paramètres avancés (marges, ratios, CFC)</summary>
+        <div class="console-grid">
+          <label class="fld"><span>Marge prudente (%)</span><input id="margeP" type="number" step="0.01" /></label>
+          <label class="fld"><span>Marge réaliste (%)</span><input id="margeR" type="number" step="0.01" /></label>
+          <label class="fld"><span>Marge potentiel (%)</span><input id="margeO" type="number" step="0.01" /></label>
+          <label class="fld"><span>Ratio volume/SBP</span><input id="ratioVolumeSBP" type="number" step="0.1" /></label>
+          <label class="fld"><span>Ratio habitable/SBP</span><input id="ratioHabitableSBP" type="number" step="0.01" /></label>
+          <label class="fld"><span>Niveaux (emprise)</span><input id="nbNiveaux" type="number" step="1" min="1" max="3" /></label>
+          <label class="fld"><span>CFC 1 (CHF)</span><input id="cfc1" type="number" /></label>
+          <label class="fld"><span>CFC 4 (CHF/m²)</span><input id="cfc4M2" type="number" /></label>
+          <label class="fld"><span>CFC 5 (% s/total)</span><input id="cfc5Pct" type="number" step="0.01" /></label>
+          <label class="fld"><span>Commercialisation (%)</span><input id="fraisCommercialisationPct" type="number" step="0.01" /></label>
+          <label class="fld"><span>Frais PPE (CHF)</span><input id="fraisPPE" type="number" /></label>
+          <label class="fld"><span>Frais acquisition (%)</span><input id="fraisAcquisitionPct" type="number" step="0.01" /></label>
+        </div>
+      </details>
     </section>
 
-    <section class="result" id="heroResult"><!-- rempli dynamiquement --></section>
+    <!-- ===================== KPIs ===================== -->
+    <section class="kpis" id="kpis"></section>
 
-    <div class="expert-toggle">
-      <button class="linklike" id="btnExpert">Mode expert (méthode détaillée)</button>
-    </div>
+    <!-- ===================== GRAPHIQUES ===================== -->
+    <section class="charts">
+      <div class="panel chart-card wide">
+        <div class="chart-head">
+          <h3>Sensibilité de la valeur du terrain</h3>
+          <div class="seg" id="sensSeg">
+            <button data-v="prix" class="on">Prix de vente</button>
+            <button data-v="cout">Coût construction</button>
+            <button data-v="marge">Marge</button>
+          </div>
+        </div>
+        <div class="canvas-wrap"><canvas id="chartSens"></canvas></div>
+        <div class="chart-note" id="sensNote"></div>
+      </div>
+
+      <div class="panel chart-card">
+        <h3>Trois niveaux de valorisation</h3>
+        <div class="canvas-wrap"><canvas id="chartLevels"></canvas></div>
+      </div>
+
+      <div class="panel chart-card">
+        <h3>D'où vient la valeur ? (réaliste)</h3>
+        <div class="canvas-wrap"><canvas id="chartDecomp"></canvas></div>
+        <div class="chart-note" id="decompNote"></div>
+      </div>
+    </section>
+
+    <!-- ===================== DÉTAIL PAR SCÉNARIO ===================== -->
+    <section class="panel">
+      <h3 class="sec-title">Détail par scénario</h3>
+      <div class="table-scroll"><table class="grid" id="detailTable"></table></div>
+    </section>
+
+    <!-- ===================== VUE ACQUÉREUR ===================== -->
+    <section class="panel">
+      <div class="acq-head">
+        <h3 class="sec-title" style="margin:0;border:0">Vue acquéreur</h3>
+        <div class="seg" id="acqSeg">
+          <button data-k="P" class="on">Prudente</button>
+          <button data-k="R">Réaliste</button>
+          <button data-k="O">Potentiel</button>
+        </div>
+      </div>
+      <div class="acq-grid" id="acqGrid"></div>
+    </section>
+
   </main>
 
-  <!-- ======================= MODE EXPERT ======================= -->
-  <div id="expert" hidden>
-  <div class="expert-head">
-    <div>
-      <div class="eh-title">Mode expert</div>
-      <div class="eh-sub">Calcul détaillé, pour votre analyse et le rappel client</div>
-    </div>
-    <button class="btn secondary eh-back" id="btnSimple">Vue simple</button>
-  </div>
-  <div class="layout">
+  <!-- Feuille d'avis pour impression -->
+  <div class="sheet" id="pdfSheet" aria-hidden="true"></div>
 
-    <!-- ======================= SIDEBAR : SAISIE ======================= -->
-    <aside class="sidebar">
-
-      <!-- CONTEXTE : facultatif, alimente surtout l'avis PDF -->
-      <details class="group">
-        <summary>Contexte du dossier</summary>
-        <div class="field"><label>N° de parcelle</label><input id="noParcelle" /></div>
-        <div class="field"><label>Auteur de l'avis</label><input id="auteur" placeholder="Nom Prénom" /></div>
-        <div class="field"><label>Titre / entité</label><input id="entite" placeholder="Courtier" /></div>
-        <div class="field"><label>Client (à la demande de)</label><input id="client" placeholder="Nom du client" /></div>
-        <div class="field"><label>Email de contact <span class="hint">bouton « être rappelé »</span></label><input id="contactEmail" type="email" placeholder="vous@agence.ch" /></div>
-        <div class="field"><label>District</label><input id="district" /></div>
-        <div class="field"><label>Affectation principale</label><select id="affectation"></select></div>
-        <div class="field"><label>Estimation fiscale (CHF) <span class="hint">repère</span></label><input id="estimationFiscale" type="number" /></div>
-        <div class="field inline">
-          <div><label>Accès grevé servitude (m²)</label><input id="surfaceAcces" type="number" value="0" /></div>
-          <div><label>Surface déterminante (m²) <span class="hint">auto</span></label><input id="surfaceDeterminante" type="number" placeholder="auto" /></div>
-        </div>
-        <div class="field"><label>Calcul de surface déterminante</label><select id="normeSurface"></select></div>
-        <div class="field inline">
-          <div><label>Jardin (m²)</label><input id="surfaceJardin" type="number" value="0" /></div>
-          <div><label>Bâtiments existants (m²)</label><input id="surfaceBatiments" type="number" value="0" /></div>
-        </div>
-        <div class="field row3">
-          <div><label>Couvert (m²)</label><input id="surfaceCouvert" type="number" value="0" /></div>
-          <div><label>Haut. corniche (m)</label><input id="hauteurCorniche" type="number" step="0.1" /></div>
-          <div><label>Dist. limites (m)</label><input id="distanceLimites" type="number" step="0.1" /></div>
-        </div>
-        <div class="field"><label>Surface min bâtiment (m²)</label><input id="surfaceMinBatiment" type="number" /></div>
-        <div class="field checks">
-          <label><input type="checkbox" id="pacomRevision" /> PACom en révision</label>
-        </div>
-        <div class="field"><label>Commentaire PACom</label><textarea id="pacomCommentaire"></textarea></div>
-        <div class="field checks">
-          <label>Servitudes</label>
-          <label><input type="checkbox" id="servPassage" /> Passage</label>
-          <label><input type="checkbox" id="servCanalisations" /> Canalisations</label>
-          <label><input type="checkbox" id="servAutres" /> Autres</label>
-        </div>
-        <div class="field"><label>Servitudes (détail)</label><textarea id="servitudes"></textarea></div>
-        <div class="field"><label>Particularités (topo, expo, accès)</label><textarea id="particularites"></textarea></div>
-      </details>
-
-      <!-- HYPOTHÈSES COMMUNES : socle identique à tous les dossiers -->
-      <details class="group">
-        <summary>Hypothèses communes (socle)</summary>
-        <div class="field">
-          <label>Standing visé</label>
-          <select id="standing">
-            <option value="standard">Standard (950 CHF/m³)</option>
-            <option value="soigne">Soigné (1'050 CHF/m³)</option>
-            <option value="premium">Premium (1'150 CHF/m³)</option>
-          </select>
-        </div>
-        <div class="field"><label>Coût construction (CHF/m³ SIA 116)</label><input id="coutM3" type="number" /></div>
-        <div class="field inline">
-          <div><label>Ratio volume/SBP (m³/m²)</label><input id="ratioVolumeSBP" type="number" step="0.1" /></div>
-          <div><label>Ratio habitable/SBP</label><input id="ratioHabitableSBP" type="number" step="0.01" /></div>
-        </div>
-        <div class="field"><label>CFC 1 travaux prépar. (CHF)</label><input id="cfc1" type="number" /></div>
-        <div class="field inline">
-          <div><label>CFC 4 (CHF/m² non bâti)</label><input id="cfc4M2" type="number" /></div>
-          <div><label>CFC 5 (% s/total)</label><input id="cfc5Pct" type="number" step="0.01" /></div>
-        </div>
-        <div class="field"><label>Frais commercialisation (% recette)</label><input id="fraisCommercialisationPct" type="number" step="0.01" /></div>
-        <div class="field">
-          <label>Marge par niveau (% recette)</label>
-          <div class="row3">
-            <div><label style="text-align:center">Prudente</label><input id="margeP" type="number" step="0.01" /></div>
-            <div><label style="text-align:center">Réaliste</label><input id="margeR" type="number" step="0.01" /></div>
-            <div><label style="text-align:center">Optimale</label><input id="margeO" type="number" step="0.01" /></div>
-          </div>
-        </div>
-        <div class="field inline">
-          <div><label>Frais acquisition terrain (%)</label><input id="fraisAcquisitionPct" type="number" step="0.01" /></div>
-          <div><label>Frais constitution PPE (CHF)</label><input id="fraisPPE" type="number" /></div>
-        </div>
-        <div class="field">
-          <label>Abattement servitudes</label>
-          <div class="slider-row">
-            <input id="abattementServitudes" type="range" min="0" max="0.2" step="0.01" value="0" />
-            <span class="val" id="abattementVal">0 %</span>
-          </div>
-        </div>
-        <div class="field">
-          <label>Niveaux habitables <span class="hint">(emprise = SBP / niveaux)</span></label>
-          <div class="slider-row">
-            <input id="nbNiveaux" type="range" min="1" max="3" step="1" value="2" />
-            <span class="val" id="nbNiveauxVal">2</span>
-          </div>
-        </div>
-      </details>
-
-      <!-- DÉGRESSIVITÉ -->
-      <details class="group">
-        <summary>Tableau de dégressivité</summary>
-        <table class="grid" id="degTable" style="font-size:12px"></table>
-        <div class="note">% du prix de référence selon la SBP d'une unité (surface du programme). Variable critique du modèle.</div>
-      </details>
-
-      <!-- ACTIONS DOSSIER -->
-      <div class="group">
-        <h3>Dossier</h3>
-        <div class="btn-row">
-          <button class="btn secondary" id="btnSave">Enregistrer</button>
-          <select id="dossierList" style="flex:1;padding:6px;border:1px solid #e3e3e3;border-radius:4px"></select>
-          <button class="btn ghost" id="btnLoad">Ouvrir</button>
-          <button class="btn ghost" id="btnDelete">Suppr.</button>
-        </div>
-        <div class="btn-row">
-          <button class="btn ghost" id="btnExport">Exporter JSON</button>
-          <button class="btn ghost" id="btnImport">Importer JSON</button>
-          <input type="file" id="fileImport" accept="application/json" style="display:none" />
-        </div>
-      </div>
-
-    </aside>
-
-    <!-- ======================= MAIN : RÉSULTATS ======================= -->
-    <main class="main">
-      <div class="tabs">
-        <div class="tab active" data-tab="synthese">Synthèse</div>
-        <div class="tab" data-tab="detail">Détail par scénario</div>
-        <div class="tab" data-tab="acquereur">Vue acquéreur</div>
-        <div class="tab" data-tab="communes">Communes</div>
-        <div class="tab" data-tab="comparables">Comparables</div>
-        <div class="tab" data-tab="pdf">Avis (PDF)</div>
-      </div>
-
-      <!-- SYNTHÈSE -->
-      <section class="panel active" id="panel-synthese">
-        <h1 class="headline" id="synTitre">Parcelle</h1>
-        <p class="subhead" id="synSub">Canton de Vaud</p>
-        <div class="cards" id="synCards"></div>
-        <div class="section-title">Détail des trois niveaux de valorisation</div>
-        <table class="grid" id="synTable"></table>
-        <p class="note" id="synFiscal"></p>
-      </section>
-
-      <!-- DÉTAIL -->
-      <section class="panel" id="panel-detail">
-        <div class="section-title">Mécanique complète, colonnes parallèles</div>
-        <table class="grid" id="detailTable"></table>
-        <p class="note">Toutes les lignes CFC sont visibles. Les cellules de saisie (sidebar) sont en surbrillance jaune.</p>
-      </section>
-
-      <!-- VUE ACQUÉREUR -->
-      <section class="panel" id="panel-acquereur">
-        <div class="flex" style="justify-content:space-between">
-          <div class="section-title" style="margin:0;border:none">Vue acquéreur, compte à l'envers</div>
-          <div class="field" style="min-width:240px;margin:0">
-            <label>Scénario cible</label>
-            <select id="cibleScenario"></select>
-          </div>
-        </div>
-        <div class="cards" id="acqCards"></div>
-        <table class="grid" id="acqTable"></table>
-        <p class="note" id="acqProfil"></p>
-      </section>
-
-      <!-- COMMUNES -->
-      <section class="panel" id="panel-communes">
-        <div class="section-title">Base de communes</div>
-        <p class="note">Vos données par commune. La saisie d'un dossier pré-remplit ces références (surchargeables). Les communes que vous ajoutez ici sont conservées sur ce poste.</p>
-        <table class="grid" id="communesTable"></table>
-        <div class="spacer"></div>
-        <div class="section-title" id="communeFormTitle">Ajouter ou modifier une commune</div>
-        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:900px">
-          <div class="field"><label>Commune</label><input id="k_commune" /></div>
-          <div class="field"><label>District</label><input id="k_district" /></div>
-          <div class="field"><label>Prix réf. (CHF/m² SBP)</label><input id="k_prix" type="number" /></div>
-          <div class="field"><label>IUS zone village</label><input id="k_ius" type="number" step="0.05" /></div>
-          <div class="field"><label>Hauteur corniche (m)</label><input id="k_hauteur" type="number" step="0.1" /></div>
-          <div class="field"><label>Surface min bâtiment (m²)</label><input id="k_surfmin" type="number" /></div>
-          <div class="field" style="grid-column:1 / -1"><label>Notes</label><textarea id="k_notes"></textarea></div>
-        </div>
-        <div class="btn-row">
-          <button class="btn" id="btnSaveCommune">Enregistrer la commune</button>
-          <button class="btn ghost" id="btnResetCommune">Vider le formulaire</button>
-        </div>
-      </section>
-
-      <!-- COMPARABLES -->
-      <section class="panel" id="panel-comparables">
-        <div class="section-title">Comparables archivés</div>
-        <table class="grid" id="compTable"></table>
-        <div class="spacer"></div>
-        <div class="section-title">Ajouter un comparable</div>
-        <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;max-width:900px">
-          <div class="field"><label>Commune</label><input id="c_commune" /></div>
-          <div class="field"><label>Adresse partielle</label><input id="c_adresse" /></div>
-          <div class="field"><label>Type de bien</label>
-            <select id="c_type">
-              <option>PPE neuve</option><option>Villa neuve</option>
-              <option>Villa rénovée</option><option>Terrain nu</option>
-            </select>
-          </div>
-          <div class="field"><label>Date observation</label><input id="c_date" type="date" /></div>
-          <div class="field"><label>SBP (m²)</label><input id="c_sbp" type="number" /></div>
-          <div class="field"><label>Habitable (m²)</label><input id="c_hab" type="number" /></div>
-          <div class="field"><label>Prix (CHF)</label><input id="c_prix" type="number" /></div>
-          <div class="field"><label>Source</label><input id="c_source" /></div>
-        </div>
-        <div class="btn-row"><button class="btn" id="btnAddComp">Ajouter</button></div>
-      </section>
-
-      <!-- PDF -->
-      <section class="panel" id="panel-pdf">
-        <div class="pdf-toolbar">
-          <button class="btn" id="btnPrint">Générer le PDF (impression)</button>
-          <span class="muted">Astuce : dans la boîte d'impression, choisir « Enregistrer au format PDF », marges « Aucune ».</span>
-          <label class="flex" style="margin-left:auto"><input type="checkbox" id="optRarete" checked /> Inclure section rareté</label>
-        </div>
-        <div style="border:1px solid var(--line);padding:12px;border-radius:4px;max-width:620px;margin-bottom:8px">
-          <div class="row3">
-            <div class="field"><label>Plancher (CHF)</label><input id="pdfMin" type="number" /></div>
-            <div class="field"><label>Valeur réaliste (CHF)</label><input id="pdfCentral" type="number" /></div>
-            <div class="field"><label>Potentiel (CHF)</label><input id="pdfMax" type="number" /></div>
-          </div>
-        </div>
-        <div class="note" style="max-width:620px">La fourchette se pré-remplit depuis les trois niveaux (arrondi à 10'000). Vous pouvez l'ajuster librement avant d'afficher au client.</div>
-        <div class="field" style="max-width:380px">
-          <label>Rareté des terrains dans la commune</label>
-          <select id="rareteNiveau">
-            <option value="pratiquement inexistants">pratiquement inexistants</option>
-            <option value="limités">limités</option>
-          </select>
-        </div>
-        <div class="pdf-stage">
-          <div class="sheet" id="pdfSheet"></div>
-        </div>
-      </section>
-
-    </main>
-  </div>
-  </div><!-- /#expert -->
-
-  <!-- ======================= MODALE CONTACT ======================= -->
-  <div class="modal-overlay" id="contactModal" hidden>
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="cmTitle">
-      <button class="modal-close" id="modalClose" type="button" aria-label="Fermer">&times;</button>
-      <div class="modal-head">
-        <span class="expert-photo lg" aria-hidden="true"></span>
-        <div>
-          <div class="modal-kicker">Votre interlocuteur</div>
-          <div class="modal-name">Kevin Lamidi</div>
-          <div class="modal-role">Conseiller en immobilier</div>
-        </div>
-      </div>
-      <h2 class="modal-title" id="cmTitle">Je contacte l'expert</h2>
-      <p class="modal-sub">Laissez vos coordonnées : je vous recontacte sous 48 h pour préciser le potentiel foncier de votre bien.</p>
-      <form id="contactForm" class="contact-form" novalidate>
-        <input type="hidden" name="access_key" id="web3formsKey" value="" />
-        <input type="hidden" name="subject" value="Nouvelle demande — Estimateur foncier" />
-        <input type="hidden" name="from_name" value="Estimateur foncier" />
-        <input type="hidden" name="estimation" id="cfEstimation" value="" />
-        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
-        <div class="cf-field">
-          <label for="cfName">Nom <span class="req">*</span></label>
-          <input id="cfName" name="name" type="text" autocomplete="name" required placeholder="Prénom et nom" />
-        </div>
-        <div class="cf-row">
-          <div class="cf-field">
-            <label for="cfEmail">E-mail <span class="req">*</span></label>
-            <input id="cfEmail" name="email" type="email" autocomplete="email" required placeholder="vous@exemple.ch" />
-          </div>
-          <div class="cf-field">
-            <label for="cfPhone">Téléphone</label>
-            <input id="cfPhone" name="phone" type="tel" autocomplete="tel" placeholder="+41 …" />
-          </div>
-        </div>
-        <div class="cf-field">
-          <label for="cfBien">Votre bien</label>
-          <textarea id="cfBien" name="bien" rows="3" placeholder="Adresse ou commune, n° de parcelle, particularités…"></textarea>
-        </div>
-        <button type="submit" class="cf-submit" id="cfSubmit">Je contacte l'expert pour plus de précisions</button>
-        <div class="cf-status" id="cfStatus" role="status" aria-live="polite"></div>
-        <p class="cf-privacy">Vos données ne servent qu'à vous recontacter. Aucune transmission à des tiers.</p>
-      </form>
-    </div>
-  </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script src="data.js"></script>
   <script src="calc.js"></script>
-  <script src="app.js"></script>
+  <script src="expert.js"></script>
 </body>
 </html>

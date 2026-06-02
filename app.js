@@ -115,7 +115,6 @@
 
   function applyDefaults() {
     var d = D.DEFAUTS;
-    setVal('prixReference', d.prixReference);
     setVal('standing', d.standing);
     setVal('coutM3', d.coutM3);
     setVal('ratioVolumeSBP', d.ratioVolumeSBP);
@@ -490,10 +489,10 @@
   function renderHero(res) {
     var box = $('heroResult');
     var s = res.synthese;
-    if (!s || s.sbpMax <= 0) {
+    if (!s || s.sbpMax <= 0 || !(parseFloat(val('prixReference')) > 0)) {
       box.className = 'result empty';
       box.innerHTML = '<div class="r-lab">Estimation</div>' +
-        '<p class="r-explain">Renseignez la commune, la surface et l\'indice de zone pour estimer la valeur de votre terrain.</p>';
+        '<p class="r-explain">Renseignez la commune, la surface, l\'indice de zone et le prix du neuf pour estimer la valeur de votre terrain.</p>';
       heroBuilt = false;
       applyGate(false);
       return;
@@ -1026,11 +1025,8 @@
      DÉMARRAGE GÉNÉRIQUE (dossier vierge, socle commun à tous les dossiers)
      ============================================================================= */
   function startNew() {
-    // Démonstration vivante au chargement : valeurs d'exemple neutres (non liées à
-    // une commune précise) pour que le résultat animé s'affiche d'emblée. Le
-    // visiteur les remplace par les données de sa parcelle.
-    setVal('surfaceCadastrale', 800);
-    setVal('ius', 0.5);
+    // Au chargement : tous les champs vides, aucun resultat tant que la surface,
+    // l'indice et le prix du neuf ne sont pas renseignes par le visiteur.
     recompute();
   }
 

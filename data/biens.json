@@ -4,6 +4,210 @@
   "totalSold": 2,
   "forSale": [
     {
+      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
+      "ref": "044333",
+      "status": "sale",
+      "type": "house",
+      "subtype": "",
+      "title": {
+        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
+        "en": "Renovated character house with independent studio and spacious rooms",
+        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
+      },
+      "desc": {
+        "fr": [
+          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
+          "Répartie sur trois niveaux, elle offre de beaux espaces :",
+          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
+          "Premier étage : un salon, un bureau et une salle d’eau.",
+          "Deuxième étage : trois chambres et une salle de bain.",
+          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
+          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
+        ],
+        "en": [
+          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
+          "Divided over three levels, it offers spacious accommodation:",
+          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
+          "Second floor: living room, study and shower room.",
+          "Second floor: three bedrooms and a bathroom.",
+          "Independent studio: accessible from both inside and outside the house, offering total independence.",
+          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
+        ],
+        "de": [
+          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
+          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
+          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
+          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
+          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
+          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
+          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
+        ]
+      },
+      "price": {
+        "amount": 1290000,
+        "currency": "CHF"
+      },
+      "rooms": 5.5,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 235,
+        "land": 250
+      },
+      "buildingYear": 1838,
+      "renovationYear": 2022,
+      "commune": "Valeyres-sous-Ursins",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.75,
+      "lon": 6.66,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
+      ]
+    },
+    {
+      "id": "03e8af8a-43ea-f011-8544-000d3a69e073",
+      "ref": "045780",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Maison 6.5 pièces - Yverdon-les-Bains avec potentiel de transformation",
+        "en": "House 6.5 rooms - Yverdon-les-Bains with conversion potential",
+        "de": "Haus 6.5 Zimmer - Yverdon-les-Bains mit Umbaupotenzial"
+      },
+      "desc": {
+        "fr": [
+          "Découvrez cette maison de 6.5 pièces à Yverdon-les-Bains, proche de toutes commodités, construite en 2005 et rénovée en 2025 avec potentiel d'évolution. Rez-de-chaussée lumineux avec cuisine ouverte équipée, chambre et salle de bain ; étage avec 4 chambres (dont une suite), terrasse de 21 m² ; sous-sol de 81 m² incluant carnotzet et buanderie (chauffage gaz au sol). Garage et possibilité de parking extérieur. Idéale comme résidence principale ou transformable en deux appartements (coûts étudiés). À visiter sans tarder ! Contactez-moi pour plus d'infos."
+        ],
+        "en": [
+          "Discover this 6.5-room house in Yverdon-les-Bains, close to all amenities, built in 2005 and renovated in 2025 with development potential. Bright first floor with open-plan fitted kitchen, bedroom and bathroom; first floor with 4 bedrooms (including one suite), 21 m² terrace; 81 m² basement including carnotzet and laundry room (underfloor gas heating). Garage and possibility of outdoor parking. Ideal as main residence or convertible into two apartments (costs studied). View now! Contact me for more information."
+        ],
+        "de": [
+          "Entdecken Sie dieses 6.5-Zimmer-Haus in Yverdon-les-Bains, nahe aller Annehmlichkeiten, das 2005 gebaut und 2025 renoviert wurde und noch Entwicklungspotenzial hat. Helles Erdgeschoss mit offener Einbauküche, Schlafzimmer und Badezimmer; Obergeschoss mit 4 Schlafzimmern (davon eine Suite), Terrasse von 21 m²; Untergeschoss von 81 m² inklusive Carnotzet und Waschküche (Gas-Fußbodenheizung). Garage und Möglichkeit eines Außenparkplatzes. Ideal als Hauptwohnsitz oder umwandelbar in zwei Wohnungen (Kosten geprüft). Besuchen Sie uns ohne Verzögerung! Kontaktieren Sie mich für weitere Informationen."
+        ]
+      },
+      "price": {
+        "amount": 1250000,
+        "currency": "CHF"
+      },
+      "rooms": 6.5,
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 153,
+        "land": 278,
+        "usable": 249
+      },
+      "buildingYear": 2005,
+      "renovationYear": 2025,
+      "commune": "Yverdon-les-bains",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.78,
+      "lon": 6.63,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183683_2675_698c7a7d39ad82.63633177.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183643_414_ea21bbde8a064f.7ed93e06.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183647_414_7c8546e012abac.ff9da9d4.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183627_414_d45ab0d190f038.c33195ff.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183659_414_85632d81f6021f.8aec915e.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183653_414_7cacba036ca665.4bfa1c01.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183661_414_e63b1b9f7c5317.8e82439e.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183649_414_dfeca73f03a034.fb66c323.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183633_414_7cfd7fb55379b6.9be451e9.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183657_414_79eb1fdf2fb82b.4ad7ca16.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183651_414_ec01180cb775df.5c62aa22.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183645_414_d7f1f08a407cd8.fe35afd1.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183637_414_1e2e716f85ab68.70ccdb6e.jpg"
+      ]
+    },
+    {
+      "id": "6323f4b0-467f-ef11-ac21-000d3ab1941c",
+      "ref": "040245",
+      "status": "sale",
+      "type": "house",
+      "subtype": "villa-house",
+      "title": {
+        "fr": "Villa d'architecte 6,5 pièces de 292 m² sur parcelle de 1'792 m²",
+        "en": "292 m², 6.5-room architect-designed villa on 1,792 m² of land",
+        "de": "6,5-Zimmer-Architektenvilla von 292 m² auf einem Grundstück von 1'792 m²."
+      },
+      "desc": {
+        "fr": [
+          "Nichée dans un quartier paisible de Rances, cette villa érigée en 2002 par un architecte se distingue par la qualité de sa construction et le soin constant apporté à son entretien. Elle développe environ 300 m² habitables sur deux niveaux, prolongés par un sous-sol entièrement excavé construit sur radier. La parcelle de 1'792 m², joliment arborisée, recèle par ailleurs un potentiel constructif additionnel d'environ 140 m² une réserve foncière rare dans le secteur.",
+          "Le rez-de-chaussée s'organise autour d'un spacieux espace de vie animé par une cheminée aux pierres égrenées, largement ouvert sur le jardin et ses deux terrasses. La cuisine, entièrement aménagée et équipée d'un four vapeur et d'un plan de travail en granit, prolonge naturellement cet espace de réception. La chambre parentale, dotée d'un dressing attenant, bénéficie d'une grande salle de bain avec douche et baignoire. Un vaste bureau, qui peut aisément faire office de chambre supplémentaire, complète ce niveau.",
+          "L'étage se découvre par un escalier en pierre avec ouverture. Il abrite deux grandes chambres à coucher, une salle de bain avec WC, ainsi qu'un vaste espace bureau offrant la possibilité d'être divisé pour créer deux chambres complémentaires. Un grenier aménageable, actuellement utilisé comme rangement, complète l'étage et laisse la porte ouverte à de futures évolutions.",
+          "Le sous-sol révèle des caves sèches ventilées, un local technique abritant la pompe à chaleur, un espace buanderie et une salle annexe pouvant accueillir un carnotzet pièce de convivialité chère à la tradition vaudoise.",
+          "À l'extérieur, un soin tout particulier a été apporté aux aménagements. Le jardin arborisé accueille une piscine au sel à contre-courant avec balnéothérapie, équipée de cinq buses hydromassantes, ainsi qu'un bel étang qui apporte au lieu une atmosphère singulière. Une large cour d'accès, capable d'accueillir plusieurs véhicules, mène à un double garage avec réduit attenant.",
+          "L'autoroute est à cinq minutes, Lausanne à vingt-cinq minutes, l'aéroport de Genève à quarante-cinq minutes. Une adresse qui conjugue le calme de la campagne vaudoise et la facilité d'accès aux grands centres."
+        ],
+        "en": [
+          "Nested in a peaceful area of Rances, this villa, built in 2002 by an architect, stands out for the quality of its construction and the constant care given to its upkeep. It offers around 300 m² of living space on two levels, extended by a fully excavated basement built on an invert. The 1,792 m² plot, beautifully planted with trees, also offers additional building potential of around 140 m² a rare land reserve in the area.",
+          "The first floor is organized around a spacious living area enlivened by a stone fireplace, widely open onto the garden and its two terraces. The kitchen, fully fitted and equipped with a steam oven and granite worktop, is a natural extension of this reception area. The master bedroom, with adjoining dressing room, benefits from a large bathroom with shower and bathtub. A vast study, which could easily double as an additional bedroom, completes this level.",
+          "The first floor is revealed by an open stone staircase. There are two large bedrooms, a bathroom with WC, and a large office area that could be divided to create two additional bedrooms. A convertible attic, currently used for storage, completes the first floor and leaves the door open to future developments.",
+          "The basement reveals ventilated dry cellars, a technical room housing the heat pump, a laundry area and an adjoining room that can accommodate a carnotzet pièce de convivialité cher à la tradition vaudoise.",
+          "Externally, particular care has been taken to the layout. The tree-lined garden features a counter-current saltwater swimming pool with balneotherapy, equipped with five hydromassage jets, as well as a beautiful pond that lends the site a singular atmosphere. A large access courtyard, capable of accommodating several vehicles, leads to a double garage with adjoining storeroom.",
+          "The freeway is five minutes away, Lausanne twenty-five minutes, Geneva airport forty-five minutes. An address that combines the calm of the Vaud countryside with easy access to major centers."
+        ],
+        "de": [
+          "Diese 2002 von einem Architekten errichtete Villa liegt in einem ruhigen Viertel von Rances und zeichnet sich durch die Qualität ihrer Konstruktion und die ständige Sorgfalt bei ihrer Instandhaltung aus. Sie verfügt über eine Wohnfläche von ca. 300 m² auf zwei Ebenen, die durch ein vollständig ausgehobenes, auf einer Bodenplatte errichtetes Untergeschoss erweitert werden. Das 1.792 m² große Grundstück mit schönen Bäumen birgt außerdem ein zusätzliches Baupotenzial von ca. 140 m² eine seltene Grundstücksreserve in diesem Sektor.",
+          "Das Erdgeschoss ist um einen geräumigen Wohnbereich herum angeordnet, der von einem Kamin mit körnigen Steinen belebt wird und sich weit zum Garten und seinen beiden Terrassen öffnet. Die Küche ist komplett eingerichtet und mit einem Dampfgarer und einer Arbeitsplatte aus Granit ausgestattet und bildet eine natürliche Verlängerung dieses Empfangsbereichs. Das Elternschlafzimmer mit angrenzendem Ankleidezimmer verfügt über ein großes Badezimmer mit Dusche und Badewanne. Ein großes Büro, das leicht als zusätzliches Schlafzimmer genutzt werden kann, vervollständigt diese Ebene.",
+          "Das Obergeschoss ist über eine Steintreppe mit Öffnung erreichbar. Es beherbergt zwei große Schlafzimmer, ein Badezimmer mit WC und einen großen Bürobereich, der in zwei weitere Schlafzimmer unterteilt werden kann. Ein ausbaubarer Dachboden, der derzeit als Abstellraum genutzt wird, vervollständigt das Obergeschoss und lässt Raum für zukünftige Entwicklungen.",
+          "Das Untergeschoss bietet trockene, belüftete Kellerräume, einen Technikraum, in dem die Wärmepumpe untergebracht ist, eine Waschküche und einen Nebenraum, der ein Carnotzet beherbergen kann, ein geselliger Raum, der in der Waadtländer Tradition hochgehalten wird.",
+          "Im Außenbereich wurde besondere Sorgfalt auf die Gestaltung gelegt. Der Garten mit Bäumen beherbergt einen Salzwasserpool mit Gegenstromanlage und Balneotherapie, der mit fünf Hydromassagedüsen ausgestattet ist, sowie einen schönen Teich, der dem Ort eine einzigartige Atmosphäre verleiht. Ein großer Hof, der Platz für mehrere Fahrzeuge bietet, führt zu einer Doppelgarage mit angrenzendem Abstellraum.",
+          "Die Autobahn ist fünf Minuten entfernt, Lausanne fünfundzwanzig Minuten, der Flughafen Genf fünfundvierzig Minuten. Eine Adresse, die die Ruhe der Waadtländer Landschaft mit der leichten Erreichbarkeit der grossen Zentren verbindet."
+        ]
+      },
+      "price": {
+        "amount": 3495000,
+        "currency": "CHF"
+      },
+      "rooms": 6.5,
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 300,
+        "land": 1792,
+        "garden": 1518
+      },
+      "buildingYear": 2002,
+      "renovationYear": 0,
+      "commune": "Rances",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.76,
+      "lon": 6.53,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048439_1367_682369702ed176.41813408.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048463_1367_682369cfc11192.20733020.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048451_1367_6823697392f794.38596619.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048445_1367_68236973a12848.18642843.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048443_1367_68236973504a24.53853252.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048441_2675_698d936cee7408.02590826.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048447_1367_682369739ede63.66753209.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048449_1367_68236973151a64.65370291.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048461_2675_698d936df37d39.37875553.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048467_2675_698d936e7a9e79.67572089.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048419_1367_6823696a48ef63.09621194.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048415_1367_68236967c7b994.20976655.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048423_1367_6823696c338f84.01997811.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048433_1367_6823696c36dae7.97971749.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048437_1367_6823696ec622a6.83526860.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048429_1367_6823696b56cac4.83256498.jpg"
+      ]
+    },
+    {
       "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
       "ref": "048060",
       "status": "sale",
@@ -397,135 +601,6 @@
       ]
     },
     {
-      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
-      "ref": "044333",
-      "status": "sale",
-      "type": "house",
-      "subtype": "",
-      "title": {
-        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
-        "en": "Renovated character house with independent studio and spacious rooms",
-        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
-      },
-      "desc": {
-        "fr": [
-          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
-          "Répartie sur trois niveaux, elle offre de beaux espaces :",
-          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
-          "Premier étage : un salon, un bureau et une salle d’eau.",
-          "Deuxième étage : trois chambres et une salle de bain.",
-          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
-          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
-        ],
-        "en": [
-          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
-          "Divided over three levels, it offers spacious accommodation:",
-          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
-          "Second floor: living room, study and shower room.",
-          "Second floor: three bedrooms and a bathroom.",
-          "Independent studio: accessible from both inside and outside the house, offering total independence.",
-          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
-        ],
-        "de": [
-          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
-          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
-          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
-          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
-          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
-          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
-          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
-        ]
-      },
-      "price": {
-        "amount": 1290000,
-        "currency": "CHF"
-      },
-      "rooms": 5.5,
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 235,
-        "land": 250
-      },
-      "buildingYear": 1838,
-      "renovationYear": 2022,
-      "commune": "Valeyres-sous-Ursins",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.75,
-      "lon": 6.66,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
-      ]
-    },
-    {
-      "id": "03e8af8a-43ea-f011-8544-000d3a69e073",
-      "ref": "045780",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Maison 6.5 pièces - Yverdon-les-Bains avec potentiel de transformation",
-        "en": "House 6.5 rooms - Yverdon-les-Bains with conversion potential",
-        "de": "Haus 6.5 Zimmer - Yverdon-les-Bains mit Umbaupotenzial"
-      },
-      "desc": {
-        "fr": [
-          "Découvrez cette maison de 6.5 pièces à Yverdon-les-Bains, proche de toutes commodités, construite en 2005 et rénovée en 2025 avec potentiel d'évolution. Rez-de-chaussée lumineux avec cuisine ouverte équipée, chambre et salle de bain ; étage avec 4 chambres (dont une suite), terrasse de 21 m² ; sous-sol de 81 m² incluant carnotzet et buanderie (chauffage gaz au sol). Garage et possibilité de parking extérieur. Idéale comme résidence principale ou transformable en deux appartements (coûts étudiés). À visiter sans tarder ! Contactez-moi pour plus d'infos."
-        ],
-        "en": [
-          "Discover this 6.5-room house in Yverdon-les-Bains, close to all amenities, built in 2005 and renovated in 2025 with development potential. Bright first floor with open-plan fitted kitchen, bedroom and bathroom; first floor with 4 bedrooms (including one suite), 21 m² terrace; 81 m² basement including carnotzet and laundry room (underfloor gas heating). Garage and possibility of outdoor parking. Ideal as main residence or convertible into two apartments (costs studied). View now! Contact me for more information."
-        ],
-        "de": [
-          "Entdecken Sie dieses 6.5-Zimmer-Haus in Yverdon-les-Bains, nahe aller Annehmlichkeiten, das 2005 gebaut und 2025 renoviert wurde und noch Entwicklungspotenzial hat. Helles Erdgeschoss mit offener Einbauküche, Schlafzimmer und Badezimmer; Obergeschoss mit 4 Schlafzimmern (davon eine Suite), Terrasse von 21 m²; Untergeschoss von 81 m² inklusive Carnotzet und Waschküche (Gas-Fußbodenheizung). Garage und Möglichkeit eines Außenparkplatzes. Ideal als Hauptwohnsitz oder umwandelbar in zwei Wohnungen (Kosten geprüft). Besuchen Sie uns ohne Verzögerung! Kontaktieren Sie mich für weitere Informationen."
-        ]
-      },
-      "price": {
-        "amount": 1250000,
-        "currency": "CHF"
-      },
-      "rooms": 6.5,
-      "bedrooms": 5,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 153,
-        "land": 278,
-        "usable": 249
-      },
-      "buildingYear": 2005,
-      "renovationYear": 2025,
-      "commune": "Yverdon-les-bains",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.78,
-      "lon": 6.63,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183683_2675_698c7a7d39ad82.63633177.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183643_414_ea21bbde8a064f.7ed93e06.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183647_414_7c8546e012abac.ff9da9d4.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183627_414_d45ab0d190f038.c33195ff.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183659_414_85632d81f6021f.8aec915e.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183653_414_7cacba036ca665.4bfa1c01.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183661_414_e63b1b9f7c5317.8e82439e.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183649_414_dfeca73f03a034.fb66c323.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183633_414_7cfd7fb55379b6.9be451e9.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183657_414_79eb1fdf2fb82b.4ad7ca16.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183651_414_ec01180cb775df.5c62aa22.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183645_414_d7f1f08a407cd8.fe35afd1.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183637_414_1e2e716f85ab68.70ccdb6e.jpg"
-      ]
-    },
-    {
       "id": "d1a54dde-97b2-f011-bbd2-000d3a69eff1",
       "ref": "045054",
       "status": "sale",
@@ -612,81 +687,6 @@
         "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-022-1776069567504.jpg",
         "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-058-1776069573904.jpg",
         "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-001-1776069561207.jpg"
-      ]
-    },
-    {
-      "id": "6323f4b0-467f-ef11-ac21-000d3ab1941c",
-      "ref": "040245",
-      "status": "sale",
-      "type": "house",
-      "subtype": "villa-house",
-      "title": {
-        "fr": "Villa d'architecte 6,5 pièces de 292 m² sur parcelle de 1'792 m²",
-        "en": "292 m², 6.5-room architect-designed villa on 1,792 m² of land",
-        "de": "6,5-Zimmer-Architektenvilla von 292 m² auf einem Grundstück von 1'792 m²."
-      },
-      "desc": {
-        "fr": [
-          "Nichée dans un quartier paisible de Rances, cette villa érigée en 2002 par un architecte se distingue par la qualité de sa construction et le soin constant apporté à son entretien. Elle développe environ 300 m² habitables sur deux niveaux, prolongés par un sous-sol entièrement excavé construit sur radier. La parcelle de 1'792 m², joliment arborisée, recèle par ailleurs un potentiel constructif additionnel d'environ 140 m² une réserve foncière rare dans le secteur.",
-          "Le rez-de-chaussée s'organise autour d'un spacieux espace de vie animé par une cheminée aux pierres égrenées, largement ouvert sur le jardin et ses deux terrasses. La cuisine, entièrement aménagée et équipée d'un four vapeur et d'un plan de travail en granit, prolonge naturellement cet espace de réception. La chambre parentale, dotée d'un dressing attenant, bénéficie d'une grande salle de bain avec douche et baignoire. Un vaste bureau, qui peut aisément faire office de chambre supplémentaire, complète ce niveau.",
-          "L'étage se découvre par un escalier en pierre avec ouverture. Il abrite deux grandes chambres à coucher, une salle de bain avec WC, ainsi qu'un vaste espace bureau offrant la possibilité d'être divisé pour créer deux chambres complémentaires. Un grenier aménageable, actuellement utilisé comme rangement, complète l'étage et laisse la porte ouverte à de futures évolutions.",
-          "Le sous-sol révèle des caves sèches ventilées, un local technique abritant la pompe à chaleur, un espace buanderie et une salle annexe pouvant accueillir un carnotzet pièce de convivialité chère à la tradition vaudoise.",
-          "À l'extérieur, un soin tout particulier a été apporté aux aménagements. Le jardin arborisé accueille une piscine au sel à contre-courant avec balnéothérapie, équipée de cinq buses hydromassantes, ainsi qu'un bel étang qui apporte au lieu une atmosphère singulière. Une large cour d'accès, capable d'accueillir plusieurs véhicules, mène à un double garage avec réduit attenant.",
-          "L'autoroute est à cinq minutes, Lausanne à vingt-cinq minutes, l'aéroport de Genève à quarante-cinq minutes. Une adresse qui conjugue le calme de la campagne vaudoise et la facilité d'accès aux grands centres."
-        ],
-        "en": [
-          "Nested in a peaceful area of Rances, this villa, built in 2002 by an architect, stands out for the quality of its construction and the constant care given to its upkeep. It offers around 300 m² of living space on two levels, extended by a fully excavated basement built on an invert. The 1,792 m² plot, beautifully planted with trees, also offers additional building potential of around 140 m² a rare land reserve in the area.",
-          "The first floor is organized around a spacious living area enlivened by a stone fireplace, widely open onto the garden and its two terraces. The kitchen, fully fitted and equipped with a steam oven and granite worktop, is a natural extension of this reception area. The master bedroom, with adjoining dressing room, benefits from a large bathroom with shower and bathtub. A vast study, which could easily double as an additional bedroom, completes this level.",
-          "The first floor is revealed by an open stone staircase. There are two large bedrooms, a bathroom with WC, and a large office area that could be divided to create two additional bedrooms. A convertible attic, currently used for storage, completes the first floor and leaves the door open to future developments.",
-          "The basement reveals ventilated dry cellars, a technical room housing the heat pump, a laundry area and an adjoining room that can accommodate a carnotzet pièce de convivialité cher à la tradition vaudoise.",
-          "Externally, particular care has been taken to the layout. The tree-lined garden features a counter-current saltwater swimming pool with balneotherapy, equipped with five hydromassage jets, as well as a beautiful pond that lends the site a singular atmosphere. A large access courtyard, capable of accommodating several vehicles, leads to a double garage with adjoining storeroom.",
-          "The freeway is five minutes away, Lausanne twenty-five minutes, Geneva airport forty-five minutes. An address that combines the calm of the Vaud countryside with easy access to major centers."
-        ],
-        "de": [
-          "Diese 2002 von einem Architekten errichtete Villa liegt in einem ruhigen Viertel von Rances und zeichnet sich durch die Qualität ihrer Konstruktion und die ständige Sorgfalt bei ihrer Instandhaltung aus. Sie verfügt über eine Wohnfläche von ca. 300 m² auf zwei Ebenen, die durch ein vollständig ausgehobenes, auf einer Bodenplatte errichtetes Untergeschoss erweitert werden. Das 1.792 m² große Grundstück mit schönen Bäumen birgt außerdem ein zusätzliches Baupotenzial von ca. 140 m² eine seltene Grundstücksreserve in diesem Sektor.",
-          "Das Erdgeschoss ist um einen geräumigen Wohnbereich herum angeordnet, der von einem Kamin mit körnigen Steinen belebt wird und sich weit zum Garten und seinen beiden Terrassen öffnet. Die Küche ist komplett eingerichtet und mit einem Dampfgarer und einer Arbeitsplatte aus Granit ausgestattet und bildet eine natürliche Verlängerung dieses Empfangsbereichs. Das Elternschlafzimmer mit angrenzendem Ankleidezimmer verfügt über ein großes Badezimmer mit Dusche und Badewanne. Ein großes Büro, das leicht als zusätzliches Schlafzimmer genutzt werden kann, vervollständigt diese Ebene.",
-          "Das Obergeschoss ist über eine Steintreppe mit Öffnung erreichbar. Es beherbergt zwei große Schlafzimmer, ein Badezimmer mit WC und einen großen Bürobereich, der in zwei weitere Schlafzimmer unterteilt werden kann. Ein ausbaubarer Dachboden, der derzeit als Abstellraum genutzt wird, vervollständigt das Obergeschoss und lässt Raum für zukünftige Entwicklungen.",
-          "Das Untergeschoss bietet trockene, belüftete Kellerräume, einen Technikraum, in dem die Wärmepumpe untergebracht ist, eine Waschküche und einen Nebenraum, der ein Carnotzet beherbergen kann, ein geselliger Raum, der in der Waadtländer Tradition hochgehalten wird.",
-          "Im Außenbereich wurde besondere Sorgfalt auf die Gestaltung gelegt. Der Garten mit Bäumen beherbergt einen Salzwasserpool mit Gegenstromanlage und Balneotherapie, der mit fünf Hydromassagedüsen ausgestattet ist, sowie einen schönen Teich, der dem Ort eine einzigartige Atmosphäre verleiht. Ein großer Hof, der Platz für mehrere Fahrzeuge bietet, führt zu einer Doppelgarage mit angrenzendem Abstellraum.",
-          "Die Autobahn ist fünf Minuten entfernt, Lausanne fünfundzwanzig Minuten, der Flughafen Genf fünfundvierzig Minuten. Eine Adresse, die die Ruhe der Waadtländer Landschaft mit der leichten Erreichbarkeit der grossen Zentren verbindet."
-        ]
-      },
-      "price": {
-        "amount": 3495000,
-        "currency": "CHF"
-      },
-      "rooms": 6.5,
-      "bedrooms": 5,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 300,
-        "land": 1792,
-        "garden": 1518
-      },
-      "buildingYear": 2002,
-      "renovationYear": 0,
-      "commune": "Rances",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.76,
-      "lon": 6.53,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048439_1367_682369702ed176.41813408.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048463_1367_682369cfc11192.20733020.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048451_1367_6823697392f794.38596619.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048445_1367_68236973a12848.18642843.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048443_1367_68236973504a24.53853252.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048441_2675_698d936cee7408.02590826.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048447_1367_682369739ede63.66753209.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048449_1367_68236973151a64.65370291.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048461_2675_698d936df37d39.37875553.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048467_2675_698d936e7a9e79.67572089.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048419_1367_6823696a48ef63.09621194.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048415_1367_68236967c7b994.20976655.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048423_1367_6823696c338f84.01997811.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048433_1367_6823696c36dae7.97971749.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048437_1367_6823696ec622a6.83526860.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048429_1367_6823696b56cac4.83256498.jpg"
       ]
     }
   ],

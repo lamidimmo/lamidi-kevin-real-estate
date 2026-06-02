@@ -382,18 +382,23 @@
       }
 
       if (emailjsReady()) {
-        // PDF genere de facon invisible puis envoye par EmailJS (piece jointe au client + copie a Kevin via le modele).
-        evalPdfBase64().then(function (pdf) {
-          return emailjs.send(EMAILJS.serviceId, EMAILJS.templateId, {
-            to_email: val('cfEmail'),
-            prenom: val('cfPrenom'), nom: val('cfNom'),
-            name: [val('cfPrenom'), val('cfNom')].filter(Boolean).join(' '),
-            phone: val('cfPhone'),
-            commune: val('commune'), surface: val('surfaceCadastrale'), ius: val('ius'),
-            estimation: $('cfEstimation') ? $('cfEstimation').value : '',
-            content: pdf, filename: 'evaluation-terrain.pdf'
-          }, { publicKey: EMAILJS.publicKey });
-        }).then(function () { finish(true); })
+        // Envoi de l'estimation par email (dans le corps du message, sans piece jointe).
+        var s = (state.lastResult || {}).synthese;
+        var params = {
+          to_email: val('cfEmail'),
+          prenom: val('cfPrenom'), nom: val('cfNom'),
+          name: [val('cfPrenom'), val('cfNom')].filter(Boolean).join(' '),
+          phone: val('cfPhone'),
+          commune: val('commune') || '—', surface: val('surfaceCadastrale') || '—', ius: val('ius') || '—',
+          estimation: $('cfEstimation') ? $('cfEstimation').value : '',
+          valeur: '—', fourchette: '—'
+        };
+        if (s && s.sbpMax > 0) {
+          params.valeur = chf(round10k(s.byKey.R || 0));
+          params.fourchette = fmt(floor10k(s.byKey.P || 0)) + ' à ' + fmt(ceil10k(s.byKey.O || 0)) + ' CHF';
+        }
+        emailjs.send(EMAILJS.serviceId, EMAILJS.templateId, params, { publicKey: EMAILJS.publicKey })
+          .then(function () { finish(true); })
           .catch(function () { finish(false, 'Envoi impossible pour le moment. Réessayez ou écrivez à lamidikevin@icloud.com.'); });
       } else {
         var payload = {};

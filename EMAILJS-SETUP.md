@@ -1,47 +1,49 @@
-# Envoi du PDF d'estimation par email — EmailJS (sans serveur)
+# Envoi de l'estimation par email — EmailJS (gratuit, sans serveur)
 
-Le site génère le PDF de façon invisible et l'envoie via **EmailJS** :
-le **client** reçoit l'email avec le PDF en pièce jointe, et **toi** une copie (Bcc).
+Le site envoie l'estimation au **client** par email (valeurs dans le corps du message),
+avec une **copie à toi** (Bcc). Les pièces jointes étant payantes sur EmailJS, on met
+l'estimation directement dans le texte de l'email (souvent plus lisible qu'un PDF).
 
-## 1. Compte + connexion de ta boîte mail
-1. Créer un compte sur https://www.emailjs.com (gratuit, 200 emails/mois).
-2. **Email Services** → *Add New Service* → choisir ton fournisseur (Gmail, Outlook, iCloud…)
-   → autoriser en 1 clic. Noter le **Service ID** (ex. `service_xxx`).
+## 1. Compte + connexion Gmail
+- Compte sur https://www.emailjs.com (gratuit, 200 emails/mois).
+- *Email Services* → *Add New Service* → **Gmail** → *Connect Account* → autoriser.
+  → **Service ID** (déjà fait : `service_gwait39`).
 
-## 2. Modèle d'email (le point important)
-**Email Templates** → *Create New Template*. Configurer :
+## 2. Modèle d'email (Email Templates → Auto-Reply → Create Template)
+Champs :
 - **To Email** : `{{to_email}}`
 - **From Name** : `Kevin Lamidi`
-- **Bcc** : ton adresse (pour recevoir une copie de chaque envoi)
 - **Reply To** : `{{to_email}}`
+- **Bcc** : ton adresse (pour recevoir une copie de chaque lead)
 - **Subject** : `Votre estimation foncière`
-- **Content** (corps) :
+- **Content** :
   ```
   Bonjour {{prenom}},
 
-  Merci d'avoir utilisé mon estimateur foncier. Vous trouverez votre
-  estimation indicative en pièce jointe (PDF).
+  Merci d'avoir utilisé mon estimateur foncier.
 
-  Récapitulatif : {{commune}} — {{estimation}}
+  Votre estimation indicative — {{commune}} :
+  • Valeur de marché estimée : {{valeur}}
+  • Fourchette : {{fourchette}}
 
-  Je reste à votre disposition pour en discuter.
+  Estimation indicative et sans engagement ; je me tiens à votre disposition
+  pour l'affiner selon les particularités de votre terrain.
+
+  Au plaisir d'en discuter,
   Kevin Lamidi · +41 76 715 50 59
+
+  —
+  Coordonnées transmises : {{prenom}} {{nom}} · {{phone}} · {{to_email}}
   ```
-- **Attachments** → *Add Attachment* → type **Variable Attachment** :
-  - *Parameter Name* : `content`
-  - *Filename* : `evaluation-terrain.pdf`
+- **PAS de pièce jointe** (payant sur EmailJS, inutile ici).
+→ *Save*, noter le **Template ID**.
 
-Enregistrer. Noter le **Template ID** (ex. `template_xxx`).
+## 3. Clé publique
+- *Account → General / API Keys* : copier la **Public Key**.
+- *Account → Security* : autoriser le domaine `lamidimmo.github.io`.
 
-## 3. Clé publique + sécurité
-- **Account → General / API Keys** : copier la **Public Key**.
-- **Account → Security** : ajouter le domaine autorisé `lamidimmo.github.io`
-  (empêche l'usage de ta clé ailleurs).
-
-## 4. Me transmettre 3 identifiants
-- **Public Key**
-- **Service ID**
-- **Template ID**
+## 4. Me transmettre
+- **Public Key** et **Template ID** (le Service ID `service_gwait39` est déjà connu).
 
 Je les renseigne dans `app.js` (objet `EMAILJS`) et je pousse. Tant qu'ils sont vides,
-le site retombe sur la notification Web3Forms (sans PDF au client).
+le site retombe sur la notification Web3Forms (toi notifié, résultat dévoilé).

@@ -209,9 +209,6 @@
 
   function updateTopbar() {
     $('brandLabel').textContent = val('auteur') ? val('auteur') + ' · Estimation foncière' : 'Estimation foncière';
-    var ref = (val('noParcelle') ? 'Parcelle ' + val('noParcelle') : 'Dossier') + (val('commune') ? ', ' + val('commune') : '');
-    $('topRef').textContent = ref;
-    $('topDate').textContent = dateFr(new Date());
   }
 
   function margeBadge(taux) {

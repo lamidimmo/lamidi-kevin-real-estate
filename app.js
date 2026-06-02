@@ -131,6 +131,7 @@
     setVal('nbNiveaux', d.nbNiveaux);
     setVal('auteur', 'Kevin Lamidi');
     setVal('entite', 'Courtier en immobilier');
+    setVal('contactEmail', 'lamidikevin@icloud.com');
   }
 
   function showCommuneNote() {

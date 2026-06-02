@@ -9,8 +9,31 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="../portal-header.css" />
+<link rel="stylesheet" href="dark.css" />
 </head>
 <body>
+
+<header class="pnav">
+  <a class="pnav-brand" href="../index.html" aria-label="Kevin Lamidi">
+    <span class="pn-name">Kevin Lamidi</span>
+    <span class="pn-affil" data-i18n="brand.tag">Immobilier sur mesure</span>
+  </a>
+  <nav class="pnav-nav" aria-label="Navigation principale">
+    <a href="../index.html" data-i18n="nav.home">Accueil</a>
+    <a href="../biens.html" data-i18n="nav.biens">Mes biens</a>
+    <a href="../estimateur.html" data-i18n="nav.estim">Estimateur foncier</a>
+    <a href="index.html" aria-current="page" data-i18n="nav.gain">Gain immobilier</a>
+  </nav>
+  <div class="pnav-tools">
+    <div class="lang-switch" role="group" aria-label="Langue">
+      <button type="button" data-lang="fr">FR</button><span class="sep">·</span>
+      <button type="button" data-lang="en">EN</button><span class="sep">·</span>
+      <button type="button" data-lang="de">DE</button>
+    </div>
+    <a class="pnav-contact" href="mailto:kevin.lamidi@swsir.ch" data-i18n="nav.contact">Me contacter</a>
+  </div>
+</header>
 
 <header class="site-header">
   <div class="topbar">
@@ -67,5 +90,6 @@
   <p class="legal-foot"><a href="index.html">← Retour au calculateur</a> · <a href="confidentialite.html">Politique de confidentialité</a></p>
 </main>
 
+<script src="../i18n.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-05",
+  "updatedAt": "2026-06-06",
   "totalForSale": 9,
   "totalSold": 2,
   "forSale": [
@@ -208,170 +208,6 @@
       ]
     },
     {
-      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
-      "ref": "048060",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
-        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
-        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
-      },
-      "desc": {
-        "fr": [
-          "Situation et environnement",
-          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
-          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
-          "Présentation générale",
-          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
-          "Rez-de-chaussée",
-          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
-          "Étage",
-          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
-          "Sous-sol",
-          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
-          "Extérieurs"
-        ],
-        "en": [
-          "Location and environment",
-          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
-          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
-          "General presentation",
-          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
-          "First floor",
-          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
-          "First floor",
-          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
-          "Basement",
-          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
-          "Exterior"
-        ],
-        "de": [
-          "Lage und Umgebung",
-          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
-          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
-          "Allgemeine Präsentation",
-          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
-          "Erdgeschoss",
-          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
-          "Etage",
-          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
-          "Untergeschoss",
-          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
-          "Außenbereiche"
-        ]
-      },
-      "price": {
-        "amount": 1345000,
-        "currency": "CHF"
-      },
-      "rooms": 7.5,
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 202,
-        "land": 981
-      },
-      "buildingYear": 1990,
-      "renovationYear": 2017,
-      "commune": "Chavannes-sur-Moudon",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.66,
-      "lon": 6.81,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/fa-ade-1778586648883.png"
-      ]
-    },
-    {
-      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
-      "ref": "13940",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Somptueuse propriété historique sur un domaine viticole !",
-        "en": "Sumptuous historic property on a wine-growing estate!",
-        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
-      },
-      "desc": {
-        "fr": [
-          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
-          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
-          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
-          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
-          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
-        ],
-        "en": [
-          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
-          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
-          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
-          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
-          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
-        ],
-        "de": [
-          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
-          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
-          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
-          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
-          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
-        ]
-      },
-      "price": {
-        "amount": 2850000,
-        "currency": "CHF"
-      },
-      "rooms": 12,
-      "bedrooms": 7,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 420,
-        "land": 10642,
-        "usable": 579
-      },
-      "buildingYear": 1823,
-      "renovationYear": 0,
-      "commune": "Orbe",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.73,
-      "lon": 6.53,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
-      ]
-    },
-    {
       "id": "159e6e90-a843-f111-88b3-7c1e5275bdc0",
       "ref": "047848",
       "status": "sale",
@@ -538,6 +374,170 @@
         "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-037-1773849601282.jpg",
         "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-022-1773849599539.jpg",
         "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/dsc00269-hdr-1777635389677.jpg"
+      ]
+    },
+    {
+      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
+      "ref": "048060",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
+        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
+        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
+      },
+      "desc": {
+        "fr": [
+          "Situation et environnement",
+          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
+          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
+          "Présentation générale",
+          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
+          "Rez-de-chaussée",
+          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
+          "Étage",
+          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
+          "Sous-sol",
+          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
+          "Extérieurs"
+        ],
+        "en": [
+          "Location and environment",
+          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
+          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
+          "General presentation",
+          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
+          "First floor",
+          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
+          "First floor",
+          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
+          "Basement",
+          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
+          "Exterior"
+        ],
+        "de": [
+          "Lage und Umgebung",
+          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
+          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
+          "Allgemeine Präsentation",
+          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
+          "Erdgeschoss",
+          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
+          "Etage",
+          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
+          "Untergeschoss",
+          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
+          "Außenbereiche"
+        ]
+      },
+      "price": {
+        "amount": 1345000,
+        "currency": "CHF"
+      },
+      "rooms": 7.5,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 202,
+        "land": 981
+      },
+      "buildingYear": 1990,
+      "renovationYear": 2017,
+      "commune": "Chavannes-sur-Moudon",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.66,
+      "lon": 6.81,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/fa-ade-1778586648883.png"
+      ]
+    },
+    {
+      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
+      "ref": "13940",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Somptueuse propriété historique sur un domaine viticole !",
+        "en": "Sumptuous historic property on a wine-growing estate!",
+        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
+      },
+      "desc": {
+        "fr": [
+          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
+          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
+          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
+          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
+          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
+        ],
+        "en": [
+          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
+          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
+          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
+          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
+          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
+        ],
+        "de": [
+          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
+          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
+          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
+          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
+          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
+        ]
+      },
+      "price": {
+        "amount": 2850000,
+        "currency": "CHF"
+      },
+      "rooms": 12,
+      "bedrooms": 7,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 420,
+        "land": 10642,
+        "usable": 579
+      },
+      "buildingYear": 1823,
+      "renovationYear": 0,
+      "commune": "Orbe",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.73,
+      "lon": 6.53,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
       ]
     },
     {

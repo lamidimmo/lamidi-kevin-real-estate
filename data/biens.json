@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-06-07",
-  "totalForSale": 9,
+  "updatedAt": "2026-06-08",
+  "totalForSale": 10,
   "totalSold": 2,
   "forSale": [
     {
@@ -169,6 +169,243 @@
       ]
     },
     {
+      "id": "319554db-d3ef-f011-8406-000d3a66f194",
+      "ref": "045901",
+      "status": "sale",
+      "type": "apartment",
+      "subtype": "ppe-apartment",
+      "title": {
+        "fr": "RARE 4,5P AVEC TERRASSE DE 30M² SUR LES HAUTS DE LAUSANNE",
+        "en": "RARE 4.5P WITH 30M² TERRACE ON THE HEIGHTS OF LAUSANNE",
+        "de": "SELTENES 4,5P MIT 30M² TERRASSE AUF DEN HÖHEN VON LAUSANNE"
+      },
+      "desc": {
+        "fr": [
+          "Sur les hauteurs de Lausanne, à deux pas de la forêt du Jorat, ce 4,5 pièces moderne offre un cadre de vie rare, à la fois calme et bien relié au centre-ville. Construit en 2017 dans une petite PPE de trois appartements, soignée et parfaitement entretenue, il assure une vraie tranquillité au quotidien.",
+          "L'appartement est pensé pour la lumière. Le séjour s'ouvre sur une cuisine moderne entièrement équipée et donne accès à une terrasse de 30 m² plein sud-ouest, sans vis-à-vis, avec vue directe sur la forêt. Trois belles chambres complètent l'ensemble, parfaites pour une famille ou un couple en quête d'espace.",
+          "Caractéristiques",
+          "Surface pondérée : 126 m²",
+          "Surface habitable nette : 111 m²",
+          "4,5 pièces, dont 3 chambres",
+          "Terrasse de 30 m² plein sud-ouest, vue forêt",
+          "Cuisine ouverte moderne, très bien entretenue",
+          "Construit en 2017",
+          "PPE de 3 appartements seulement",
+          "Charges mensuelles modérées : moins de CHF 450.",
+          "Grande cave privative au sous-sol"
+        ],
+        "en": [
+          "On the heights of Lausanne, a stone's throw from the Jorat forest, this modern 4.5-room apartment offers a rare living environment, both quiet and well-connected to the city center. Built in 2017 in a small, well-tended and perfectly maintained condominium of three apartments, it offers real peace and quiet on a daily basis.",
+          "The apartment is designed for light. The living room opens onto a modern, fully-equipped kitchen and provides access to a 30 m² southwest-facing terrace with no overlooking views of the forest. Three bedrooms complete the apartment, perfect for a family or couple looking for more space.",
+          "Features",
+          "Weighted floor area: 126 m² (129 sq.ft.)",
+          "Net floor area: 111 m²",
+          "4.5 rooms, including 3 bedrooms",
+          "30 m² southwest-facing terrace with forest views",
+          "Modern open kitchen, very well maintained",
+          "Built in 2017",
+          "PPE of 3 apartments only",
+          "Moderate monthly charges: less than CHF 450.",
+          "Large private cellar in basement"
+        ],
+        "de": [
+          "Auf den Anhöhen von Lausanne, nur wenige Schritte vom Jorat-Wald entfernt, bietet dieses moderne 4,5-Zimmer-Apartment einen seltenen Lebensrahmen, der gleichzeitig ruhig und gut an das Stadtzentrum angebunden ist. Es wurde 2017 in einer kleinen Eigentumswohnung mit drei Wohnungen gebaut, die gepflegt und perfekt in Stand gehalten wird, und sorgt für echte Ruhe im Alltag.",
+          "Die Wohnung ist auf Licht ausgelegt. Das Wohnzimmer öffnet sich zu einer modernen, voll ausgestatteten Küche und bietet Zugang zu einer 30 m² großen Terrasse in Südwestlage, ohne Gegenüber und mit direktem Blick auf den Wald. Drei schöne Schlafzimmer vervollständigen das Ensemble, perfekt für eine Familie oder ein Paar auf der Suche nach mehr Platz.",
+          "Merkmale",
+          "Gewichtete Wohnfläche: 126 m².",
+          "Nettowohnfläche: 111 m².",
+          "4,5 Zimmer, davon 3 Schlafzimmer",
+          "30 m² Terrasse Südwestlage, Waldblick",
+          "Moderne offene Küche, sehr gepflegt",
+          "2017 erbaut",
+          "Eigentumswohnung mit nur 3 Wohnungen",
+          "Moderate monatliche Nebenkosten: weniger als CHF 450.",
+          "Großer privater Keller im Untergeschoss."
+        ]
+      },
+      "price": {
+        "amount": 1300000,
+        "currency": "CHF"
+      },
+      "rooms": 4.5,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 126,
+        "balanced": 141,
+        "balcony": 30
+      },
+      "buildingYear": 2017,
+      "renovationYear": null,
+      "commune": "Lausanne",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.54,
+      "lon": 6.68,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-044-hd-1780858701872.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-053-hd-1780858704812.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-065-hd-1780858707557.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-068-hd-1780858707558.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-077-hd-1780858710053.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-071-hd-1780858707559.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-074-hd-1780858710052.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-023-hd-1780858699341.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-026-hd-1780858699343.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-008-hd-1780858695652.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-035-hd-1780858699344.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-011-hd-1780858695652.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-038-hd-1780858701871.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-047-hd-1780858701872.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-061-hd-1780858704813.jpg",
+        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/619628-a-backbonephoto-062-hd-1780858704814.jpg"
+      ]
+    },
+    {
+      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
+      "ref": "13940",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Somptueuse propriété historique sur un domaine viticole !",
+        "en": "Sumptuous historic property on a wine-growing estate!",
+        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
+      },
+      "desc": {
+        "fr": [
+          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
+          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
+          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
+          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
+          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
+        ],
+        "en": [
+          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
+          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
+          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
+          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
+          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
+        ],
+        "de": [
+          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
+          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
+          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
+          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
+          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
+        ]
+      },
+      "price": {
+        "amount": 2850000,
+        "currency": "CHF"
+      },
+      "rooms": 12,
+      "bedrooms": 7,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 420,
+        "land": 10642,
+        "usable": 579
+      },
+      "buildingYear": 1823,
+      "renovationYear": 0,
+      "commune": "Orbe",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.73,
+      "lon": 6.53,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
+      ]
+    },
+    {
+      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
+      "ref": "044333",
+      "status": "sale",
+      "type": "house",
+      "subtype": "",
+      "title": {
+        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
+        "en": "Renovated character house with independent studio and spacious rooms",
+        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
+      },
+      "desc": {
+        "fr": [
+          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
+          "Répartie sur trois niveaux, elle offre de beaux espaces :",
+          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
+          "Premier étage : un salon, un bureau et une salle d’eau.",
+          "Deuxième étage : trois chambres et une salle de bain.",
+          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
+          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
+        ],
+        "en": [
+          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
+          "Divided over three levels, it offers spacious accommodation:",
+          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
+          "Second floor: living room, study and shower room.",
+          "Second floor: three bedrooms and a bathroom.",
+          "Independent studio: accessible from both inside and outside the house, offering total independence.",
+          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
+        ],
+        "de": [
+          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
+          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
+          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
+          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
+          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
+          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
+          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
+        ]
+      },
+      "price": {
+        "amount": 1290000,
+        "currency": "CHF"
+      },
+      "rooms": 5.5,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 235,
+        "land": 250
+      },
+      "buildingYear": 1838,
+      "renovationYear": 2022,
+      "commune": "Valeyres-sous-Ursins",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.75,
+      "lon": 6.66,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
+      ]
+    },
+    {
       "id": "6323f4b0-467f-ef11-ac21-000d3ab1941c",
       "ref": "040245",
       "status": "sale",
@@ -301,240 +538,63 @@
       ]
     },
     {
-      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
-      "ref": "044333",
-      "status": "sale",
-      "type": "house",
-      "subtype": "",
-      "title": {
-        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
-        "en": "Renovated character house with independent studio and spacious rooms",
-        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
-      },
-      "desc": {
-        "fr": [
-          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
-          "Répartie sur trois niveaux, elle offre de beaux espaces :",
-          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
-          "Premier étage : un salon, un bureau et une salle d’eau.",
-          "Deuxième étage : trois chambres et une salle de bain.",
-          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
-          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
-        ],
-        "en": [
-          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
-          "Divided over three levels, it offers spacious accommodation:",
-          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
-          "Second floor: living room, study and shower room.",
-          "Second floor: three bedrooms and a bathroom.",
-          "Independent studio: accessible from both inside and outside the house, offering total independence.",
-          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
-        ],
-        "de": [
-          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
-          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
-          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
-          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
-          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
-          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
-          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
-        ]
-      },
-      "price": {
-        "amount": 1290000,
-        "currency": "CHF"
-      },
-      "rooms": 5.5,
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 235,
-        "land": 250
-      },
-      "buildingYear": 1838,
-      "renovationYear": 2022,
-      "commune": "Valeyres-sous-Ursins",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.75,
-      "lon": 6.66,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
-      ]
-    },
-    {
-      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
-      "ref": "13940",
+      "id": "c79318ea-22d3-ef11-8ee9-000d3ab0233c",
+      "ref": "041389",
       "status": "sale",
       "type": "house",
       "subtype": "single-house",
       "title": {
-        "fr": "Somptueuse propriété historique sur un domaine viticole !",
-        "en": "Sumptuous historic property on a wine-growing estate!",
-        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
+        "fr": "Maison familiale avec vaste extérieur et terrasse, proche d’Yverdon",
+        "en": "Family home with large exterior and terrace, near Yverdon",
+        "de": "Familienhaus mit großem Außenbereich und Terrasse, in der Nähe von Yverdon"
       },
       "desc": {
         "fr": [
-          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
-          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
-          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
-          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
-          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
+          "Construite en 1900 et entièrement rénovée en 2018, cette maison allie le charme de l’ancien au confort moderne. Très bien isolée, elle est équipée d’un système de chauffage économique : poêle à bois/pellets et panneaux solaires.",
+          "Le rez-de-chaussée comprend un salon lumineux, une cuisine ouverte, un atelier et des WC. À l’étage, trois chambres, une salle de bain et une buanderie offrent un espace fonctionnel pour toute la famille. Au deuxième étage, deux chambres supplémentaires et un accès au grenier aménageable complètent l’ensemble.",
+          "À l’extérieur, vous profiterez d’un agréable jardin arboré de 103 m² et d’un vaste terrain de plus de 970 m², planté d’arbres fruitiers. Deux places de parking extérieures viennent parfaire ce bien.",
+          "Un descriptif détaillé et des photos supplémentaires se trouvent dans le dossier de vente."
         ],
         "en": [
-          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
-          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
-          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
-          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
-          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
+          "Built in 1900 and completely renovated in 2018, this house combines old-world charm with modern comfort. Very well insulated, it is equipped with an economical heating system: wood/pellet stove and solar panels.",
+          "The first floor comprises a bright living room, open kitchen, workshop and WC. Upstairs, three bedrooms, a bathroom and laundry room provide functional space for the whole family. On the second floor, two additional bedrooms and access to the convertible attic complete the ensemble.",
+          "Outside, you'll enjoy a pleasant 103 m² garden planted with trees and a vast plot of over 970 m², planted with fruit trees. Two outdoor parking spaces complete this property.",
+          "A detailed description and additional photos can be found in the sales file."
         ],
         "de": [
-          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
-          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
-          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
-          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
-          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
+          "Dieses 1900 erbaute und 2018 komplett renovierte Haus verbindet den Charme des Alten mit modernem Komfort. Es ist sehr gut isoliert und mit einem sparsamen Heizsystem ausgestattet: Holz-/Pelletofen und Sonnenkollektoren.",
+          "Das Erdgeschoss umfasst ein helles Wohnzimmer, eine offene Küche, ein Atelier und ein WC. Im Obergeschoss bieten drei Schlafzimmer, ein Badezimmer und ein Hauswirtschaftsraum einen funktionalen Raum für die ganze Familie. Im zweiten Stock vervollständigen zwei weitere Schlafzimmer und ein Zugang zum ausbaufähigen Dachboden das Ensemble.",
+          "Im Außenbereich profitieren Sie von einem angenehmen Garten mit Bäumen von 103 m² und einem großen Grundstück von über 970 m², das mit Obstbäumen bepflanzt ist. Zwei Außenparkplätze runden diese Immobilie ab.",
+          "Eine detaillierte Beschreibung und weitere Fotos finden Sie in den Verkaufsunterlagen."
         ]
       },
       "price": {
-        "amount": 2850000,
+        "amount": 1250000,
         "currency": "CHF"
       },
-      "rooms": 12,
-      "bedrooms": 7,
-      "bathrooms": 3,
+      "rooms": 6.5,
+      "bedrooms": 5,
+      "bathrooms": 1,
       "surfaces": {
-        "living": 420,
-        "land": 10642,
-        "usable": 579
+        "living": 150
       },
-      "buildingYear": 1823,
-      "renovationYear": 0,
-      "commune": "Orbe",
+      "buildingYear": 1900,
+      "renovationYear": 2018,
+      "commune": "Valeyres-sous-Ursins",
       "region": "Vaud",
       "country": "CH",
-      "lat": 46.73,
-      "lon": 6.53,
+      "lat": 46.75,
+      "lon": 6.65,
       "images": [
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
-      ]
-    },
-    {
-      "id": "319554db-d3ef-f011-8406-000d3a66f194",
-      "ref": "045901",
-      "status": "sale",
-      "type": "apartment",
-      "subtype": "ppe-apartment",
-      "title": {
-        "fr": "RARE 4,5P AVEC TERRASSE DE 30M² SUR LES HAUTS DE LAUSANNE",
-        "en": "RARE 4.5P WITH 30M² TERRACE ON THE HEIGHTS OF LAUSANNE",
-        "de": "SELTENES 4,5P MIT 30M² TERRASSE AUF DEN HÖHEN VON LAUSANNE"
-      },
-      "desc": {
-        "fr": [
-          "Sur les hauteurs de Lausanne, à deux pas de la forêt du Jorat, ce 4,5 pièces moderne offre un cadre de vie rare, à la fois calme et bien relié au centre-ville. Construit en 2017 dans une petite PPE de trois appartements, soignée et parfaitement entretenue, il assure une vraie tranquillité au quotidien.",
-          "L'appartement est pensé pour la lumière. Le séjour s'ouvre sur une cuisine moderne entièrement équipée et donne accès à une terrasse de 30 m² plein sud-ouest, sans vis-à-vis, avec vue directe sur la forêt. Trois belles chambres complètent l'ensemble, parfaites pour une famille ou un couple en quête d'espace.",
-          "Caractéristiques",
-          "Surface pondérée : 126 m²",
-          "Surface habitable nette : 111 m²",
-          "4,5 pièces, dont 3 chambres",
-          "Terrasse de 30 m² plein sud-ouest, vue forêt",
-          "Cuisine ouverte moderne, très bien entretenue",
-          "Construit en 2017",
-          "PPE de 3 appartements seulement",
-          "Charges mensuelles modérées : moins de CHF 450.",
-          "Grande cave privative au sous-sol"
-        ],
-        "en": [
-          "On the heights of Lausanne, a stone's throw from the Jorat forest, this modern 4.5-room apartment offers a rare living environment, both quiet and well-connected to the city center. Built in 2017 in a small, well-tended and perfectly maintained condominium of three apartments, it offers real peace and quiet on a daily basis.",
-          "The apartment is designed for light. The living room opens onto a modern, fully-equipped kitchen and provides access to a 30 m² southwest-facing terrace with no overlooking views of the forest. Three bedrooms complete the apartment, perfect for a family or couple looking for more space.",
-          "Features",
-          "Weighted floor area: 126 m² (129 sq.ft.)",
-          "Net floor area: 111 m²",
-          "4.5 rooms, including 3 bedrooms",
-          "30 m² southwest-facing terrace with forest views",
-          "Modern open kitchen, very well maintained",
-          "Built in 2017",
-          "PPE of 3 apartments only",
-          "Moderate monthly charges: less than CHF 450.",
-          "Large private cellar in basement"
-        ],
-        "de": [
-          "Auf den Anhöhen von Lausanne, nur wenige Schritte vom Jorat-Wald entfernt, bietet dieses moderne 4,5-Zimmer-Apartment einen seltenen Lebensrahmen, der gleichzeitig ruhig und gut an das Stadtzentrum angebunden ist. Es wurde 2017 in einer kleinen Eigentumswohnung mit drei Wohnungen gebaut, die gepflegt und perfekt in Stand gehalten wird, und sorgt für echte Ruhe im Alltag.",
-          "Die Wohnung ist auf Licht ausgelegt. Das Wohnzimmer öffnet sich zu einer modernen, voll ausgestatteten Küche und bietet Zugang zu einer 30 m² großen Terrasse in Südwestlage, ohne Gegenüber und mit direktem Blick auf den Wald. Drei schöne Schlafzimmer vervollständigen das Ensemble, perfekt für eine Familie oder ein Paar auf der Suche nach mehr Platz.",
-          "Merkmale",
-          "Gewichtete Wohnfläche: 126 m².",
-          "Nettowohnfläche: 111 m².",
-          "4,5 Zimmer, davon 3 Schlafzimmer",
-          "30 m² Terrasse Südwestlage, Waldblick",
-          "Moderne offene Küche, sehr gepflegt",
-          "2017 erbaut",
-          "Eigentumswohnung mit nur 3 Wohnungen",
-          "Moderate monatliche Nebenkosten: weniger als CHF 450.",
-          "Großer privater Keller im Untergeschoss."
-        ]
-      },
-      "price": {
-        "amount": 1300000,
-        "currency": "CHF"
-      },
-      "rooms": 4.5,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 126,
-        "balanced": 141,
-        "balcony": 30
-      },
-      "buildingYear": 2017,
-      "renovationYear": null,
-      "commune": "Lausanne",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.54,
-      "lon": 6.68,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/dsc00272-hdr-1777635395692.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-064-1773849594849.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-049-1773849601284.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-019-1773849597615.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-055-1773849602866.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-052-1773849602865.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-061-1773849602867.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/dsc00266-hdr-1777635389673.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/dsc00257-hdr-1777635389666.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-001-1773849594851.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-046-1773849601283.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-034-1773849599541.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-031-1773849599540.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-037-1773849601282.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/604862-a-backbonephoto-022-1773849599539.jpg",
-        "https://uploads.swsir-tech.ch/images/319554db-d3ef-f011-8406-000d3a66f194/dsc00269-hdr-1777635389677.jpg"
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966985_2675_698af7e1d29cf9.00835138.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966973_415_6819cc11c10985.02444283.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966965_415_6819cc1108f513.79272272.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966953_2675_698af7deecc9c6.79985281.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966963_415_6819cc0f254743.68643839.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966949_2675_698af7de9c4a71.48887224.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966961_2675_698af7df8584b2.04110703.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966989_2675_698af7e235ac07.28078810.jpg",
+        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966991_2675_698af7e2586636.26523396.jpg"
       ]
     },
     {
@@ -623,70 +683,102 @@
         "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
         "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
         "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/montage-paysage-1780911271443.jpg",
         "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
         "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/fa-ade-1778586648883.png"
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg"
       ]
     },
     {
-      "id": "c79318ea-22d3-ef11-8ee9-000d3ab0233c",
-      "ref": "041389",
+      "id": "2dcf89ac-5363-f111-a826-002248997b8f",
+      "ref": "048320",
       "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
+      "type": "apartment",
+      "subtype": "ppe-apartment",
       "title": {
-        "fr": "Maison familiale avec vaste extérieur et terrasse, proche d’Yverdon",
-        "en": "Family home with large exterior and terrace, near Yverdon",
-        "de": "Familienhaus mit großem Außenbereich und Terrasse, in der Nähe von Yverdon"
+        "fr": "RARE 4,5P AVEC TERRASSE DE 30M² - MONTBLESSON",
+        "en": "RARE 4,5P WITH 30M² TERRACE - MONTBLESSON",
+        "de": "SELTENES 4,5P MIT 30M² TERRASSE - MONTBLESSON"
       },
       "desc": {
         "fr": [
-          "Construite en 1900 et entièrement rénovée en 2018, cette maison allie le charme de l’ancien au confort moderne. Très bien isolée, elle est équipée d’un système de chauffage économique : poêle à bois/pellets et panneaux solaires.",
-          "Le rez-de-chaussée comprend un salon lumineux, une cuisine ouverte, un atelier et des WC. À l’étage, trois chambres, une salle de bain et une buanderie offrent un espace fonctionnel pour toute la famille. Au deuxième étage, deux chambres supplémentaires et un accès au grenier aménageable complètent l’ensemble.",
-          "À l’extérieur, vous profiterez d’un agréable jardin arboré de 103 m² et d’un vaste terrain de plus de 970 m², planté d’arbres fruitiers. Deux places de parking extérieures viennent parfaire ce bien.",
-          "Un descriptif détaillé et des photos supplémentaires se trouvent dans le dossier de vente."
+          "Sur les hauteurs de Lausanne, à deux pas de la forêt du Jorat et de l'arrêt de bus Montblesson, Perronnaz ce 4,5 pièces moderne offre un cadre de vie rare, à la fois calme et bien relié au centre-ville. Construit en 2017 dans une petite PPE de trois appartements, soignée et parfaitement entretenue, il assure une vraie tranquillité au quotidien.",
+          "L'appartement est pensé pour la lumière. Le séjour s'ouvre sur une cuisine moderne entièrement équipée et donne accès à une terrasse de 30 m² plein sud-ouest, sans vis-à-vis, avec vue directe sur la forêt. Trois belles chambres complètent l'ensemble, parfaites pour une famille ou un couple en quête d'espace.",
+          "Caractéristiques",
+          "Surface pondérée : 126 m²",
+          "Surface habitable nette : 111 m²",
+          "4,5 pièces, dont 3 chambres",
+          "Terrasse de 30 m² plein sud-ouest, vue forêt",
+          "Cuisine ouverte moderne, très bien entretenue",
+          "Construit en 2017",
+          "PPE de 3 appartements seulement",
+          "Charges mensuelles modérées : moins de CHF 450.",
+          "Grande cave privative au sous-sol"
         ],
         "en": [
-          "Built in 1900 and completely renovated in 2018, this house combines old-world charm with modern comfort. Very well insulated, it is equipped with an economical heating system: wood/pellet stove and solar panels.",
-          "The first floor comprises a bright living room, open kitchen, workshop and WC. Upstairs, three bedrooms, a bathroom and laundry room provide functional space for the whole family. On the second floor, two additional bedrooms and access to the convertible attic complete the ensemble.",
-          "Outside, you'll enjoy a pleasant 103 m² garden planted with trees and a vast plot of over 970 m², planted with fruit trees. Two outdoor parking spaces complete this property.",
-          "A detailed description and additional photos can be found in the sales file."
+          "On the heights of Lausanne, a stone's throw from the Jorat forest and the Montblesson bus stop, Perronnaz this modern 4.5-room apartment offers a rare living environment, both quiet and well-connected to the city center. Built in 2017 in a small, well-tended and perfectly maintained three-apartment condominium, it ensures real peace and quiet on a daily basis.",
+          "The apartment is designed for light. The living room opens onto a modern, fully-equipped kitchen and provides access to a 30 m² terrace facing south-west, with a direct view of the forest. Three beautiful bedrooms complete the ensemble, perfect for a family or couple looking for space.",
+          "Features",
+          "Weighted area : 126 m²",
+          "Net living area : 111 m²",
+          "4.5 rooms, including 3 bedrooms",
+          "30 m² terrace facing southwest, forest view",
+          "Modern open kitchen, very well maintained",
+          "Built in 2017",
+          "PPE of only 3 apartments",
+          "Moderate monthly charges: less than CHF 450.",
+          "Grande cave privative au sous-sol"
         ],
         "de": [
-          "Dieses 1900 erbaute und 2018 komplett renovierte Haus verbindet den Charme des Alten mit modernem Komfort. Es ist sehr gut isoliert und mit einem sparsamen Heizsystem ausgestattet: Holz-/Pelletofen und Sonnenkollektoren.",
-          "Das Erdgeschoss umfasst ein helles Wohnzimmer, eine offene Küche, ein Atelier und ein WC. Im Obergeschoss bieten drei Schlafzimmer, ein Badezimmer und ein Hauswirtschaftsraum einen funktionalen Raum für die ganze Familie. Im zweiten Stock vervollständigen zwei weitere Schlafzimmer und ein Zugang zum ausbaufähigen Dachboden das Ensemble.",
-          "Im Außenbereich profitieren Sie von einem angenehmen Garten mit Bäumen von 103 m² und einem großen Grundstück von über 970 m², das mit Obstbäumen bepflanzt ist. Zwei Außenparkplätze runden diese Immobilie ab.",
-          "Eine detaillierte Beschreibung und weitere Fotos finden Sie in den Verkaufsunterlagen."
+          "Auf den Höhen von Lausanne, nur wenige Schritte vom Jorat-Wald und der Bushaltestelle Montblesson entfernt, bietet Perronnaz diese moderne 4,5-Zimmer-Wohnung eine seltene Lebensumgebung, die sowohl ruhig als auch gut an das Stadtzentrum angebunden ist. Es wurde 2017 in einer kleinen Eigentumswohnung mit drei Wohnungen gebaut, die gepflegt und perfekt gewartet wird, und sorgt für echte Ruhe im Alltag.",
+          "Die Wohnung ist für das Licht gedacht. Das Wohnzimmer öffnet sich zu einer modernen, voll ausgestatteten Küche und bietet Zugang zu einer 30 m² großen Terrasse in Südwestlage, ohne Gegenüber, mit direktem Blick auf den Wald. Drei schöne Schlafzimmer vervollständigen das Ensemble, perfekt für eine Familie oder ein Paar auf der Suche nach mehr Platz.",
+          "Eigenschaften",
+          "Bewertete Fläche : 126 m²",
+          "Nettobewohnfläche : 111 m²",
+          "4,5 Zimmer, davon 3 Schlafzimmer",
+          "Terrasse von 30 m² Südwestlage, Waldblick",
+          "Moderne offene Küche, sehr gepflegt",
+          "Errichtet im Jahr 2017",
+          "Eigentumswohnung mit nur 3 Wohnungen",
+          "Moderate monatliche Belastungen: weniger als CHF 450.",
+          "Grosser privater Keller im Untergeschoss"
         ]
       },
       "price": {
-        "amount": 1250000,
+        "amount": 1300000,
         "currency": "CHF"
       },
-      "rooms": 6.5,
-      "bedrooms": 5,
-      "bathrooms": 1,
+      "rooms": 4.5,
+      "bedrooms": 3,
+      "bathrooms": 2,
       "surfaces": {
-        "living": 150
+        "living": 126,
+        "balcony": 30
       },
-      "buildingYear": 1900,
-      "renovationYear": 2018,
-      "commune": "Valeyres-sous-Ursins",
+      "buildingYear": 2017,
+      "renovationYear": null,
+      "commune": "Épalinges",
       "region": "Vaud",
       "country": "CH",
-      "lat": 46.75,
-      "lon": 6.65,
+      "lat": 46.54,
+      "lon": 6.67,
       "images": [
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966985_2675_698af7e1d29cf9.00835138.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966973_415_6819cc11c10985.02444283.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966965_415_6819cc1108f513.79272272.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966953_2675_698af7deecc9c6.79985281.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966963_415_6819cc0f254743.68643839.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966949_2675_698af7de9c4a71.48887224.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966961_2675_698af7df8584b2.04110703.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966989_2675_698af7e235ac07.28078810.jpg",
-        "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966991_2675_698af7e2586636.26523396.jpg"
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-061-hd-1780934985658.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-068-hd-1780934990671.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-044-hd-1780934981376.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-065-hd-1780934990670.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-077-hd-1780934995808.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-071-hd-1780934990672.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-074-hd-1780934995807.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-023-hd-1780934978746.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-026-hd-1780934978747.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-008-hd-1780934975332.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-035-hd-1780934978747.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-011-hd-1780934975334.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-038-hd-1780934981374.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-047-hd-1780934981377.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-053-hd-1780934985657.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-062-hd-1780934985659.jpg"
       ]
     }
   ],

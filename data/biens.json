@@ -1,100 +1,8 @@
 {
-  "updatedAt": "2026-06-09",
+  "updatedAt": "2026-06-10",
   "totalForSale": 10,
   "totalSold": 2,
   "forSale": [
-    {
-      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
-      "ref": "048060",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
-        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
-        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
-      },
-      "desc": {
-        "fr": [
-          "Situation et environnement",
-          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
-          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
-          "Présentation générale",
-          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
-          "Rez-de-chaussée",
-          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
-          "Étage",
-          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
-          "Sous-sol",
-          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
-          "Extérieurs"
-        ],
-        "en": [
-          "Location and environment",
-          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
-          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
-          "General presentation",
-          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
-          "First floor",
-          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
-          "First floor",
-          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
-          "Basement",
-          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
-          "Exterior"
-        ],
-        "de": [
-          "Lage und Umgebung",
-          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
-          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
-          "Allgemeine Präsentation",
-          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
-          "Erdgeschoss",
-          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
-          "Etage",
-          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
-          "Untergeschoss",
-          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
-          "Außenbereiche"
-        ]
-      },
-      "price": {
-        "amount": 1345000,
-        "currency": "CHF"
-      },
-      "rooms": 7.5,
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 202,
-        "land": 981
-      },
-      "buildingYear": 1990,
-      "renovationYear": 2017,
-      "commune": "Chavannes-sur-Moudon",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.66,
-      "lon": 6.81,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/montage-paysage-1780911271443.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg"
-      ]
-    },
     {
       "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
       "ref": "13940",
@@ -472,78 +380,6 @@
       ]
     },
     {
-      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
-      "ref": "044333",
-      "status": "sale",
-      "type": "house",
-      "subtype": "",
-      "title": {
-        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
-        "en": "Renovated character house with independent studio and spacious rooms",
-        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
-      },
-      "desc": {
-        "fr": [
-          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
-          "Répartie sur trois niveaux, elle offre de beaux espaces :",
-          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
-          "Premier étage : un salon, un bureau et une salle d’eau.",
-          "Deuxième étage : trois chambres et une salle de bain.",
-          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
-          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
-        ],
-        "en": [
-          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
-          "Divided over three levels, it offers spacious accommodation:",
-          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
-          "Second floor: living room, study and shower room.",
-          "Second floor: three bedrooms and a bathroom.",
-          "Independent studio: accessible from both inside and outside the house, offering total independence.",
-          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
-        ],
-        "de": [
-          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
-          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
-          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
-          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
-          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
-          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
-          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
-        ]
-      },
-      "price": {
-        "amount": 1290000,
-        "currency": "CHF"
-      },
-      "rooms": 5.5,
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 235,
-        "land": 250
-      },
-      "buildingYear": 1838,
-      "renovationYear": 2022,
-      "commune": "Valeyres-sous-Ursins",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.75,
-      "lon": 6.66,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
-      ]
-    },
-    {
       "id": "d1a54dde-97b2-f011-bbd2-000d3a69eff1",
       "ref": "045054",
       "status": "sale",
@@ -687,6 +523,170 @@
         "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183651_414_ec01180cb775df.5c62aa22.jpg",
         "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183645_414_d7f1f08a407cd8.fe35afd1.jpg",
         "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183637_414_1e2e716f85ab68.70ccdb6e.jpg"
+      ]
+    },
+    {
+      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
+      "ref": "044333",
+      "status": "sale",
+      "type": "house",
+      "subtype": "",
+      "title": {
+        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
+        "en": "Renovated character house with independent studio and spacious rooms",
+        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
+      },
+      "desc": {
+        "fr": [
+          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
+          "Répartie sur trois niveaux, elle offre de beaux espaces :",
+          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
+          "Premier étage : un salon, un bureau et une salle d’eau.",
+          "Deuxième étage : trois chambres et une salle de bain.",
+          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
+          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
+        ],
+        "en": [
+          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
+          "Divided over three levels, it offers spacious accommodation:",
+          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
+          "Second floor: living room, study and shower room.",
+          "Second floor: three bedrooms and a bathroom.",
+          "Independent studio: accessible from both inside and outside the house, offering total independence.",
+          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
+        ],
+        "de": [
+          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
+          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
+          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
+          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
+          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
+          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
+          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
+        ]
+      },
+      "price": {
+        "amount": 1290000,
+        "currency": "CHF"
+      },
+      "rooms": 5.5,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 235,
+        "land": 250
+      },
+      "buildingYear": 1838,
+      "renovationYear": 2022,
+      "commune": "Valeyres-sous-Ursins",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.75,
+      "lon": 6.66,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
+      ]
+    },
+    {
+      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
+      "ref": "048060",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
+        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
+        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
+      },
+      "desc": {
+        "fr": [
+          "Situation et environnement",
+          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
+          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
+          "Présentation générale",
+          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
+          "Rez-de-chaussée",
+          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
+          "Étage",
+          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
+          "Sous-sol",
+          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
+          "Extérieurs"
+        ],
+        "en": [
+          "Location and environment",
+          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
+          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
+          "General presentation",
+          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
+          "First floor",
+          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
+          "First floor",
+          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
+          "Basement",
+          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
+          "Exterior"
+        ],
+        "de": [
+          "Lage und Umgebung",
+          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
+          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
+          "Allgemeine Präsentation",
+          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
+          "Erdgeschoss",
+          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
+          "Etage",
+          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
+          "Untergeschoss",
+          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
+          "Außenbereiche"
+        ]
+      },
+      "price": {
+        "amount": 1345000,
+        "currency": "CHF"
+      },
+      "rooms": 7.5,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 202,
+        "land": 981
+      },
+      "buildingYear": 1990,
+      "renovationYear": 2017,
+      "commune": "Chavannes-sur-Moudon",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.66,
+      "lon": 6.81,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/montage-paysage-1780911271443.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg"
       ]
     },
     {

@@ -1,78 +1,391 @@
 {
-  "updatedAt": "2026-06-13",
+  "updatedAt": "2026-06-14",
   "totalForSale": 10,
   "totalSold": 2,
   "forSale": [
     {
-      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
-      "ref": "13940",
+      "id": "2dcf89ac-5363-f111-a826-002248997b8f",
+      "ref": "048320",
+      "status": "sale",
+      "type": "apartment",
+      "subtype": "ppe-apartment",
+      "title": {
+        "fr": "RARE 4,5P AVEC TERRASSE DE 30M² - MONTBLESSON",
+        "en": "RARE 4,5P WITH 30M² TERRACE - MONTBLESSON",
+        "de": "SELTENES 4,5P MIT 30M² TERRASSE - MONTBLESSON"
+      },
+      "desc": {
+        "fr": [
+          "Sur les hauteurs de Lausanne, à deux pas de la forêt du Jorat et de l'arrêt de bus Montblesson, Perronnaz ce 4,5 pièces moderne offre un cadre de vie rare, à la fois calme et bien relié au centre-ville. Construit en 2017 dans une petite PPE de trois appartements, soignée et parfaitement entretenue, il assure une vraie tranquillité au quotidien.",
+          "L'appartement est pensé pour la lumière. Le séjour s'ouvre sur une cuisine moderne entièrement équipée et donne accès à une terrasse de 30 m² plein sud-ouest, sans vis-à-vis, avec vue directe sur la forêt. Trois belles chambres complètent l'ensemble, parfaites pour une famille ou un couple en quête d'espace.",
+          "Caractéristiques",
+          "Surface pondérée : 126 m²",
+          "Surface habitable nette : 111 m²",
+          "4,5 pièces, dont 3 chambres",
+          "Terrasse de 30 m² plein sud-ouest, vue forêt",
+          "Cuisine ouverte moderne, très bien entretenue",
+          "Construit en 2017",
+          "PPE de 3 appartements seulement",
+          "Charges mensuelles modérées : moins de CHF 450.",
+          "Grande cave privative au sous-sol"
+        ],
+        "en": [
+          "On the heights of Lausanne, a stone's throw from the Jorat forest and the Montblesson bus stop, Perronnaz this modern 4.5-room apartment offers a rare living environment, both quiet and well-connected to the city center. Built in 2017 in a small, well-tended and perfectly maintained three-apartment condominium, it ensures real peace and quiet on a daily basis.",
+          "The apartment is designed for light. The living room opens onto a modern, fully-equipped kitchen and provides access to a 30 m² terrace facing south-west, with a direct view of the forest. Three beautiful bedrooms complete the ensemble, perfect for a family or couple looking for space.",
+          "Features",
+          "Weighted area : 126 m²",
+          "Net living area : 111 m²",
+          "4.5 rooms, including 3 bedrooms",
+          "30 m² terrace facing southwest, forest view",
+          "Modern open kitchen, very well maintained",
+          "Built in 2017",
+          "PPE of only 3 apartments",
+          "Moderate monthly charges: less than CHF 450.",
+          "Grande cave privative au sous-sol"
+        ],
+        "de": [
+          "Auf den Höhen von Lausanne, nur wenige Schritte vom Jorat-Wald und der Bushaltestelle Montblesson entfernt, bietet Perronnaz diese moderne 4,5-Zimmer-Wohnung eine seltene Lebensumgebung, die sowohl ruhig als auch gut an das Stadtzentrum angebunden ist. Es wurde 2017 in einer kleinen Eigentumswohnung mit drei Wohnungen gebaut, die gepflegt und perfekt gewartet wird, und sorgt für echte Ruhe im Alltag.",
+          "Die Wohnung ist für das Licht gedacht. Das Wohnzimmer öffnet sich zu einer modernen, voll ausgestatteten Küche und bietet Zugang zu einer 30 m² großen Terrasse in Südwestlage, ohne Gegenüber, mit direktem Blick auf den Wald. Drei schöne Schlafzimmer vervollständigen das Ensemble, perfekt für eine Familie oder ein Paar auf der Suche nach mehr Platz.",
+          "Eigenschaften",
+          "Bewertete Fläche : 126 m²",
+          "Nettobewohnfläche : 111 m²",
+          "4,5 Zimmer, davon 3 Schlafzimmer",
+          "Terrasse von 30 m² Südwestlage, Waldblick",
+          "Moderne offene Küche, sehr gepflegt",
+          "Errichtet im Jahr 2017",
+          "Eigentumswohnung mit nur 3 Wohnungen",
+          "Moderate monatliche Belastungen: weniger als CHF 450.",
+          "Grosser privater Keller im Untergeschoss"
+        ]
+      },
+      "price": {
+        "amount": 1300000,
+        "currency": "CHF"
+      },
+      "rooms": 4.5,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 126,
+        "balcony": 30
+      },
+      "buildingYear": 2017,
+      "renovationYear": null,
+      "commune": "Épalinges",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.54,
+      "lon": 6.67,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-061-hd-1780934985658.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-068-hd-1780934990671.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-044-hd-1780934981376.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-065-hd-1780934990670.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-077-hd-1780934995808.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-071-hd-1780934990672.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-074-hd-1780934995807.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-023-hd-1780934978746.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-026-hd-1780934978747.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-008-hd-1780934975332.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-035-hd-1780934978747.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-011-hd-1780934975334.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-038-hd-1780934981374.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-047-hd-1780934981377.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-053-hd-1780934985657.jpg",
+        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-062-hd-1780934985659.jpg"
+      ]
+    },
+    {
+      "id": "d1a54dde-97b2-f011-bbd2-000d3a69eff1",
+      "ref": "045054",
       "status": "sale",
       "type": "house",
       "subtype": "single-house",
       "title": {
-        "fr": "Somptueuse propriété historique sur un domaine viticole !",
-        "en": "Sumptuous historic property on a wine-growing estate!",
-        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
+        "fr": "Grande maison villageoise aux Tuileries-de-Grandson – 2 appartements + fort potentiel d’aménagement",
+        "en": "Large village house in Les Tuileries-de-Grandson - 2 apartments + strong development potential",
+        "de": "Großes Dorfhaus in Les Tuileries-de-Grandson - 2 Wohnungen + hohes Ausbaupotenzial"
       },
       "desc": {
         "fr": [
-          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
-          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
-          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
-          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
-          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
+          "Située dans le quartier résidentiel et paisible des Tuileries-de-Grandson, cette élégante bâtisse historique allie cachet d’époque et emplacement privilégié. Proche des accès autoroutiers et à quelques minutes seulement du centre d’Yverdon-les-Bains, elle offre un cadre de vie calme et pratique.",
+          "Idéale pour une famille, un projet multi-générationnel ou un usage mixte habitation et professionnel, cette propriété séduit par ses volumes généreux et ses belles hauteurs de plafonds.",
+          "Au rez-de-chaussée se trouvent de belles surfaces adaptées à une activité artisanale, un bureau ou un espace de loisirs, complétées par des caves, une grande buanderie et une véranda lumineuse ouvrant sur la cour extérieure.",
+          "À l’étage, deux appartements indépendants d’environ 150 m² chacun bénéficient d’entrées privatives garantissant une parfaite intimité.",
+          "Le premier comprend trois chambres spacieuses, un séjour d’environ 30 m² ouvert sur la cuisine équipée et une salle de bains, avec accès direct à une terrasse.",
+          "Le second, tout aussi confortable, propose trois chambres, un grand séjour et une salle à manger attenante à la cuisine, agrémenté de cheminées décoratives.",
+          "Les combles offrent plus de 170 m² utiles (volume 513 m³), un espace exceptionnel pouvant accueillir salle de jeux, home cinéma, atelier ou tout autre projet. Le bâtiment se trouve en zone village ce qui permet d’envisager des aménagements supplémentaires sous réserve d’autorisations.",
+          "À l’extérieur, le terrain de 678 m² comprend un jardin, une grande véranda vitrée et une cour reliant harmonieusement les différents espaces.",
+          "Plus de 100 m² d’annexes complètent l’ensemble : un local indépendant accessible depuis la rue, un ancien fumoir de plus de 16 m² et un vaste dépôt. Quatre places de stationnement extérieures sont disponibles, avec possibilité d’aménager un garage sous réserve d'autorisations.",
+          "Cette belle propriété constitue une opportunité rare alliant charme authentique, espaces généreux et fort potentiel.",
+          "Contactez-nous pour plus d’informations."
         ],
         "en": [
-          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
-          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
-          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
-          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
-          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
+          "Located in the quiet residential area of Tuileries-de-Grandson, this elegant historic building combines period cachet with a privileged location. Close to motorway access and just a few minutes from the center of Yverdon-les-Bains, it offers a calm and practical living environment.",
+          "Ideal for a family, a multi-generational project or a mixed residential and professional use, this property captivates with its generous volumes and high ceilings.",
+          "On the first floor, there are spacious areas suitable for a craft activity, office or leisure space, complemented by cellars, a large laundry room and a bright veranda opening onto the outside courtyard.",
+          "Upstairs, two independent apartments, each around 150 m² in size, benefit from private entrances guaranteeing perfect privacy.",
+          "The first features three spacious bedrooms, a 30 m² living room opening onto the fitted kitchen and a bathroom, with direct access to a terrace. The second, just as comfortable, offers three bedrooms, a large living room and a dining room adjoining the kitchen, complete with decorative fireplaces.",
+          "The attic offers over 170 m² of usable space (volume 513 m³), an exceptional area suitable for a games room, home cinema, workshop or any other project. The building is located in a village zone, which means it is possible to envisage additional development subject to authorization.",
+          "Outside, the 678 m² grounds include a garden, a large glazed veranda and a courtyard that harmoniously links the different areas.",
+          "More than 100 m² of outbuildings complete the ensemble: a separate room accessible from the street, a former smoking room of more than 16 m² and a large storage area. Four outdoor parking spaces are available, with the possibility of adding a garage subject to authorization.",
+          "This beautiful property is a rare opportunity combining authentic charm, generous space and great potential.",
+          "Contact us for more information."
         ],
         "de": [
-          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
-          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
-          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
-          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
-          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
+          "Dieses elegante historische Gebäude befindet sich im ruhigen Wohnviertel Tuileries-de-Grandson. Es vereint das Flair der Epoche mit einer privilegierten Lage. In der Nähe des Autobahnanschlusses und nur wenige Minuten vom Zentrum von Yverdon-les-Bains entfernt, bietet es eine ruhige und praktische Lebensumgebung.",
+          "Ideal für eine Familie, ein Mehrgenerationenprojekt oder eine gemischte Nutzung von Wohn- und Geschäftsräumen, besticht diese Immobilie durch ihre großzügigen Volumen und die schönen Deckenhöhen.",
+          "Im Erdgeschoss befinden sich schöne Flächen, die sich für eine handwerkliche Tätigkeit, ein Büro oder einen Freizeitbereich eignen, ergänzt durch Kellerräume, eine große Waschküche und eine helle Veranda, die sich zum Außenhof hin öffnet.",
+          "Im Obergeschoss befinden sich zwei unabhängige Wohnungen von jeweils ca. 150 m² mit privaten Eingängen, die eine perfekte Privatsphäre garantieren.",
+          "Die erste umfasst drei geräumige Schlafzimmer, ein Wohnzimmer von ca. 30 m², das sich zur Einbauküche hin öffnet, und ein Badezimmer mit direktem Zugang zu einer Terrasse. Die zweite, ebenso komfortable Wohnung bietet drei Schlafzimmer, ein großes Wohnzimmer und ein an die Küche angrenzendes Esszimmer, das mit dekorativen Kaminen verziert ist.",
+          "Das Dachgeschoss bietet über 170 m² Nutzfläche (Volumen 513 m³), ein außergewöhnlicher Raum, der als Spielzimmer, Heimkino, Atelier oder für jedes andere Projekt genutzt werden kann. Das Gebäude befindet sich in einem Dorfgebiet, sodass weitere Ausbauten vorbehaltlich der Genehmigungen möglich sind.",
+          "Im Außenbereich umfasst das 678 m² große Grundstück einen Garten, eine große verglaste Veranda und einen Hof, der die verschiedenen Räume harmonisch miteinander verbindet.",
+          "Über 100 m² Nebengebäude vervollständigen das Ensemble: ein separater Raum, der von der Straße aus zugänglich ist, eine ehemalige Räucherkammer mit über 16 m² und ein großes Lager. Es stehen vier Außenparkplätze zur Verfügung, wobei vorbehaltlich der Genehmigungen die Möglichkeit besteht, eine Garage einzurichten.",
+          "Diese schöne Immobilie stellt eine seltene Gelegenheit dar, die authentischen Charme, großzügige Räume und großes Potenzial vereint.",
+          "Kontaktieren Sie uns für weitere Informationen."
         ]
       },
       "price": {
-        "amount": 2850000,
+        "amount": 1800000,
         "currency": "CHF"
       },
-      "rooms": 12,
-      "bedrooms": 7,
-      "bathrooms": 3,
+      "rooms": 9,
+      "bedrooms": 6,
+      "bathrooms": 2,
       "surfaces": {
-        "living": 420,
-        "land": 10642,
-        "usable": 579
+        "living": 300,
+        "balanced": 300,
+        "land": 678,
+        "usable": 730
       },
-      "buildingYear": 1823,
-      "renovationYear": 0,
-      "commune": "Orbe",
+      "buildingYear": 1925,
+      "renovationYear": 2021,
+      "commune": "Grandson",
       "region": "Vaud",
       "country": "CH",
-      "lat": 46.73,
+      "lat": 46.8,
+      "lon": 6.63,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-067-1776069575828.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-061-1776069573905.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-034-1776069569886.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-037-1776069569887.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-040-1776069571889.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-073-1776069561207.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-031-1776069569886.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-052-1776069571890.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-046-1776069571890.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-055-1776069573904.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-025-1776069567505.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-070-1776069575828.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-019-1776069567504.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-022-1776069567504.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-058-1776069573904.jpg",
+        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-001-1776069561207.jpg"
+      ]
+    },
+    {
+      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
+      "ref": "044333",
+      "status": "sale",
+      "type": "house",
+      "subtype": "",
+      "title": {
+        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
+        "en": "Renovated character house with independent studio and spacious rooms",
+        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
+      },
+      "desc": {
+        "fr": [
+          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
+          "Répartie sur trois niveaux, elle offre de beaux espaces :",
+          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
+          "Premier étage : un salon, un bureau et une salle d’eau.",
+          "Deuxième étage : trois chambres et une salle de bain.",
+          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
+          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
+        ],
+        "en": [
+          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
+          "Divided over three levels, it offers spacious accommodation:",
+          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
+          "Second floor: living room, study and shower room.",
+          "Second floor: three bedrooms and a bathroom.",
+          "Independent studio: accessible from both inside and outside the house, offering total independence.",
+          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
+        ],
+        "de": [
+          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
+          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
+          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
+          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
+          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
+          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
+          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
+        ]
+      },
+      "price": {
+        "amount": 1290000,
+        "currency": "CHF"
+      },
+      "rooms": 5.5,
+      "bedrooms": 4,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 235,
+        "land": 250
+      },
+      "buildingYear": 1838,
+      "renovationYear": 2022,
+      "commune": "Valeyres-sous-Ursins",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.75,
+      "lon": 6.66,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
+        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
+      ]
+    },
+    {
+      "id": "03e8af8a-43ea-f011-8544-000d3a69e073",
+      "ref": "045780",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Maison 6.5 pièces - Yverdon-les-Bains avec potentiel de transformation",
+        "en": "House 6.5 rooms - Yverdon-les-Bains with conversion potential",
+        "de": "Haus 6.5 Zimmer - Yverdon-les-Bains mit Umbaupotenzial"
+      },
+      "desc": {
+        "fr": [
+          "Découvrez cette maison de 6.5 pièces à Yverdon-les-Bains, proche de toutes commodités, construite en 2005 et rénovée en 2025 avec potentiel d'évolution. Rez-de-chaussée lumineux avec cuisine ouverte équipée, chambre et salle de bain ; étage avec 4 chambres (dont une suite), terrasse de 21 m² ; sous-sol de 81 m² incluant carnotzet et buanderie (chauffage gaz au sol). Garage et possibilité de parking extérieur. Idéale comme résidence principale ou transformable en deux appartements (coûts étudiés). À visiter sans tarder ! Contactez-moi pour plus d'infos."
+        ],
+        "en": [
+          "Discover this 6.5-room house in Yverdon-les-Bains, close to all amenities, built in 2005 and renovated in 2025 with development potential. Bright first floor with open-plan fitted kitchen, bedroom and bathroom; first floor with 4 bedrooms (including one suite), 21 m² terrace; 81 m² basement including carnotzet and laundry room (underfloor gas heating). Garage and possibility of outdoor parking. Ideal as main residence or convertible into two apartments (costs studied). View now! Contact me for more information."
+        ],
+        "de": [
+          "Entdecken Sie dieses 6.5-Zimmer-Haus in Yverdon-les-Bains, nahe aller Annehmlichkeiten, das 2005 gebaut und 2025 renoviert wurde und noch Entwicklungspotenzial hat. Helles Erdgeschoss mit offener Einbauküche, Schlafzimmer und Badezimmer; Obergeschoss mit 4 Schlafzimmern (davon eine Suite), Terrasse von 21 m²; Untergeschoss von 81 m² inklusive Carnotzet und Waschküche (Gas-Fußbodenheizung). Garage und Möglichkeit eines Außenparkplatzes. Ideal als Hauptwohnsitz oder umwandelbar in zwei Wohnungen (Kosten geprüft). Besuchen Sie uns ohne Verzögerung! Kontaktieren Sie mich für weitere Informationen."
+        ]
+      },
+      "price": {
+        "amount": 1250000,
+        "currency": "CHF"
+      },
+      "rooms": 6.5,
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 153,
+        "land": 278,
+        "usable": 249
+      },
+      "buildingYear": 2005,
+      "renovationYear": 2025,
+      "commune": "Yverdon-les-bains",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.78,
+      "lon": 6.63,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183683_2675_698c7a7d39ad82.63633177.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183643_414_ea21bbde8a064f.7ed93e06.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183647_414_7c8546e012abac.ff9da9d4.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183627_414_d45ab0d190f038.c33195ff.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183659_414_85632d81f6021f.8aec915e.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183653_414_7cacba036ca665.4bfa1c01.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183661_414_e63b1b9f7c5317.8e82439e.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183649_414_dfeca73f03a034.fb66c323.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183633_414_7cfd7fb55379b6.9be451e9.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183657_414_79eb1fdf2fb82b.4ad7ca16.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183651_414_ec01180cb775df.5c62aa22.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183645_414_d7f1f08a407cd8.fe35afd1.jpg",
+        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183637_414_1e2e716f85ab68.70ccdb6e.jpg"
+      ]
+    },
+    {
+      "id": "6323f4b0-467f-ef11-ac21-000d3ab1941c",
+      "ref": "040245",
+      "status": "sale",
+      "type": "house",
+      "subtype": "villa-house",
+      "title": {
+        "fr": "Villa d'architecte 6,5 pièces de 292 m² sur parcelle de 1'792 m²",
+        "en": "292 m², 6.5-room architect-designed villa on 1,792 m² of land",
+        "de": "6,5-Zimmer-Architektenvilla von 292 m² auf einem Grundstück von 1'792 m²."
+      },
+      "desc": {
+        "fr": [
+          "Nichée dans un quartier paisible de Rances, cette villa érigée en 2002 par un architecte se distingue par la qualité de sa construction et le soin constant apporté à son entretien. Elle développe environ 300 m² habitables sur deux niveaux, prolongés par un sous-sol entièrement excavé construit sur radier. La parcelle de 1'792 m², joliment arborisée, recèle par ailleurs un potentiel constructif additionnel d'environ 140 m² une réserve foncière rare dans le secteur.",
+          "Le rez-de-chaussée s'organise autour d'un spacieux espace de vie animé par une cheminée aux pierres égrenées, largement ouvert sur le jardin et ses deux terrasses. La cuisine, entièrement aménagée et équipée d'un four vapeur et d'un plan de travail en granit, prolonge naturellement cet espace de réception. La chambre parentale, dotée d'un dressing attenant, bénéficie d'une grande salle de bain avec douche et baignoire. Un vaste bureau, qui peut aisément faire office de chambre supplémentaire, complète ce niveau.",
+          "L'étage se découvre par un escalier en pierre avec ouverture. Il abrite deux grandes chambres à coucher, une salle de bain avec WC, ainsi qu'un vaste espace bureau offrant la possibilité d'être divisé pour créer deux chambres complémentaires. Un grenier aménageable, actuellement utilisé comme rangement, complète l'étage et laisse la porte ouverte à de futures évolutions.",
+          "Le sous-sol révèle des caves sèches ventilées, un local technique abritant la pompe à chaleur, un espace buanderie et une salle annexe pouvant accueillir un carnotzet pièce de convivialité chère à la tradition vaudoise.",
+          "À l'extérieur, un soin tout particulier a été apporté aux aménagements. Le jardin arborisé accueille une piscine au sel à contre-courant avec balnéothérapie, équipée de cinq buses hydromassantes, ainsi qu'un bel étang qui apporte au lieu une atmosphère singulière. Une large cour d'accès, capable d'accueillir plusieurs véhicules, mène à un double garage avec réduit attenant.",
+          "L'autoroute est à cinq minutes, Lausanne à vingt-cinq minutes, l'aéroport de Genève à quarante-cinq minutes. Une adresse qui conjugue le calme de la campagne vaudoise et la facilité d'accès aux grands centres."
+        ],
+        "en": [
+          "Nested in a peaceful area of Rances, this villa, built in 2002 by an architect, stands out for the quality of its construction and the constant care given to its upkeep. It offers around 300 m² of living space on two levels, extended by a fully excavated basement built on an invert. The 1,792 m² plot, beautifully planted with trees, also offers additional building potential of around 140 m² a rare land reserve in the area.",
+          "The first floor is organized around a spacious living area enlivened by a stone fireplace, widely open onto the garden and its two terraces. The kitchen, fully fitted and equipped with a steam oven and granite worktop, is a natural extension of this reception area. The master bedroom, with adjoining dressing room, benefits from a large bathroom with shower and bathtub. A vast study, which could easily double as an additional bedroom, completes this level.",
+          "The first floor is revealed by an open stone staircase. There are two large bedrooms, a bathroom with WC, and a large office area that could be divided to create two additional bedrooms. A convertible attic, currently used for storage, completes the first floor and leaves the door open to future developments.",
+          "The basement reveals ventilated dry cellars, a technical room housing the heat pump, a laundry area and an adjoining room that can accommodate a carnotzet pièce de convivialité cher à la tradition vaudoise.",
+          "Externally, particular care has been taken to the layout. The tree-lined garden features a counter-current saltwater swimming pool with balneotherapy, equipped with five hydromassage jets, as well as a beautiful pond that lends the site a singular atmosphere. A large access courtyard, capable of accommodating several vehicles, leads to a double garage with adjoining storeroom.",
+          "The freeway is five minutes away, Lausanne twenty-five minutes, Geneva airport forty-five minutes. An address that combines the calm of the Vaud countryside with easy access to major centers."
+        ],
+        "de": [
+          "Diese 2002 von einem Architekten errichtete Villa liegt in einem ruhigen Viertel von Rances und zeichnet sich durch die Qualität ihrer Konstruktion und die ständige Sorgfalt bei ihrer Instandhaltung aus. Sie verfügt über eine Wohnfläche von ca. 300 m² auf zwei Ebenen, die durch ein vollständig ausgehobenes, auf einer Bodenplatte errichtetes Untergeschoss erweitert werden. Das 1.792 m² große Grundstück mit schönen Bäumen birgt außerdem ein zusätzliches Baupotenzial von ca. 140 m² eine seltene Grundstücksreserve in diesem Sektor.",
+          "Das Erdgeschoss ist um einen geräumigen Wohnbereich herum angeordnet, der von einem Kamin mit körnigen Steinen belebt wird und sich weit zum Garten und seinen beiden Terrassen öffnet. Die Küche ist komplett eingerichtet und mit einem Dampfgarer und einer Arbeitsplatte aus Granit ausgestattet und bildet eine natürliche Verlängerung dieses Empfangsbereichs. Das Elternschlafzimmer mit angrenzendem Ankleidezimmer verfügt über ein großes Badezimmer mit Dusche und Badewanne. Ein großes Büro, das leicht als zusätzliches Schlafzimmer genutzt werden kann, vervollständigt diese Ebene.",
+          "Das Obergeschoss ist über eine Steintreppe mit Öffnung erreichbar. Es beherbergt zwei große Schlafzimmer, ein Badezimmer mit WC und einen großen Bürobereich, der in zwei weitere Schlafzimmer unterteilt werden kann. Ein ausbaubarer Dachboden, der derzeit als Abstellraum genutzt wird, vervollständigt das Obergeschoss und lässt Raum für zukünftige Entwicklungen.",
+          "Das Untergeschoss bietet trockene, belüftete Kellerräume, einen Technikraum, in dem die Wärmepumpe untergebracht ist, eine Waschküche und einen Nebenraum, der ein Carnotzet beherbergen kann, ein geselliger Raum, der in der Waadtländer Tradition hochgehalten wird.",
+          "Im Außenbereich wurde besondere Sorgfalt auf die Gestaltung gelegt. Der Garten mit Bäumen beherbergt einen Salzwasserpool mit Gegenstromanlage und Balneotherapie, der mit fünf Hydromassagedüsen ausgestattet ist, sowie einen schönen Teich, der dem Ort eine einzigartige Atmosphäre verleiht. Ein großer Hof, der Platz für mehrere Fahrzeuge bietet, führt zu einer Doppelgarage mit angrenzendem Abstellraum.",
+          "Die Autobahn ist fünf Minuten entfernt, Lausanne fünfundzwanzig Minuten, der Flughafen Genf fünfundvierzig Minuten. Eine Adresse, die die Ruhe der Waadtländer Landschaft mit der leichten Erreichbarkeit der grossen Zentren verbindet."
+        ]
+      },
+      "price": {
+        "amount": 3495000,
+        "currency": "CHF"
+      },
+      "rooms": 6.5,
+      "bedrooms": 5,
+      "bathrooms": 2,
+      "surfaces": {
+        "living": 300,
+        "land": 1792,
+        "garden": 1518
+      },
+      "buildingYear": 2002,
+      "renovationYear": 0,
+      "commune": "Rances",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.76,
       "lon": 6.53,
       "images": [
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
-        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048439_1367_682369702ed176.41813408.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048463_1367_682369cfc11192.20733020.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048451_1367_6823697392f794.38596619.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048445_1367_68236973a12848.18642843.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048443_1367_68236973504a24.53853252.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048441_2675_698d936cee7408.02590826.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048447_1367_682369739ede63.66753209.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048449_1367_68236973151a64.65370291.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048461_2675_698d936df37d39.37875553.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048467_2675_698d936e7a9e79.67572089.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048419_1367_6823696a48ef63.09621194.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048415_1367_68236967c7b994.20976655.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048423_1367_6823696c338f84.01997811.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048433_1367_6823696c36dae7.97971749.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048437_1367_6823696ec622a6.83526860.jpg",
+        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048429_1367_6823696b56cac4.83256498.jpg"
       ]
     },
     {
@@ -149,6 +462,170 @@
         "https://uploads.swsir-tech.ch/images/159e6e90-a843-f111-88b3-7c1e5275bdc0/rebsbmu4p8wvjq8hobp7-1779112032406.jpg",
         "https://uploads.swsir-tech.ch/images/159e6e90-a843-f111-88b3-7c1e5275bdc0/wolstbysvhwfgxdz45sz-1779112036482.jpeg",
         "https://uploads.swsir-tech.ch/images/159e6e90-a843-f111-88b3-7c1e5275bdc0/xzawxcrxy7w8jfargngn-1779112036483.jpeg"
+      ]
+    },
+    {
+      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
+      "ref": "048060",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
+        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
+        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
+      },
+      "desc": {
+        "fr": [
+          "Situation et environnement",
+          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
+          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
+          "Présentation générale",
+          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
+          "Rez-de-chaussée",
+          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
+          "Étage",
+          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
+          "Sous-sol",
+          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
+          "Extérieurs"
+        ],
+        "en": [
+          "Location and environment",
+          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
+          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
+          "General presentation",
+          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
+          "First floor",
+          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
+          "First floor",
+          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
+          "Basement",
+          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
+          "Exterior"
+        ],
+        "de": [
+          "Lage und Umgebung",
+          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
+          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
+          "Allgemeine Präsentation",
+          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
+          "Erdgeschoss",
+          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
+          "Etage",
+          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
+          "Untergeschoss",
+          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
+          "Außenbereiche"
+        ]
+      },
+      "price": {
+        "amount": 1345000,
+        "currency": "CHF"
+      },
+      "rooms": 7.5,
+      "bedrooms": 5,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 202,
+        "land": 981
+      },
+      "buildingYear": 1990,
+      "renovationYear": 2017,
+      "commune": "Chavannes-sur-Moudon",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.66,
+      "lon": 6.81,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/montage-paysage-1780911271443.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
+        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg"
+      ]
+    },
+    {
+      "id": "30e05a76-cb30-ed11-9db1-000d3ab98d48",
+      "ref": "13940",
+      "status": "sale",
+      "type": "house",
+      "subtype": "single-house",
+      "title": {
+        "fr": "Somptueuse propriété historique sur un domaine viticole !",
+        "en": "Sumptuous historic property on a wine-growing estate!",
+        "de": "Prächtiges historisches Anwesen auf einem Weingut!"
+      },
+      "desc": {
+        "fr": [
+          "Idéalement située à Obre, commune chargée d'histoire, cette propriété de maître du début du 19ème siècle saura vous séduire par son style architectural ainsi que pour sa parcelle jouissant d'une magnifique vue et imprenable sur le bourg d'Obre, les plaines et ses montagnes avoisinantes.",
+          "Erigée entre 1816 & 1823 (selon le recensement architectural du canton de Vaud) la bâtisse principale était, à l'origine, une maison vigneronne. Transformé et restauré au fil des années, le bâtiment se trouve sur une parcelle de plus de 10'000 m2 (nous soumis à LDFR) composée de vignes, forêts et terrain d'agréments.",
+          "La maison s'érige sur 4 niveaux et comprend des sous-sols, un rez-de-chaussée, un étage et des combles aménageables. Votre futur lieu de vie profite d'environ 12 pièces et pourrait tout à fait être occupé comme habitation principale, résidence secondaire ou encore servir à une activité commerciale ou une association/fondation. A ce jour, la propriété se compose d'une galerie d'art au rez-de-chaussée et d'un logement principal aux étages.",
+          "Le charme des lieux et l'élégance du bâtiment doivent beaucoup à la qualité de son emplacement et de ses espaces extérieurs, garni d'arbres séculaires aux essences variées ainsi que son panorama d'exception. Une très belle dépendance offrant garages et divers espaces de stockages complètent agréablement cet objet unique et rare sur le marché.",
+          "Vous l'aurez compris, il s'agit d'une propriété qui doit se visiter! Cela pour ressentir l'énergie des lieux et admirer sa beauté. En cas de cas de questions ou pour visiter, n'hésitez pas à nous contacter."
+        ],
+        "en": [
+          "Ideally located in Obre, a commune steeped in history, this early 19th-century manor house will seduce you with its architectural style and its plot of land with a magnificent, unobstructed view of the village of Obre, the plains and the surrounding mountains.",
+          "Built between 1816 & 1823 (according to the architectural census of the canton of Vaud), the main building was originally a winegrower's house. Transformed and restored over the years, the building stands on a plot of over 10,000 m2 (subject to LDFR) of vineyards, forest and pleasure grounds.",
+          "The house is built over 4 levels and includes basements, a first floor, an upper floor and attic space for conversion. Your future home has around 12 rooms and could be used as a main residence, a second home, a business or an association/foundation. To date, the property comprises an art gallery on the first floor and a main dwelling on the upper floors.",
+          "The charm of the premises and the elegance of the building owe much to the quality of its location and outdoor spaces, lined with centuries-old trees of varied species, as well as its exceptional panorama. A beautiful outbuilding offering garages and various storage spaces pleasantly completes this unique and rare object on the market.",
+          "As you can see, this is a property that must be visited! To feel the energy of the place and admire its beauty. Should you have any questions or wish to visit, please do not hesitate to contact us."
+        ],
+        "de": [
+          "Dieses Herrenhaus aus dem frühen 19. Jahrhundert befindet sich in idealer Lage in Obre, einer geschichtsträchtigen Gemeinde. Es besticht durch seinen architektonischen Stil und seine Parzelle, die einen herrlichen Blick auf das Dorf Obre, die Ebenen und die umliegenden Berge bietet.",
+          "Das Hauptgebäude wurde zwischen 1816 und 1823 erbaut (laut dem Architekturverzeichnis des Kantons Waadt) und war ursprünglich ein Winzerhaus. Das Gebäude wurde im Laufe der Jahre umgebaut und restauriert und befindet sich auf einem Grundstück von mehr als 10'000 m2 (wir unterliegen dem BGBB), das aus Weinbergen, Wäldern und Freizeitflächen besteht.",
+          "Das Haus erstreckt sich über vier Stockwerke und besteht aus Untergeschossen, Erdgeschoss, Obergeschoss und einem ausbaubaren Dachgeschoss. Ihr zukünftiger Lebensraum verfügt über ca. 12 Zimmer und könnte durchaus als Hauptwohnsitz, Zweitwohnsitz oder auch für eine gewerbliche Tätigkeit oder einen Verein/eine Stiftung genutzt werden. Derzeit besteht die Immobilie aus einer Kunstgalerie im Erdgeschoss und einer Hauptwohnung in den oberen Stockwerken.",
+          "Der Charme des Ortes und die Eleganz des Gebäudes sind der Qualität seiner Lage und seiner Außenanlagen zu verdanken, die mit jahrhundertealten Bäumen verschiedener Arten bepflanzt sind, sowie seinem außergewöhnlichen Panorama. Ein sehr schönes Nebengebäude mit Garagen und verschiedenen Lagerräumen vervollständigt dieses einzigartige und seltene Objekt auf dem Markt.",
+          "Sie werden verstehen, dass es sich hier um eine Immobilie handelt, die man besichtigen muss! So können Sie die Energie des Ortes spüren und seine Schönheit bewundern. Wenn Sie Fragen haben oder eine Besichtigung wünschen, zögern Sie bitte nicht, uns zu kontaktieren."
+        ]
+      },
+      "price": {
+        "amount": 2850000,
+        "currency": "CHF"
+      },
+      "rooms": 12,
+      "bedrooms": 7,
+      "bathrooms": 3,
+      "surfaces": {
+        "living": 420,
+        "land": 10642,
+        "usable": 579
+      },
+      "buildingYear": 1823,
+      "renovationYear": 0,
+      "commune": "Orbe",
+      "region": "Vaud",
+      "country": "CH",
+      "lat": 46.73,
+      "lon": 6.53,
+      "images": [
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_1367_6683b7323f9788.83110147.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_2675_69860a04e6fcf2.08303235.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277298_1367_6683b7349b7081.36762152.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697246_2675_69860a074c4c66.37196941.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277234_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697216_1367_6683b72e477676.01163943.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_1367_6683b72baf7261.52894154.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697200_2675_69860a037e5217.59242888.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277258_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277232_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_2675_69860a058fa736.37147634.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697224_1367_6683b72f479e40.12180250.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_1367_6683b72b75cf42.04703290.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/32697198_2675_69860a03513ff9.85893690.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277238_1367_6683b72c428b28.20534057.jpg",
+        "https://uploads.swsir-tech.ch/images/30e05a76-cb30-ed11-9db1-000d3ab98d48/31277270_1367_6683b730e2eb90.98058965.jpg"
       ]
     },
     {
@@ -302,483 +779,6 @@
         "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966961_2675_698af7df8584b2.04110703.jpg",
         "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966989_2675_698af7e235ac07.28078810.jpg",
         "https://uploads.swsir-tech.ch/images/c79318ea-22d3-ef11-8ee9-000d3ab0233c/33966991_2675_698af7e2586636.26523396.jpg"
-      ]
-    },
-    {
-      "id": "c57e3300-f74d-f111-bec6-7ced8d2e5c87",
-      "ref": "048060",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Villa familiale à 35 minutes de Lausanne, vue panoramique, calme et studio indépendant",
-        "en": "Family villa 35 minutes from Lausanne, panoramic view, quiet and independent studio",
-        "de": "Familienvilla 35 Minuten von Lausanne entfernt, Panoramablick, ruhig und unabhängiges Studio"
-      },
-      "desc": {
-        "fr": [
-          "Situation et environnement",
-          "Située à Chavannes-sur-Moudon, entre Lausanne (35 min) et Payerne, cette villa individuelle profite d'un cadre rural préservé à proximité de Moudon et de ses services. La vue s'ouvre sur les reliefs environnants et les sommets enneigés. Orientation et topographie garantissent un ensoleillement généreux et une absence de vis-à-vis. La parcelle, plate et facile d'entretien, s'étend sur 891 m² entièrement clôturés.",
-          "Les photos d'intérieur ont été mises en valeur par intelligence artificielle (home staging virtuel) : seuls le mobilier et la décoration sont fictifs. Volumes, fenêtres, vues et matériaux sont conformes à la réalité.",
-          "Présentation générale",
-          "Construite en 1990 et rénovée partiellement jusqu'en 2017, la villa se développe sur trois niveaux pour 202 m² habitables (293 m² utiles).",
-          "Rez-de-chaussée",
-          "Séjour traversant avec cheminée prolongé par la terrasse, cuisine ouverte sur la salle à manger, deux pièces aménagées en bureaux dont l'une convertible en chambre, hall d'entrée avec vestiaire et WC visiteurs.",
-          "Étage",
-          "Suite parentale avec salle de bains privative, trois chambres et salle de bains familiale. Grandes baies vitrées, vue dégagée et belle lumière.",
-          "Sous-sol",
-          "Studio indépendant de 49 m² avec cuisine équipée, salle d'eau, entrée privative et place de parc dédiée. Idéal en location (potentiel estimé à 950 CHF/mois), Airbnb, logement pour un proche ou activité indépendante. Également deux pièces polyvalentes, sauna, buanderie, rangements et abri PC aménagé en espace musique et enregistrement.",
-          "Extérieurs"
-        ],
-        "en": [
-          "Location and environment",
-          "Located in Chavannes-sur-Moudon, between Lausanne (35 min) and Payerne, this detached villa enjoys an unspoilt rural setting close to Moudon and its amenities. The view opens onto the surrounding hills and snow-capped peaks. The orientation and topography guarantee generous sunlight and the absence of overlooking views. The flat, easy-to-maintain plot spans 891 m² and is fully fenced.",
-          "The interior photos have been enhanced by artificial intelligence (virtual home staging): only the furniture and decoration are fictitious. Volumes, windows, views and materials are true to life.",
-          "General presentation",
-          "Built in 1990 and partially renovated until 2017, the villa spans three levels and offers 202 m² of living space (293 m² of usable space).",
-          "First floor",
-          "Open-plan living room with fireplace leading onto terrace, kitchen opening onto dining room, two rooms converted into offices, one of which converts into a bedroom, entrance hall with checkroom and guest WC.",
-          "First floor",
-          "Master suite with private bathroom, three bedrooms and family bathroom. Large bay windows, unobstructed views and plenty of light.",
-          "Basement",
-          "Independent 49 m² studio with fitted kitchen, shower room, private entrance and dedicated parking space. Ideal for rental (potential estimated at 950 CHF/month), Airbnb, accommodation for a relative or self-employed activity. Also two multi-purpose rooms, sauna, laundry room, storage and PC shelter converted into music and recording space.",
-          "Exterior"
-        ],
-        "de": [
-          "Lage und Umgebung",
-          "Diese freistehende Villa befindet sich in Chavannes-sur-Moudon, zwischen Lausanne (35 Min.) und Payerne. Sie profitiert von einer geschützten ländlichen Umgebung in der Nähe von Moudon und seinen Dienstleistungen. Der Blick öffnet sich auf die umliegenden Reliefs und die schneebedeckten Gipfel. Die Ausrichtung und die Topografie garantieren eine großzügige Sonneneinstrahlung und keine Gegenüberstellung. Das flache und pflegeleichte Grundstück erstreckt sich über 891 m² und ist komplett eingezäunt.",
-          "Die Innenaufnahmen wurden durch künstliche Intelligenz (virtuelles Home Staging) aufgewertet: Nur die Möbel und die Dekoration sind fiktiv. Volumen, Fenster, Ausblicke und Materialien entsprechen der Realität.",
-          "Allgemeine Präsentation",
-          "Die 1990 erbaute und bis 2017 teilweise renovierte Villa erstreckt sich über drei Ebenen mit einer Wohnfläche von 202 m² (293 m² Nutzfläche).",
-          "Erdgeschoss",
-          "Durchgehendes Wohnzimmer mit Kamin, das durch die Terrasse verlängert wird, zum Esszimmer hin offene Küche, zwei als Büros eingerichtete Räume, von denen einer in ein Schlafzimmer umgewandelt werden kann, Eingangshalle mit Garderobe und Besucher-WC.",
-          "Etage",
-          "Mastersuite mit eigenem Badezimmer, drei Schlafzimmer und Familienbadezimmer. Große Fensterfronten, freier Blick und schönes Licht.",
-          "Untergeschoss",
-          "Unabhängiges Studio von 49 m² mit ausgestatteter Küche, Badezimmer, privatem Eingang und eigenem Parkplatz. Ideal zur Vermietung (geschätztes Potenzial: 950 CHF/Monat), Airbnb, als Unterkunft für einen Angehörigen oder für eine selbstständige Tätigkeit. Ebenfalls zwei Mehrzweckräume, Sauna, Waschküche, Abstellräume und PC-Schutzraum, der als Musik- und Aufnahmeraum eingerichtet werden kann.",
-          "Außenbereiche"
-        ]
-      },
-      "price": {
-        "amount": 1345000,
-        "currency": "CHF"
-      },
-      "rooms": 7.5,
-      "bedrooms": 5,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 202,
-        "land": 981
-      },
-      "buildingYear": 1990,
-      "renovationYear": 2017,
-      "commune": "Chavannes-sur-Moudon",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.66,
-      "lon": 6.81,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/img-7913-1778696714507.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/2-s-jour-1778586637607.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/3-s-jour-2-1778586637611.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/4-cuisine-1778586640499.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/5-espace-d-tente-bas-1778586640501.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/6-bureau-bas-petit-1778586640502.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/7-chambre-parentale-1778586642617.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/8-sde-1778586642618.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/chambre-1-1-1778697169136.jpeg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/9-chambre-1-1778586642620.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/10-chambre-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-sdb-1778586643871.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/montage-paysage-1780911271443.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/11-1-couloir-1778586645513.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/12-studio-1778586645514.jpg",
-        "https://uploads.swsir-tech.ch/images/c57e3300-f74d-f111-bec6-7ced8d2e5c87/exterieur-1778586646690.jpg"
-      ]
-    },
-    {
-      "id": "b4cd5021-977d-f011-b4cc-000d3ab3389b",
-      "ref": "044333",
-      "status": "sale",
-      "type": "house",
-      "subtype": "",
-      "title": {
-        "fr": "Maison de caractère rénovée avec studio indépendant et beaux volumes",
-        "en": "Renovated character house with independent studio and spacious rooms",
-        "de": "Renoviertes Charakterhaus mit separatem Studio und schönen Räumen"
-      },
-      "desc": {
-        "fr": [
-          "Maison de charme, rénovée en 2003, a su conserver toute son authenticité tout en offrant le confort moderne. Elle se distingue par sa luminosité et ses beaux volumes.",
-          "Répartie sur trois niveaux, elle offre de beaux espaces :",
-          "Rez-de-chaussée : hall d’entrée avec WC visiteurs, buanderie, et un vaste espace de vie comprenant cuisine ouverte, salle à manger et coin détente. Cet espace s’ouvre sur une terrasse équipée d’une pergola avec store occultant.",
-          "Premier étage : un salon, un bureau et une salle d’eau.",
-          "Deuxième étage : trois chambres et une salle de bain.",
-          "Studio indépendant : accessible depuis la maison mais également par l’extérieur, offrant ainsi une totale indépendance.",
-          "En complément, trois places de parking et un atelier viennent agrémenter ce bien. Un lieu idéal pour une famille ou pour combiner habitation et activité professionnelle, à découvrir sans tarder !"
-        ],
-        "en": [
-          "This charming house, renovated in 2003, has retained all its authenticity while offering modern comforts. It stands out for its brightness and spaciousness.",
-          "Divided over three levels, it offers spacious accommodation:",
-          "First floor: entrance hall with guest WC, laundry room, and a vast living space with open-plan kitchen, dining room and sitting area. This space opens onto a terrace equipped with a pergola and blackout blind.",
-          "Second floor: living room, study and shower room.",
-          "Second floor: three bedrooms and a bathroom.",
-          "Independent studio: accessible from both inside and outside the house, offering total independence.",
-          "Three parking spaces and a workshop complete this property. An ideal place for a family or to combine living and working, to be discovered without delay!"
-        ],
-        "de": [
-          "Dieses charmante Haus wurde 2003 renoviert. Es hat seine Authentizität bewahrt und bietet gleichzeitig modernen Komfort. Es zeichnet sich durch seine Helligkeit und seine schönen Räume aus.",
-          "Es ist auf drei Ebenen verteilt und bietet schöne Räume:",
-          "Erdgeschoss: Eingangshalle mit Gäste-WC, Hauswirtschaftsraum und ein großer Wohnbereich mit offener Küche, Esszimmer und Entspannungsbereich. Dieser Bereich öffnet sich zu einer Terrasse, die mit einer Pergola mit Verdunklungsrollo ausgestattet ist.",
-          "Erster Stock: ein Wohnzimmer, ein Büro und ein Badezimmer.",
-          "Zweiter Stock: drei Schlafzimmer und ein Badezimmer.",
-          "Unabhängiges Studio: zugänglich vom Haus aus, aber auch von außen, und bietet somit völlige Unabhängigkeit.",
-          "Zusätzlich gibt es drei Parkplätze und ein Atelier, die diese Immobilie ergänzen. Ein idealer Ort für eine Familie oder um Wohnen und Berufstätigkeit zu kombinieren, entdecken Sie ihn sofort!"
-        ]
-      },
-      "price": {
-        "amount": 1290000,
-        "currency": "CHF"
-      },
-      "rooms": 5.5,
-      "bedrooms": 4,
-      "bathrooms": 3,
-      "surfaces": {
-        "living": 235,
-        "land": 250
-      },
-      "buildingYear": 1838,
-      "renovationYear": 2022,
-      "commune": "Valeyres-sous-Ursins",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.75,
-      "lon": 6.66,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737013_2675_698afcc4760d73.65296000.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736981_2675_698afcc26166e9.43534504.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737025_415_68b58b71708918.85853572.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736983_415_68b58b6f75cb34.77311678.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736987_415_68b58b70d5b410.39592813.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736993_415_68b58b70d48670.27355830.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736973_2675_698afcc1abf3d7.27169348.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35737005_2675_698afcc3e04533.88552744.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736991_415_68b58b71478475.82500836.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736989_2675_698afcc3007d63.37697642.jpg",
-        "https://uploads.swsir-tech.ch/images/b4cd5021-977d-f011-b4cc-000d3ab3389b/35736985_2675_698afcc2adefd3.89962764.jpg"
-      ]
-    },
-    {
-      "id": "d1a54dde-97b2-f011-bbd2-000d3a69eff1",
-      "ref": "045054",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Grande maison villageoise aux Tuileries-de-Grandson – 2 appartements + fort potentiel d’aménagement",
-        "en": "Large village house in Les Tuileries-de-Grandson - 2 apartments + strong development potential",
-        "de": "Großes Dorfhaus in Les Tuileries-de-Grandson - 2 Wohnungen + hohes Ausbaupotenzial"
-      },
-      "desc": {
-        "fr": [
-          "Située dans le quartier résidentiel et paisible des Tuileries-de-Grandson, cette élégante bâtisse historique allie cachet d’époque et emplacement privilégié. Proche des accès autoroutiers et à quelques minutes seulement du centre d’Yverdon-les-Bains, elle offre un cadre de vie calme et pratique.",
-          "Idéale pour une famille, un projet multi-générationnel ou un usage mixte habitation et professionnel, cette propriété séduit par ses volumes généreux et ses belles hauteurs de plafonds.",
-          "Au rez-de-chaussée se trouvent de belles surfaces adaptées à une activité artisanale, un bureau ou un espace de loisirs, complétées par des caves, une grande buanderie et une véranda lumineuse ouvrant sur la cour extérieure.",
-          "À l’étage, deux appartements indépendants d’environ 150 m² chacun bénéficient d’entrées privatives garantissant une parfaite intimité.",
-          "Le premier comprend trois chambres spacieuses, un séjour d’environ 30 m² ouvert sur la cuisine équipée et une salle de bains, avec accès direct à une terrasse.",
-          "Le second, tout aussi confortable, propose trois chambres, un grand séjour et une salle à manger attenante à la cuisine, agrémenté de cheminées décoratives.",
-          "Les combles offrent plus de 170 m² utiles (volume 513 m³), un espace exceptionnel pouvant accueillir salle de jeux, home cinéma, atelier ou tout autre projet. Le bâtiment se trouve en zone village ce qui permet d’envisager des aménagements supplémentaires sous réserve d’autorisations.",
-          "À l’extérieur, le terrain de 678 m² comprend un jardin, une grande véranda vitrée et une cour reliant harmonieusement les différents espaces.",
-          "Plus de 100 m² d’annexes complètent l’ensemble : un local indépendant accessible depuis la rue, un ancien fumoir de plus de 16 m² et un vaste dépôt. Quatre places de stationnement extérieures sont disponibles, avec possibilité d’aménager un garage sous réserve d'autorisations.",
-          "Cette belle propriété constitue une opportunité rare alliant charme authentique, espaces généreux et fort potentiel.",
-          "Contactez-nous pour plus d’informations."
-        ],
-        "en": [
-          "Located in the quiet residential area of Tuileries-de-Grandson, this elegant historic building combines period cachet with a privileged location. Close to motorway access and just a few minutes from the center of Yverdon-les-Bains, it offers a calm and practical living environment.",
-          "Ideal for a family, a multi-generational project or a mixed residential and professional use, this property captivates with its generous volumes and high ceilings.",
-          "On the first floor, there are spacious areas suitable for a craft activity, office or leisure space, complemented by cellars, a large laundry room and a bright veranda opening onto the outside courtyard.",
-          "Upstairs, two independent apartments, each around 150 m² in size, benefit from private entrances guaranteeing perfect privacy.",
-          "The first features three spacious bedrooms, a 30 m² living room opening onto the fitted kitchen and a bathroom, with direct access to a terrace. The second, just as comfortable, offers three bedrooms, a large living room and a dining room adjoining the kitchen, complete with decorative fireplaces.",
-          "The attic offers over 170 m² of usable space (volume 513 m³), an exceptional area suitable for a games room, home cinema, workshop or any other project. The building is located in a village zone, which means it is possible to envisage additional development subject to authorization.",
-          "Outside, the 678 m² grounds include a garden, a large glazed veranda and a courtyard that harmoniously links the different areas.",
-          "More than 100 m² of outbuildings complete the ensemble: a separate room accessible from the street, a former smoking room of more than 16 m² and a large storage area. Four outdoor parking spaces are available, with the possibility of adding a garage subject to authorization.",
-          "This beautiful property is a rare opportunity combining authentic charm, generous space and great potential.",
-          "Contact us for more information."
-        ],
-        "de": [
-          "Dieses elegante historische Gebäude befindet sich im ruhigen Wohnviertel Tuileries-de-Grandson. Es vereint das Flair der Epoche mit einer privilegierten Lage. In der Nähe des Autobahnanschlusses und nur wenige Minuten vom Zentrum von Yverdon-les-Bains entfernt, bietet es eine ruhige und praktische Lebensumgebung.",
-          "Ideal für eine Familie, ein Mehrgenerationenprojekt oder eine gemischte Nutzung von Wohn- und Geschäftsräumen, besticht diese Immobilie durch ihre großzügigen Volumen und die schönen Deckenhöhen.",
-          "Im Erdgeschoss befinden sich schöne Flächen, die sich für eine handwerkliche Tätigkeit, ein Büro oder einen Freizeitbereich eignen, ergänzt durch Kellerräume, eine große Waschküche und eine helle Veranda, die sich zum Außenhof hin öffnet.",
-          "Im Obergeschoss befinden sich zwei unabhängige Wohnungen von jeweils ca. 150 m² mit privaten Eingängen, die eine perfekte Privatsphäre garantieren.",
-          "Die erste umfasst drei geräumige Schlafzimmer, ein Wohnzimmer von ca. 30 m², das sich zur Einbauküche hin öffnet, und ein Badezimmer mit direktem Zugang zu einer Terrasse. Die zweite, ebenso komfortable Wohnung bietet drei Schlafzimmer, ein großes Wohnzimmer und ein an die Küche angrenzendes Esszimmer, das mit dekorativen Kaminen verziert ist.",
-          "Das Dachgeschoss bietet über 170 m² Nutzfläche (Volumen 513 m³), ein außergewöhnlicher Raum, der als Spielzimmer, Heimkino, Atelier oder für jedes andere Projekt genutzt werden kann. Das Gebäude befindet sich in einem Dorfgebiet, sodass weitere Ausbauten vorbehaltlich der Genehmigungen möglich sind.",
-          "Im Außenbereich umfasst das 678 m² große Grundstück einen Garten, eine große verglaste Veranda und einen Hof, der die verschiedenen Räume harmonisch miteinander verbindet.",
-          "Über 100 m² Nebengebäude vervollständigen das Ensemble: ein separater Raum, der von der Straße aus zugänglich ist, eine ehemalige Räucherkammer mit über 16 m² und ein großes Lager. Es stehen vier Außenparkplätze zur Verfügung, wobei vorbehaltlich der Genehmigungen die Möglichkeit besteht, eine Garage einzurichten.",
-          "Diese schöne Immobilie stellt eine seltene Gelegenheit dar, die authentischen Charme, großzügige Räume und großes Potenzial vereint.",
-          "Kontaktieren Sie uns für weitere Informationen."
-        ]
-      },
-      "price": {
-        "amount": 1800000,
-        "currency": "CHF"
-      },
-      "rooms": 9,
-      "bedrooms": 6,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 300,
-        "balanced": 300,
-        "land": 678,
-        "usable": 730
-      },
-      "buildingYear": 1925,
-      "renovationYear": 2021,
-      "commune": "Grandson",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.8,
-      "lon": 6.63,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-067-1776069575828.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-061-1776069573905.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-034-1776069569886.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-037-1776069569887.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-040-1776069571889.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-073-1776069561207.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-031-1776069569886.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-052-1776069571890.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-046-1776069571890.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-055-1776069573904.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-025-1776069567505.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-070-1776069575828.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-019-1776069567504.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-022-1776069567504.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-058-1776069573904.jpg",
-        "https://uploads.swsir-tech.ch/images/d1a54dde-97b2-f011-bbd2-000d3a69eff1/611747-a-backbonephoto-001-1776069561207.jpg"
-      ]
-    },
-    {
-      "id": "03e8af8a-43ea-f011-8544-000d3a69e073",
-      "ref": "045780",
-      "status": "sale",
-      "type": "house",
-      "subtype": "single-house",
-      "title": {
-        "fr": "Maison 6.5 pièces - Yverdon-les-Bains avec potentiel de transformation",
-        "en": "House 6.5 rooms - Yverdon-les-Bains with conversion potential",
-        "de": "Haus 6.5 Zimmer - Yverdon-les-Bains mit Umbaupotenzial"
-      },
-      "desc": {
-        "fr": [
-          "Découvrez cette maison de 6.5 pièces à Yverdon-les-Bains, proche de toutes commodités, construite en 2005 et rénovée en 2025 avec potentiel d'évolution. Rez-de-chaussée lumineux avec cuisine ouverte équipée, chambre et salle de bain ; étage avec 4 chambres (dont une suite), terrasse de 21 m² ; sous-sol de 81 m² incluant carnotzet et buanderie (chauffage gaz au sol). Garage et possibilité de parking extérieur. Idéale comme résidence principale ou transformable en deux appartements (coûts étudiés). À visiter sans tarder ! Contactez-moi pour plus d'infos."
-        ],
-        "en": [
-          "Discover this 6.5-room house in Yverdon-les-Bains, close to all amenities, built in 2005 and renovated in 2025 with development potential. Bright first floor with open-plan fitted kitchen, bedroom and bathroom; first floor with 4 bedrooms (including one suite), 21 m² terrace; 81 m² basement including carnotzet and laundry room (underfloor gas heating). Garage and possibility of outdoor parking. Ideal as main residence or convertible into two apartments (costs studied). View now! Contact me for more information."
-        ],
-        "de": [
-          "Entdecken Sie dieses 6.5-Zimmer-Haus in Yverdon-les-Bains, nahe aller Annehmlichkeiten, das 2005 gebaut und 2025 renoviert wurde und noch Entwicklungspotenzial hat. Helles Erdgeschoss mit offener Einbauküche, Schlafzimmer und Badezimmer; Obergeschoss mit 4 Schlafzimmern (davon eine Suite), Terrasse von 21 m²; Untergeschoss von 81 m² inklusive Carnotzet und Waschküche (Gas-Fußbodenheizung). Garage und Möglichkeit eines Außenparkplatzes. Ideal als Hauptwohnsitz oder umwandelbar in zwei Wohnungen (Kosten geprüft). Besuchen Sie uns ohne Verzögerung! Kontaktieren Sie mich für weitere Informationen."
-        ]
-      },
-      "price": {
-        "amount": 1250000,
-        "currency": "CHF"
-      },
-      "rooms": 6.5,
-      "bedrooms": 5,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 153,
-        "land": 278,
-        "usable": 249
-      },
-      "buildingYear": 2005,
-      "renovationYear": 2025,
-      "commune": "Yverdon-les-bains",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.78,
-      "lon": 6.63,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183683_2675_698c7a7d39ad82.63633177.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183643_414_ea21bbde8a064f.7ed93e06.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183647_414_7c8546e012abac.ff9da9d4.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183627_414_d45ab0d190f038.c33195ff.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183659_414_85632d81f6021f.8aec915e.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183653_414_7cacba036ca665.4bfa1c01.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183661_414_e63b1b9f7c5317.8e82439e.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183649_414_dfeca73f03a034.fb66c323.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183633_414_7cfd7fb55379b6.9be451e9.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183657_414_79eb1fdf2fb82b.4ad7ca16.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183651_414_ec01180cb775df.5c62aa22.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183645_414_d7f1f08a407cd8.fe35afd1.jpg",
-        "https://uploads.swsir-tech.ch/images/03e8af8a-43ea-f011-8544-000d3a69e073/39183637_414_1e2e716f85ab68.70ccdb6e.jpg"
-      ]
-    },
-    {
-      "id": "6323f4b0-467f-ef11-ac21-000d3ab1941c",
-      "ref": "040245",
-      "status": "sale",
-      "type": "house",
-      "subtype": "villa-house",
-      "title": {
-        "fr": "Villa d'architecte 6,5 pièces de 292 m² sur parcelle de 1'792 m²",
-        "en": "292 m², 6.5-room architect-designed villa on 1,792 m² of land",
-        "de": "6,5-Zimmer-Architektenvilla von 292 m² auf einem Grundstück von 1'792 m²."
-      },
-      "desc": {
-        "fr": [
-          "Nichée dans un quartier paisible de Rances, cette villa érigée en 2002 par un architecte se distingue par la qualité de sa construction et le soin constant apporté à son entretien. Elle développe environ 300 m² habitables sur deux niveaux, prolongés par un sous-sol entièrement excavé construit sur radier. La parcelle de 1'792 m², joliment arborisée, recèle par ailleurs un potentiel constructif additionnel d'environ 140 m² une réserve foncière rare dans le secteur.",
-          "Le rez-de-chaussée s'organise autour d'un spacieux espace de vie animé par une cheminée aux pierres égrenées, largement ouvert sur le jardin et ses deux terrasses. La cuisine, entièrement aménagée et équipée d'un four vapeur et d'un plan de travail en granit, prolonge naturellement cet espace de réception. La chambre parentale, dotée d'un dressing attenant, bénéficie d'une grande salle de bain avec douche et baignoire. Un vaste bureau, qui peut aisément faire office de chambre supplémentaire, complète ce niveau.",
-          "L'étage se découvre par un escalier en pierre avec ouverture. Il abrite deux grandes chambres à coucher, une salle de bain avec WC, ainsi qu'un vaste espace bureau offrant la possibilité d'être divisé pour créer deux chambres complémentaires. Un grenier aménageable, actuellement utilisé comme rangement, complète l'étage et laisse la porte ouverte à de futures évolutions.",
-          "Le sous-sol révèle des caves sèches ventilées, un local technique abritant la pompe à chaleur, un espace buanderie et une salle annexe pouvant accueillir un carnotzet pièce de convivialité chère à la tradition vaudoise.",
-          "À l'extérieur, un soin tout particulier a été apporté aux aménagements. Le jardin arborisé accueille une piscine au sel à contre-courant avec balnéothérapie, équipée de cinq buses hydromassantes, ainsi qu'un bel étang qui apporte au lieu une atmosphère singulière. Une large cour d'accès, capable d'accueillir plusieurs véhicules, mène à un double garage avec réduit attenant.",
-          "L'autoroute est à cinq minutes, Lausanne à vingt-cinq minutes, l'aéroport de Genève à quarante-cinq minutes. Une adresse qui conjugue le calme de la campagne vaudoise et la facilité d'accès aux grands centres."
-        ],
-        "en": [
-          "Nested in a peaceful area of Rances, this villa, built in 2002 by an architect, stands out for the quality of its construction and the constant care given to its upkeep. It offers around 300 m² of living space on two levels, extended by a fully excavated basement built on an invert. The 1,792 m² plot, beautifully planted with trees, also offers additional building potential of around 140 m² a rare land reserve in the area.",
-          "The first floor is organized around a spacious living area enlivened by a stone fireplace, widely open onto the garden and its two terraces. The kitchen, fully fitted and equipped with a steam oven and granite worktop, is a natural extension of this reception area. The master bedroom, with adjoining dressing room, benefits from a large bathroom with shower and bathtub. A vast study, which could easily double as an additional bedroom, completes this level.",
-          "The first floor is revealed by an open stone staircase. There are two large bedrooms, a bathroom with WC, and a large office area that could be divided to create two additional bedrooms. A convertible attic, currently used for storage, completes the first floor and leaves the door open to future developments.",
-          "The basement reveals ventilated dry cellars, a technical room housing the heat pump, a laundry area and an adjoining room that can accommodate a carnotzet pièce de convivialité cher à la tradition vaudoise.",
-          "Externally, particular care has been taken to the layout. The tree-lined garden features a counter-current saltwater swimming pool with balneotherapy, equipped with five hydromassage jets, as well as a beautiful pond that lends the site a singular atmosphere. A large access courtyard, capable of accommodating several vehicles, leads to a double garage with adjoining storeroom.",
-          "The freeway is five minutes away, Lausanne twenty-five minutes, Geneva airport forty-five minutes. An address that combines the calm of the Vaud countryside with easy access to major centers."
-        ],
-        "de": [
-          "Diese 2002 von einem Architekten errichtete Villa liegt in einem ruhigen Viertel von Rances und zeichnet sich durch die Qualität ihrer Konstruktion und die ständige Sorgfalt bei ihrer Instandhaltung aus. Sie verfügt über eine Wohnfläche von ca. 300 m² auf zwei Ebenen, die durch ein vollständig ausgehobenes, auf einer Bodenplatte errichtetes Untergeschoss erweitert werden. Das 1.792 m² große Grundstück mit schönen Bäumen birgt außerdem ein zusätzliches Baupotenzial von ca. 140 m² eine seltene Grundstücksreserve in diesem Sektor.",
-          "Das Erdgeschoss ist um einen geräumigen Wohnbereich herum angeordnet, der von einem Kamin mit körnigen Steinen belebt wird und sich weit zum Garten und seinen beiden Terrassen öffnet. Die Küche ist komplett eingerichtet und mit einem Dampfgarer und einer Arbeitsplatte aus Granit ausgestattet und bildet eine natürliche Verlängerung dieses Empfangsbereichs. Das Elternschlafzimmer mit angrenzendem Ankleidezimmer verfügt über ein großes Badezimmer mit Dusche und Badewanne. Ein großes Büro, das leicht als zusätzliches Schlafzimmer genutzt werden kann, vervollständigt diese Ebene.",
-          "Das Obergeschoss ist über eine Steintreppe mit Öffnung erreichbar. Es beherbergt zwei große Schlafzimmer, ein Badezimmer mit WC und einen großen Bürobereich, der in zwei weitere Schlafzimmer unterteilt werden kann. Ein ausbaubarer Dachboden, der derzeit als Abstellraum genutzt wird, vervollständigt das Obergeschoss und lässt Raum für zukünftige Entwicklungen.",
-          "Das Untergeschoss bietet trockene, belüftete Kellerräume, einen Technikraum, in dem die Wärmepumpe untergebracht ist, eine Waschküche und einen Nebenraum, der ein Carnotzet beherbergen kann, ein geselliger Raum, der in der Waadtländer Tradition hochgehalten wird.",
-          "Im Außenbereich wurde besondere Sorgfalt auf die Gestaltung gelegt. Der Garten mit Bäumen beherbergt einen Salzwasserpool mit Gegenstromanlage und Balneotherapie, der mit fünf Hydromassagedüsen ausgestattet ist, sowie einen schönen Teich, der dem Ort eine einzigartige Atmosphäre verleiht. Ein großer Hof, der Platz für mehrere Fahrzeuge bietet, führt zu einer Doppelgarage mit angrenzendem Abstellraum.",
-          "Die Autobahn ist fünf Minuten entfernt, Lausanne fünfundzwanzig Minuten, der Flughafen Genf fünfundvierzig Minuten. Eine Adresse, die die Ruhe der Waadtländer Landschaft mit der leichten Erreichbarkeit der grossen Zentren verbindet."
-        ]
-      },
-      "price": {
-        "amount": 3495000,
-        "currency": "CHF"
-      },
-      "rooms": 6.5,
-      "bedrooms": 5,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 300,
-        "land": 1792,
-        "garden": 1518
-      },
-      "buildingYear": 2002,
-      "renovationYear": 0,
-      "commune": "Rances",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.76,
-      "lon": 6.53,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048439_1367_682369702ed176.41813408.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048463_1367_682369cfc11192.20733020.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048451_1367_6823697392f794.38596619.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048445_1367_68236973a12848.18642843.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048443_1367_68236973504a24.53853252.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048441_2675_698d936cee7408.02590826.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048447_1367_682369739ede63.66753209.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048449_1367_68236973151a64.65370291.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048461_2675_698d936df37d39.37875553.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048467_2675_698d936e7a9e79.67572089.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048419_1367_6823696a48ef63.09621194.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048415_1367_68236967c7b994.20976655.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048423_1367_6823696c338f84.01997811.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048433_1367_6823696c36dae7.97971749.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048437_1367_6823696ec622a6.83526860.jpg",
-        "https://uploads.swsir-tech.ch/images/6323f4b0-467f-ef11-ac21-000d3ab1941c/34048429_1367_6823696b56cac4.83256498.jpg"
-      ]
-    },
-    {
-      "id": "2dcf89ac-5363-f111-a826-002248997b8f",
-      "ref": "048320",
-      "status": "sale",
-      "type": "apartment",
-      "subtype": "ppe-apartment",
-      "title": {
-        "fr": "RARE 4,5P AVEC TERRASSE DE 30M² - MONTBLESSON",
-        "en": "RARE 4,5P WITH 30M² TERRACE - MONTBLESSON",
-        "de": "SELTENES 4,5P MIT 30M² TERRASSE - MONTBLESSON"
-      },
-      "desc": {
-        "fr": [
-          "Sur les hauteurs de Lausanne, à deux pas de la forêt du Jorat et de l'arrêt de bus Montblesson, Perronnaz ce 4,5 pièces moderne offre un cadre de vie rare, à la fois calme et bien relié au centre-ville. Construit en 2017 dans une petite PPE de trois appartements, soignée et parfaitement entretenue, il assure une vraie tranquillité au quotidien.",
-          "L'appartement est pensé pour la lumière. Le séjour s'ouvre sur une cuisine moderne entièrement équipée et donne accès à une terrasse de 30 m² plein sud-ouest, sans vis-à-vis, avec vue directe sur la forêt. Trois belles chambres complètent l'ensemble, parfaites pour une famille ou un couple en quête d'espace.",
-          "Caractéristiques",
-          "Surface pondérée : 126 m²",
-          "Surface habitable nette : 111 m²",
-          "4,5 pièces, dont 3 chambres",
-          "Terrasse de 30 m² plein sud-ouest, vue forêt",
-          "Cuisine ouverte moderne, très bien entretenue",
-          "Construit en 2017",
-          "PPE de 3 appartements seulement",
-          "Charges mensuelles modérées : moins de CHF 450.",
-          "Grande cave privative au sous-sol"
-        ],
-        "en": [
-          "On the heights of Lausanne, a stone's throw from the Jorat forest and the Montblesson bus stop, Perronnaz this modern 4.5-room apartment offers a rare living environment, both quiet and well-connected to the city center. Built in 2017 in a small, well-tended and perfectly maintained three-apartment condominium, it ensures real peace and quiet on a daily basis.",
-          "The apartment is designed for light. The living room opens onto a modern, fully-equipped kitchen and provides access to a 30 m² terrace facing south-west, with a direct view of the forest. Three beautiful bedrooms complete the ensemble, perfect for a family or couple looking for space.",
-          "Features",
-          "Weighted area : 126 m²",
-          "Net living area : 111 m²",
-          "4.5 rooms, including 3 bedrooms",
-          "30 m² terrace facing southwest, forest view",
-          "Modern open kitchen, very well maintained",
-          "Built in 2017",
-          "PPE of only 3 apartments",
-          "Moderate monthly charges: less than CHF 450.",
-          "Grande cave privative au sous-sol"
-        ],
-        "de": [
-          "Auf den Höhen von Lausanne, nur wenige Schritte vom Jorat-Wald und der Bushaltestelle Montblesson entfernt, bietet Perronnaz diese moderne 4,5-Zimmer-Wohnung eine seltene Lebensumgebung, die sowohl ruhig als auch gut an das Stadtzentrum angebunden ist. Es wurde 2017 in einer kleinen Eigentumswohnung mit drei Wohnungen gebaut, die gepflegt und perfekt gewartet wird, und sorgt für echte Ruhe im Alltag.",
-          "Die Wohnung ist für das Licht gedacht. Das Wohnzimmer öffnet sich zu einer modernen, voll ausgestatteten Küche und bietet Zugang zu einer 30 m² großen Terrasse in Südwestlage, ohne Gegenüber, mit direktem Blick auf den Wald. Drei schöne Schlafzimmer vervollständigen das Ensemble, perfekt für eine Familie oder ein Paar auf der Suche nach mehr Platz.",
-          "Eigenschaften",
-          "Bewertete Fläche : 126 m²",
-          "Nettobewohnfläche : 111 m²",
-          "4,5 Zimmer, davon 3 Schlafzimmer",
-          "Terrasse von 30 m² Südwestlage, Waldblick",
-          "Moderne offene Küche, sehr gepflegt",
-          "Errichtet im Jahr 2017",
-          "Eigentumswohnung mit nur 3 Wohnungen",
-          "Moderate monatliche Belastungen: weniger als CHF 450.",
-          "Grosser privater Keller im Untergeschoss"
-        ]
-      },
-      "price": {
-        "amount": 1300000,
-        "currency": "CHF"
-      },
-      "rooms": 4.5,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "surfaces": {
-        "living": 126,
-        "balcony": 30
-      },
-      "buildingYear": 2017,
-      "renovationYear": null,
-      "commune": "Épalinges",
-      "region": "Vaud",
-      "country": "CH",
-      "lat": 46.54,
-      "lon": 6.67,
-      "images": [
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-061-hd-1780934985658.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-068-hd-1780934990671.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-044-hd-1780934981376.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-065-hd-1780934990670.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-077-hd-1780934995808.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-071-hd-1780934990672.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-074-hd-1780934995807.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-023-hd-1780934978746.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-026-hd-1780934978747.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-008-hd-1780934975332.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-035-hd-1780934978747.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-011-hd-1780934975334.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-038-hd-1780934981374.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-047-hd-1780934981377.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-053-hd-1780934985657.jpg",
-        "https://uploads.swsir-tech.ch/images/2dcf89ac-5363-f111-a826-002248997b8f/619628-a-backbonephoto-062-hd-1780934985659.jpg"
       ]
     }
   ],
